@@ -1,11 +1,22 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { NgbAlertModule } from "@ng-bootstrap/ng-bootstrap";
 
 import { ListOrderRoutingModule } from "./list-order-routing.module";
 import { ListOrderComponent } from "./list-order.component";
+import { ListSearchComponent } from "./list-search/list-search.component";
+import { WarningMessageModule } from "../../shared/warning-message/warning-message.module";
 
 @NgModule({
-  declarations: [ListOrderComponent],
-  imports: [CommonModule, ListOrderRoutingModule]
+  declarations: [ListOrderComponent, ListSearchComponent],
+  imports: [
+    CommonModule,
+    ListOrderRoutingModule,
+    NgbAlertModule,
+    FormsModule,
+    ReactiveFormsModule,
+    WarningMessageModule
+  ]
 })
 export class ListOrderModule {}

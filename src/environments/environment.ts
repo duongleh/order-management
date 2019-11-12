@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   endpoint: {
+    listorder: "/api/list-order",
     grid: "/api/grid",
     list: "/api/list",
     masterdetail: "/api/masterdetail"

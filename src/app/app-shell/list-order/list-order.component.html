@@ -1,3 +1,53 @@
-<p>
-  list-order works!
-</p>
+<body class="bg-light">
+  <div class="container">
+    <div class="py-5 text-center">
+      <h2>Quản lý đơn hàng</h2>
+      <app-list-search (inputText)="handleSearch($event)"></app-list-search>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3 order-md-1 mb-4">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-muted">Danh sách đơn hàng</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Đơn hàng thành công</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Đơn hàng bị huỷ</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Đơn hàng đã tiếp nhận</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-9 order-md-2">
+        <h4 class="mb-3">Đơn hàng của tôi</h4>
+        <table class="table table-hover table-responsive-md">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Mã đơn hàng</th>
+              <th scope="col">Ngày giao hàng</th>
+              <th scope="col">Tên sản phẩm</th>
+              <th scope="col">Tổng tiền</th>
+              <th scope="col">Trạng thái</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">$row['id']</th>
+              <td>$row['firstname']</td>
+              <td>$row['lastname']</td>
+              <td>$row['email']</td>
+              <td>$row['phonenumber']</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+<app-warning-message *ngIf="WarningMessageOpen" [text]="WarningMessageText"
+  (WarningMessageOpen)="handleWarningClose($event)"></app-warning-message>

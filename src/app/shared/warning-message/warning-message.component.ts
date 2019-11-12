@@ -1,23 +1,21 @@
-﻿import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+﻿import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 
 @Component({
-  selector: 'app-warning-message',
-  templateUrl: './warning-message.component.html',
-  styleUrls: ['./warning-message.component.css']
+  selector: "app-warning-message",
+  templateUrl: "./warning-message.component.html",
+  styleUrls: ["./warning-message.component.css"]
 })
 export class WarningMessageComponent implements OnInit {
-
   open = false;
-  @Input() text = '';
+  @Input() text = "";
   @Output() WarningMessageOpen = new EventEmitter<boolean>();
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   onWarningClose() {
-    this.text = '';
+    this.text = "";
     this.open = false;
     this.WarningMessageOpen.emit(this.open);
   }

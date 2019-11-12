@@ -1,16 +1,16 @@
-﻿import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
+﻿import { Injectable } from "@angular/core";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { Observable } from "rxjs";
 
-import { environment } from '../../../environments/environment';
+import { environment } from "../../../environments/environment";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class ListService {
   private listUrl = environment.endpoint.list;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getListItems(): Observable<IListItem[]> {
     return this.http.get<IListItem[]>(this.listUrl);
@@ -19,7 +19,7 @@ export class ListService {
   addListItem(inputText: string): Observable<IListItem> {
     const httpOptions = {
       headers: new HttpHeaders({
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json"
       })
     };
     const body = JSON.stringify({
@@ -37,4 +37,3 @@ export interface IListItem {
   _id: number;
   text: string;
 }
-

@@ -1,12 +1,12 @@
-﻿import { Component, OnInit, Output, EventEmitter } from "@angular/core";
+import { Component, OnInit, Output, EventEmitter } from "@angular/core";
 import { FormControl, FormGroup } from "@angular/forms";
 
 @Component({
-  selector: "app-list-form",
-  templateUrl: "./list-form.component.html",
-  styleUrls: ["./list-form.component.css"]
+  selector: "app-list-search",
+  templateUrl: "./list-search.component.html",
+  styleUrls: ["./list-search.component.css"]
 })
-export class ListFormComponent implements OnInit {
+export class ListSearchComponent implements OnInit {
   listForm: FormGroup;
 
   @Output() inputText = new EventEmitter<string>();
