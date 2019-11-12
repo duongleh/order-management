@@ -5,9 +5,9 @@
 export const environment = {
   production: false,
   endpoint: {
-    grid : '/api/grid',
-    list : '/api/list',
-    masterdetail : '/api/masterdetail',
+    grid: "/api/grid",
+    list: "/api/list",
+    masterdetail: "/api/masterdetail"
   }
 };
 

@@ -1,12 +1,11 @@
-﻿import { NgModule } from "@angular/core";
+import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 
-import { GridComponent } from "./grid.component";
-
+import { ListOrderComponent } from "./list-order.component";
 const routes: Routes = [
   {
     path: "",
-    component: GridComponent
+    component: ListOrderComponent
   }
 ];
 
@@ -14,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class GridRoutingModule {}
+export class ListOrderRoutingModule {}
