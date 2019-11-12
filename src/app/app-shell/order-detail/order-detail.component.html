@@ -1,0 +1,80 @@
+<body class="bg-light">
+    <div class="container">
+        <div class="py-4 text-center">
+            <h2>Chi tiết đơn hàng #{{id}}</h2>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Địa chỉ người nhận</h5>
+                    <p class="card-text">
+                        <b>{{orderDetail.name}}</b><br>
+                        Địa chỉ: {{orderDetail.address}}
+                        Điện thoại: {{orderDetail.phone}}</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tình trạng giao hàng</h5>
+                    <p class="card-text">
+                        {{orderDetail.shippingType}}<br>
+                        {{orderDetail.shippingStatus}}</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Hình thức thanh toán</h5>
+                    <p class="card-text">
+                        Thanh toán bằng <b>{{orderDetail.paymentType}}</b><br>
+                        {{orderDetail.paymentStatus}}</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-body">
+                <table class="table table-hover table-responsive-md">
+                    <thead>
+                        <tr>
+                            <th style="width: 50%">Sản phẩm</th>
+                            <th scope="col">Giá</th>
+                            <th scope="col">Số lượng</th>
+                            <th scope="col">Giảm giá</th>
+                            <th scope="col">Tạm tính</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of orderDetail.product">
+                            <td>{{item.productName}}</td>
+                            <td>{{item.price}} đ</td>
+                            <td>{{item.amount}}</td>
+                            <td>{{item.discount}} đ</td>
+                            <td>{{item.subTotal}} đ</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="checkout">
+                    <div class="row">
+                        <div class="col col-md-10 checkout-name"><b>Tạm tính</b></div>
+                        <div class="col col-md-2 checkout-price">{{orderDetail.preTotal}} đ</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-md-10 checkout-name"><b>Giảm giá</b></div>
+                        <div class="col col-md-2 checkout-price">{{orderDetail.totalDiscount}} đ</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-md-10col-md-10 checkout-name"><b>Phí vận chuyển</b></div>
+                        <div class="col col-md-2 checkout-price">{{orderDetail.shippingFee}} đ</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-md-10col-md-10 checkout-name"><b>Tổng cộng</b></div>
+                        <div class="col col-md-2 checkout-price">{{orderDetail.total}} đ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<app-warning-message *ngIf="WarningMessageOpen" [text]="WarningMessageText"
+    (WarningMessageOpen)="handleWarningClose($event)"></app-warning-message>

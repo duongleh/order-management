@@ -10,6 +10,7 @@ import { MasterDetailModule } from "./app-shell/master-detail/master-detail.modu
 import { NavBarComponent } from "./app-shell/nav-bar/nav-bar.component";
 import { FooterComponent } from "./app-shell/footer/footer.component";
 import { ListOrderModule } from "./app-shell/list-order/list-order.module";
+import { OrderDetailModule } from "./app-shell/order-detail/order-detail.module";
 
 @NgModule({
   declarations: [AppComponent, NavBarComponent, FooterComponent],
@@ -17,10 +18,11 @@ import { ListOrderModule } from "./app-shell/list-order/list-order.module";
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    ListOrderModule,
+    OrderDetailModule,
     GridModule,
     ListModule,
-    MasterDetailModule,
-    ListOrderModule
+    MasterDetailModule
   ],
   providers: [],
   bootstrap: [AppComponent]

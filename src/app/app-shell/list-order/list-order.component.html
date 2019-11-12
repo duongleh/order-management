@@ -1,6 +1,6 @@
 <body class="bg-light">
   <div class="container">
-    <div class="py-5 text-center">
+    <div class="py-4 text-center">
       <h2>Quản lý đơn hàng</h2>
       <app-list-search (inputText)="handleSearch($event)"></app-list-search>
     </div>
@@ -35,12 +35,12 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">$row['id']</th>
-              <td>$row['firstname']</td>
-              <td>$row['lastname']</td>
-              <td>$row['email']</td>
-              <td>$row['phonenumber']</td>
+            <tr *ngFor="let order of listOrders">
+              <th scope="row">{{order.id}}</th>
+              <td>{{order.date}}</td>
+              <td>{{order.productName}}</td>
+              <td>{{order.total}}</td>
+              <td>{{order.status}}</td>
             </tr>
           </tbody>
         </table>

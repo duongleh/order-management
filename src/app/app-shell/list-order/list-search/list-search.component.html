@@ -1,6 +1,6 @@
 <form [formGroup]="listForm" (ngSubmit)="onSubmit()" class="input-group my-3">
     <div class="col-11">
-        <input id="content" class="form-control" placeholder="Search orders..." aria-label="Search orders..."
+        <input id="content" class="form-control" placeholder="Tìm kiếm đơn hàng..." aria-label="Tìm kiếm đơn hàng..."
             formControlName="content" required />
         <ngb-alert type="danger" *ngIf="content.invalid && content.dirty">
             <div *ngIf="content.errors.required">
@@ -10,7 +10,7 @@
     </div>
     <span class="input-group-btn col-1">
         <button type="submit" class="btn btn-primary" [disabled]="listForm.invalid">
-            Submit
+            Search
         </button>
     </span>
 </form>

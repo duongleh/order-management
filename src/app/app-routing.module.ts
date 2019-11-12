@@ -2,7 +2,21 @@
 import { Routes, RouterModule } from "@angular/router";
 
 const routes: Routes = [
-  { path: "", redirectTo: "/master-detail", pathMatch: "full" },
+  { path: "", redirectTo: "/list-order", pathMatch: "full" },
+  {
+    path: "list-order",
+    loadChildren: () =>
+      import("./app-shell/list-order/list-order.module").then(
+        mod => mod.ListOrderModule
+      )
+  },
+  {
+    path: "order-detail",
+    loadChildren: () =>
+      import("./app-shell/order-detail/order-detail.module").then(
+        mod => mod.OrderDetailModule
+      )
+  },
   {
     path: "master-detail",
     loadChildren: () =>
@@ -15,13 +29,7 @@ const routes: Routes = [
     loadChildren: () =>
       import("./app-shell/list/list.module").then(mod => mod.ListModule)
   },
-  {
-    path: "list-order",
-    loadChildren: () =>
-      import("./app-shell/list-order/list-order.module").then(
-        mod => mod.ListOrderModule
-      )
-  },
+
   {
     path: "grid",
     loadChildren: () =>

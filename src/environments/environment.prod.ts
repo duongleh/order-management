@@ -1,8 +1,10 @@
 ﻿export const environment = {
   production: true,
   endpoint: {
-    grid : '/api/grid',
-    list : '/api/list',
-    masterdetail : '/api/masterdetail',
+    listorder: "/api/list-order",
+    orderdetail: "/api/order-detail",
+    grid: "/api/grid",
+    list: "/api/list",
+    masterdetail: "/api/masterdetail"
   }
 };
