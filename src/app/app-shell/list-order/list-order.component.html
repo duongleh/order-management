@@ -36,7 +36,7 @@
           </thead>
           <tbody>
             <tr *ngFor="let order of listOrders">
-              <th scope="row">{{order.id}}</th>
+              <th scope="row"> <a href="/order-detail/{{order.id}}">{{order.id}}</a></th>
               <td>{{order.date}}</td>
               <td>{{order.productName}}</td>
               <td>{{order.total}}</td>

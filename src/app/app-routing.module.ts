@@ -18,22 +18,9 @@ const routes: Routes = [
       )
   },
   {
-    path: "master-detail",
-    loadChildren: () =>
-      import("./app-shell/master-detail/master-detail.module").then(
-        mod => mod.MasterDetailModule
-      )
-  },
-  {
     path: "list",
     loadChildren: () =>
       import("./app-shell/list/list.module").then(mod => mod.ListModule)
-  },
-
-  {
-    path: "grid",
-    loadChildren: () =>
-      import("./app-shell/grid/grid.module").then(mod => mod.GridModule)
   }
 ];
 

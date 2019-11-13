@@ -23,22 +23,6 @@ export class ListOrderComponent implements OnInit {
         this.WarningMessageText = `Request to get list items failed: ${error}`;
       }
     );
-    this.listOrders = [
-      {
-        id: 1123,
-        date: "11-03-2017",
-        productName: "Book",
-        total: 230000,
-        status: "Pending"
-      },
-      {
-        id: 1123,
-        date: "11-03-2017",
-        productName: "Book",
-        total: 230000,
-        status: "Pending"
-      }
-    ];
   }
   handleSearch(inputText: string) {
     this.listOrderService.searchOrder(inputText).subscribe(

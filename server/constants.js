@@ -1,12 +1,10 @@
-﻿const CONSTANTS = {};
-CONSTANTS.ENDPOINT = {};
-
-CONSTANTS.PORT = process.env.PORT || "3001";
-CONSTANTS.ENDPOINT.GRID = "/grid";
-
-CONSTANTS.ENDPOINT.LIST = "/list";
-
-CONSTANTS.ENDPOINT.MASTERDETAIL = "/masterdetail";
-
+﻿const CONSTANTS = {
+  ENDPOINT: {
+    LISTORDER: "/listorder",
+    ORDERDETAIL: "/orderdetail",
+    LIST: "/list"
+  },
+  PORT: process.env.PORT || "3001"
+};
 
 module.exports = CONSTANTS;
