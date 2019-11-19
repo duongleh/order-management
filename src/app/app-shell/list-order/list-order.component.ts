@@ -7,14 +7,33 @@ import { ListOrderService, IListOrder } from "./list-order.service";
   styleUrls: ["./list-order.component.css"]
 })
 export class ListOrderComponent implements OnInit {
-  listOrders: IListOrder[] = [];
-  WarningMessageText = "Request to get list items failed:";
-  WarningMessageOpen = false;
+  public listOrders: IListOrder[] = [];
+  public WarningMessageText = "Request to get list items failed:";
+  public WarningMessageOpen = false;
+  public beginTime;
+  public endTime;
+  public beginValue;
+  public endValue;
+  public status;
 
+  public params = {
+    sort: "DSC",
+    count: 100,
+    beginTime: this.beginTime || "",
+    endTime: this.endTime || "",
+    beginValue: this.beginValue || "",
+    endValue: this.endValue || "",
+    status: this.status || "",
+    product: ""
+  };
   constructor(private listOrderService: ListOrderService) {}
 
   ngOnInit() {
-    this.listOrderService.getListOrder().subscribe(
+    this.renderList();
+  }
+
+  renderList() {
+    this.listOrderService.getListOrder(this.params).subscribe(
       response => {
         this.listOrders = response;
       },
@@ -24,15 +43,16 @@ export class ListOrderComponent implements OnInit {
       }
     );
   }
+
   handleSearch(inputText: string) {
-    this.listOrderService.searchOrder(inputText).subscribe(
-      response => {
-        this.listOrders = response;
-      },
-      error => {
-        this.WarningMessageOpen = true;
-        this.WarningMessageText = `Request to get list items failed: ${error}`;
-      }
-    );
+    this.params.product = inputText;
+    this.renderList();
+  }
+
+  onOptionsSelected(value: string) {
+    if (value) {
+      this.params.status = value;
+      this.renderList();
+    }
   }
 }

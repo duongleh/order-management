@@ -1,71 +1,69 @@
-<div class="bg-light">
-    <div class="container">
-        <div class="py-4 text-center">
-            <h2>Chi tiết đơn hàng #{{order.id}} - {{order.status}}</h2>
-        </div>
-        <div class="card-deck">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Địa chỉ người nhận</h5>
-                    <p class="card-text">
-                        <b>{{order.user?.name}}</b><br>
-                        Địa chỉ: {{order.user?.address}}
-                        Điện thoại: {{order.user?.phone}}
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Tình trạng giao hàng</h5>
-                    <p class="card-text">
-                        {{order.delivery?.date}}<br>
-                        Tình trạng: {{order.delivery?.status}}</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Hình thức thanh toán</h5>
-                    <p class="card-text">
-                        Thanh toán bằng <b>{{order.payment?.type}}</b><br>
-                        Tình trạng: {{order.payment?.status}}</p>
-                </div>
-            </div>
-        </div>
-        <br>
+<div class="container">
+    <div class="py-4 text-center">
+        <h2>Chi tiết đơn hàng #{{order.id}} - {{order.status}}</h2>
+    </div>
+    <div class="card-deck">
         <div class="card">
             <div class="card-body">
-                <table class="table table-hover table-responsive-md">
-                    <thead>
-                        <tr>
-                            <th style="width: 50%">Sản phẩm</th>
-                            <th scope="col">Giá</th>
-                            <th scope="col">Số lượng</th>
-                            <th scope="col">Tạm tính</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr *ngFor="let item of order.products">
-                            <td>{{item?.name}}</td>
-                            <td>{{item.price | currency:'VND'}}</td>
-                            <td>{{item.amount}}</td>
-                            <td>{{item.subTotal | currency:'VND'}}</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="checkout">
-                    <div class="row">
-                        <div class="col col-md-10 checkout-name"><b>Tạm tính</b></div>
-                        <div class="col col-md-2 checkout-price">{{order.totalValue - order.discount | currency:'VND'}}
-                        </div>
+                <h5 class="card-title">Địa chỉ người nhận</h5>
+                <p class="card-text">
+                    <b>{{order.user?.name}}</b><br>
+                    Địa chỉ: {{order.user?.address}}
+                    Điện thoại: {{order.user?.phone}}
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Tình trạng giao hàng</h5>
+                <p class="card-text">
+                    {{order.delivery?.date}}<br>
+                    Tình trạng: {{order.delivery?.status}}</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Hình thức thanh toán</h5>
+                <p class="card-text">
+                    Thanh toán bằng <b>{{order.payment?.type}}</b><br>
+                    Tình trạng: {{order.payment?.status}}</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <table class="table table-hover table-responsive-md">
+                <thead>
+                    <tr>
+                        <th style="width: 50%">Sản phẩm</th>
+                        <th scope="col">Giá</th>
+                        <th scope="col">Số lượng</th>
+                        <th scope="col">Tạm tính</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of order.products">
+                        <td>{{item?.name}}</td>
+                        <td>{{item.price | currency:'VND'}}</td>
+                        <td>{{item.amount}}</td>
+                        <td>{{item.subTotal | currency:'VND'}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="checkout">
+                <div class="row">
+                    <div class="col col-md-10 checkout-name"><b>Tạm tính</b></div>
+                    <div class="col col-md-2 checkout-price">{{order.totalValue - order.discount | currency:'VND'}}
                     </div>
-                    <div class="row">
-                        <div class="col col-md-10col-md-10 checkout-name"><b>Giảm giá</b></div>
-                        <div class="col col-md-2 checkout-price">{{order.discount | currency:'VND'}}</div>
-                    </div>
-                    <div class="row">
-                        <div class="col col-md-10col-md-10 checkout-name"><b>Tổng cộng</b></div>
-                        <div class="col col-md-2 checkout-price">{{order.totalValue | currency:'VND'}}</div>
-                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-md-10col-md-10 checkout-name"><b>Giảm giá</b></div>
+                    <div class="col col-md-2 checkout-price">{{order.discount | currency:'VND'}}</div>
+                </div>
+                <div class="row">
+                    <div class="col col-md-10col-md-10 checkout-name"><b>Tổng cộng</b></div>
+                    <div class="col col-md-2 checkout-price">{{order.totalValue | currency:'VND'}}</div>
                 </div>
             </div>
         </div>

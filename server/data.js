@@ -68,7 +68,8 @@ data.order = [
     payment: { type: "Master Card", status: "Success" },
     status: "Pending",
     discount: 3000,
-    totalValue: 4487000
+    totalValue: 4487000,
+    warranty: "mollit reprehenderit nulla reprehenderit consectetur"
   },
   {
     id: 1,
@@ -101,7 +102,8 @@ data.order = [
     payment: { type: "VISA", status: "Success" },
     status: "Cancel",
     discount: 26000,
-    totalValue: 1087000
+    totalValue: 1087000,
+    warranty: "aliquip ullamco cupidatat Lorem non"
   },
   {
     id: 2,
@@ -148,7 +150,8 @@ data.order = [
     payment: { type: "COD", status: "Success" },
     status: "Success",
     discount: 28000,
-    totalValue: 2988000
+    totalValue: 2988000,
+    warranty: "laboris occaecat voluptate consequat anim"
   },
   {
     id: 3,
@@ -171,7 +174,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Success" },
     status: "Success",
     discount: 3000,
-    totalValue: 1307000
+    totalValue: 1307000,
+    warranty: "ullamco qui esse tempor cillum"
   },
   {
     id: 4,
@@ -211,7 +215,8 @@ data.order = [
     payment: { type: "VISA", status: "Pending" },
     status: "Success",
     discount: 84000,
-    totalValue: 4030000
+    totalValue: 4030000,
+    warranty: "officia exercitation elit laboris sit"
   },
   {
     id: 5,
@@ -258,7 +263,8 @@ data.order = [
     payment: { type: "Master Card", status: "Pending" },
     status: "Success",
     discount: 94000,
-    totalValue: 2618000
+    totalValue: 2618000,
+    warranty: "adipisicing occaecat elit mollit dolore"
   },
   {
     id: 6,
@@ -302,7 +308,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Pending" },
     status: "Success",
     discount: 93000,
-    totalValue: 2838000
+    totalValue: 2838000,
+    warranty: "minim sint consectetur sint est"
   },
   {
     id: 7,
@@ -335,7 +342,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Success" },
     status: "Cancel",
     discount: 50000,
-    totalValue: 1418000
+    totalValue: 1418000,
+    warranty: "eu duis dolore magna ut"
   },
   {
     id: 8,
@@ -368,7 +376,8 @@ data.order = [
     payment: { type: "Master Card", status: "Cancel" },
     status: "Cancel",
     discount: 86000,
-    totalValue: 1626000
+    totalValue: 1626000,
+    warranty: "non non nulla et laboris"
   },
   {
     id: 9,
@@ -415,7 +424,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Success" },
     status: "Success",
     discount: 29000,
-    totalValue: 4264000
+    totalValue: 4264000,
+    warranty: "voluptate reprehenderit Lorem consectetur anim"
   },
   {
     id: 10,
@@ -448,7 +458,8 @@ data.order = [
     payment: { type: "VISA", status: "Success" },
     status: "Cancel",
     discount: 41000,
-    totalValue: 1360000
+    totalValue: 1360000,
+    warranty: "magna culpa incididunt dolore magna"
   },
   {
     id: 11,
@@ -495,7 +506,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Cancel" },
     status: "Pending",
     discount: 74000,
-    totalValue: 3365000
+    totalValue: 3365000,
+    warranty: "veniam aute veniam excepteur irure"
   },
   {
     id: 12,
@@ -529,7 +541,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Success" },
     status: "Cancel",
     discount: 19000,
-    totalValue: 1433000
+    totalValue: 1433000,
+    warranty: "Lorem Lorem excepteur non sit"
   },
   {
     id: 13,
@@ -583,7 +596,8 @@ data.order = [
     payment: { type: "VISA", status: "Cancel" },
     status: "Success",
     discount: 0,
-    totalValue: 5352000
+    totalValue: 5352000,
+    warranty: "veniam magna excepteur dolore eiusmod"
   },
   {
     id: 14,
@@ -630,7 +644,8 @@ data.order = [
     payment: { type: "COD", status: "Pending" },
     status: "Pending",
     discount: 58000,
-    totalValue: 1844000
+    totalValue: 1844000,
+    warranty: "minim cupidatat do nisi irure"
   },
   {
     id: 15,
@@ -670,7 +685,8 @@ data.order = [
     payment: { type: "Master Card", status: "Pending" },
     status: "Cancel",
     discount: 5000,
-    totalValue: 2622000
+    totalValue: 2622000,
+    warranty: "irure commodo esse deserunt velit"
   },
   {
     id: 16,
@@ -717,7 +733,8 @@ data.order = [
     payment: { type: "Master Card", status: "Pending" },
     status: "Pending",
     discount: 8000,
-    totalValue: 2962000
+    totalValue: 2962000,
+    warranty: "minim minim in est labore"
   },
   {
     id: 17,
@@ -771,7 +788,8 @@ data.order = [
     payment: { type: "COD", status: "Success" },
     status: "Pending",
     discount: 60000,
-    totalValue: 4223000
+    totalValue: 4223000,
+    warranty: "incididunt sit qui veniam sint"
   },
   {
     id: 18,
@@ -811,7 +829,8 @@ data.order = [
     payment: { type: "Master Card", status: "Cancel" },
     status: "Cancel",
     discount: 1000,
-    totalValue: 2514000
+    totalValue: 2514000,
+    warranty: "consequat consequat elit proident eiusmod"
   },
   {
     id: 19,
@@ -844,7 +863,8 @@ data.order = [
     payment: { type: "COD", status: "Cancel" },
     status: "Cancel",
     discount: 35000,
-    totalValue: 1942000
+    totalValue: 1942000,
+    warranty: "minim aliqua minim nulla dolore"
   },
   {
     id: 20,
@@ -884,7 +904,8 @@ data.order = [
     payment: { type: "COD", status: "Cancel" },
     status: "Success",
     discount: 58000,
-    totalValue: 1599000
+    totalValue: 1599000,
+    warranty: "laborum duis qui aliqua reprehenderit"
   },
   {
     id: 21,
@@ -917,7 +938,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Success" },
     status: "Pending",
     discount: 89000,
-    totalValue: 1799000
+    totalValue: 1799000,
+    warranty: "do enim ad cillum quis"
   },
   {
     id: 22,
@@ -971,7 +993,8 @@ data.order = [
     payment: { type: "VISA", status: "Cancel" },
     status: "Success",
     discount: 75000,
-    totalValue: 5243000
+    totalValue: 5243000,
+    warranty: "amet sunt amet dolore nostrud"
   },
   {
     id: 23,
@@ -997,7 +1020,8 @@ data.order = [
     payment: { type: "VISA", status: "Cancel" },
     status: "Success",
     discount: 71000,
-    totalValue: 371000
+    totalValue: 371000,
+    warranty: "fugiat ut laboris ullamco nostrud"
   },
   {
     id: 24,
@@ -1051,7 +1075,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Cancel" },
     status: "Pending",
     discount: 96000,
-    totalValue: 3137000
+    totalValue: 3137000,
+    warranty: "incididunt nulla proident id laborum"
   },
   {
     id: 25,
@@ -1098,7 +1123,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Success" },
     status: "Cancel",
     discount: 32000,
-    totalValue: 5809000
+    totalValue: 5809000,
+    warranty: "dolore ullamco dolore excepteur esse"
   },
   {
     id: 26,
@@ -1152,7 +1178,8 @@ data.order = [
     payment: { type: "Master Card", status: "Success" },
     status: "Pending",
     discount: 59000,
-    totalValue: 1536000
+    totalValue: 1536000,
+    warranty: "elit aute elit duis mollit"
   },
   {
     id: 27,
@@ -1192,7 +1219,8 @@ data.order = [
     payment: { type: "VISA", status: "Success" },
     status: "Success",
     discount: 17000,
-    totalValue: 3634000
+    totalValue: 3634000,
+    warranty: "proident cupidatat aliquip aute nostrud"
   },
   {
     id: 28,
@@ -1246,7 +1274,8 @@ data.order = [
     payment: { type: "Master Card", status: "Pending" },
     status: "Success",
     discount: 30000,
-    totalValue: 4045000
+    totalValue: 4045000,
+    warranty: "cupidatat irure veniam cillum pariatur"
   },
   {
     id: 29,
@@ -1293,7 +1322,8 @@ data.order = [
     payment: { type: "COD", status: "Success" },
     status: "Success",
     discount: 23000,
-    totalValue: 2039000
+    totalValue: 2039000,
+    warranty: "reprehenderit aliquip do eiusmod dolor"
   },
   {
     id: 30,
@@ -1330,7 +1360,8 @@ data.order = [
     payment: { type: "COD", status: "Pending" },
     status: "Cancel",
     discount: 97000,
-    totalValue: 1106000
+    totalValue: 1106000,
+    warranty: "consectetur aliquip elit est dolore"
   },
   {
     id: 31,
@@ -1363,7 +1394,8 @@ data.order = [
     payment: { type: "COD", status: "Cancel" },
     status: "Cancel",
     discount: 36000,
-    totalValue: 2079000
+    totalValue: 2079000,
+    warranty: "reprehenderit irure aliqua ex voluptate"
   },
   {
     id: 32,
@@ -1393,7 +1425,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Pending" },
     status: "Cancel",
     discount: 82000,
-    totalValue: 2252000
+    totalValue: 2252000,
+    warranty: "pariatur cillum amet in incididunt"
   },
   {
     id: 33,
@@ -1440,7 +1473,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Success" },
     status: "Pending",
     discount: 41000,
-    totalValue: 2543000
+    totalValue: 2543000,
+    warranty: "est nostrud reprehenderit Lorem irure"
   },
   {
     id: 34,
@@ -1473,7 +1507,8 @@ data.order = [
     payment: { type: "VISA", status: "Cancel" },
     status: "Pending",
     discount: 3000,
-    totalValue: 1607000
+    totalValue: 1607000,
+    warranty: "excepteur nostrud pariatur irure velit"
   },
   {
     id: 35,
@@ -1520,7 +1555,8 @@ data.order = [
     payment: { type: "VISA", status: "Success" },
     status: "Cancel",
     discount: 35000,
-    totalValue: 1863000
+    totalValue: 1863000,
+    warranty: "esse laboris cillum non proident"
   },
   {
     id: 36,
@@ -1560,7 +1596,8 @@ data.order = [
     payment: { type: "COD", status: "Pending" },
     status: "Cancel",
     discount: 13000,
-    totalValue: 2833000
+    totalValue: 2833000,
+    warranty: "voluptate consequat quis consectetur ea"
   },
   {
     id: 37,
@@ -1614,7 +1651,8 @@ data.order = [
     payment: { type: "VISA", status: "Success" },
     status: "Pending",
     discount: 20000,
-    totalValue: 5257000
+    totalValue: 5257000,
+    warranty: "voluptate in elit mollit excepteur"
   },
   {
     id: 38,
@@ -1661,7 +1699,8 @@ data.order = [
     payment: { type: "COD", status: "Pending" },
     status: "Success",
     discount: 62000,
-    totalValue: 2378000
+    totalValue: 2378000,
+    warranty: "quis deserunt ullamco ad nostrud"
   },
   {
     id: 39,
@@ -1698,7 +1737,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Success" },
     status: "Cancel",
     discount: 60000,
-    totalValue: 1404000
+    totalValue: 1404000,
+    warranty: "minim velit non id ex"
   },
   {
     id: 40,
@@ -1721,7 +1761,8 @@ data.order = [
     payment: { type: "VISA", status: "Pending" },
     status: "Pending",
     discount: 24000,
-    totalValue: 618000
+    totalValue: 618000,
+    warranty: "incididunt velit enim enim magna"
   },
   {
     id: 41,
@@ -1768,7 +1809,8 @@ data.order = [
     payment: { type: "VISA", status: "Success" },
     status: "Pending",
     discount: 84000,
-    totalValue: 1919000
+    totalValue: 1919000,
+    warranty: "reprehenderit aute cillum magna minim"
   },
   {
     id: 42,
@@ -1805,7 +1847,8 @@ data.order = [
     payment: { type: "COD", status: "Success" },
     status: "Success",
     discount: 41000,
-    totalValue: 3403000
+    totalValue: 3403000,
+    warranty: "eu nulla commodo proident in"
   },
   {
     id: 43,
@@ -1845,7 +1888,8 @@ data.order = [
     payment: { type: "Master Card", status: "Success" },
     status: "Pending",
     discount: 90000,
-    totalValue: 3205000
+    totalValue: 3205000,
+    warranty: "laborum aliqua culpa eiusmod exercitation"
   },
   {
     id: 44,
@@ -1885,7 +1929,8 @@ data.order = [
     payment: { type: "COD", status: "Success" },
     status: "Pending",
     discount: 29000,
-    totalValue: 4470000
+    totalValue: 4470000,
+    warranty: "enim qui do sit tempor"
   },
   {
     id: 45,
@@ -1918,7 +1963,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Pending" },
     status: "Pending",
     discount: 61000,
-    totalValue: 1614000
+    totalValue: 1614000,
+    warranty: "aliqua eiusmod ea dolor cupidatat"
   },
   {
     id: 46,
@@ -1965,7 +2011,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Pending" },
     status: "Success",
     discount: 8000,
-    totalValue: 3857000
+    totalValue: 3857000,
+    warranty: "ex sunt officia duis ex"
   },
   {
     id: 47,
@@ -2012,7 +2059,8 @@ data.order = [
     payment: { type: "VISA", status: "Cancel" },
     status: "Success",
     discount: 19000,
-    totalValue: 4479000
+    totalValue: 4479000,
+    warranty: "officia esse aute anim velit"
   },
   {
     id: 48,
@@ -2045,7 +2093,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Cancel" },
     status: "Cancel",
     discount: 48000,
-    totalValue: 1676000
+    totalValue: 1676000,
+    warranty: "sunt laboris veniam pariatur duis"
   },
   {
     id: 49,
@@ -2092,7 +2141,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Cancel" },
     status: "Pending",
     discount: 12000,
-    totalValue: 2013000
+    totalValue: 2013000,
+    warranty: "cupidatat et nisi dolore elit"
   },
   {
     id: 50,
@@ -2139,7 +2189,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Success" },
     status: "Pending",
     discount: 11000,
-    totalValue: 2076000
+    totalValue: 2076000,
+    warranty: "consectetur eu anim ea minim"
   },
   {
     id: 51,
@@ -2165,7 +2216,8 @@ data.order = [
     payment: { type: "COD", status: "Pending" },
     status: "Pending",
     discount: 96000,
-    totalValue: 894000
+    totalValue: 894000,
+    warranty: "quis sunt Lorem commodo dolore"
   },
   {
     id: 52,
@@ -2212,7 +2264,8 @@ data.order = [
     payment: { type: "Master Card", status: "Cancel" },
     status: "Pending",
     discount: 98000,
-    totalValue: 4025000
+    totalValue: 4025000,
+    warranty: "amet sit labore dolor dolore"
   },
   {
     id: 53,
@@ -2238,7 +2291,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Cancel" },
     status: "Cancel",
     discount: 77000,
-    totalValue: 788000
+    totalValue: 788000,
+    warranty: "qui proident Lorem duis nulla"
   },
   {
     id: 54,
@@ -2264,7 +2318,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Success" },
     status: "Success",
     discount: 94000,
-    totalValue: 1456000
+    totalValue: 1456000,
+    warranty: "quis commodo eiusmod occaecat aliquip"
   },
   {
     id: 55,
@@ -2297,7 +2352,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Cancel" },
     status: "Cancel",
     discount: 95000,
-    totalValue: 2400000
+    totalValue: 2400000,
+    warranty: "deserunt mollit fugiat elit tempor"
   },
   {
     id: 56,
@@ -2337,7 +2393,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Cancel" },
     status: "Success",
     discount: 71000,
-    totalValue: 3450000
+    totalValue: 3450000,
+    warranty: "in cillum anim amet minim"
   },
   {
     id: 57,
@@ -2363,7 +2420,8 @@ data.order = [
     payment: { type: "VISA", status: "Cancel" },
     status: "Pending",
     discount: 3000,
-    totalValue: 189000
+    totalValue: 189000,
+    warranty: "velit ipsum nisi deserunt officia"
   },
   {
     id: 58,
@@ -2414,7 +2472,8 @@ data.order = [
     payment: { type: "Online Banking", status: "Pending" },
     status: "Cancel",
     discount: 61000,
-    totalValue: 4066000
+    totalValue: 4066000,
+    warranty: "nulla cillum culpa irure aliquip"
   },
   {
     id: 59,
@@ -2461,7 +2520,8 @@ data.order = [
     payment: { type: "Master Card", status: "Pending" },
     status: "Cancel",
     discount: 40000,
-    totalValue: 3587000
+    totalValue: 3587000,
+    warranty: "veniam proident in sunt excepteur"
   },
   {
     id: 60,
@@ -2508,7 +2568,8 @@ data.order = [
     payment: { type: "VISA", status: "Cancel" },
     status: "Cancel",
     discount: 80000,
-    totalValue: 5300000
+    totalValue: 5300000,
+    warranty: "consequat exercitation ex et ullamco"
   },
   {
     id: 61,
@@ -2541,7 +2602,8 @@ data.order = [
     payment: { type: "VISA", status: "Cancel" },
     status: "Success",
     discount: 42000,
-    totalValue: 1090000
+    totalValue: 1090000,
+    warranty: "magna aliquip sunt sit commodo"
   },
   {
     id: 62,
@@ -2581,7 +2643,8 @@ data.order = [
     payment: { type: "COD", status: "Pending" },
     status: "Pending",
     discount: 81000,
-    totalValue: 2664000
+    totalValue: 2664000,
+    warranty: "aute Lorem commodo laborum nisi"
   },
   {
     id: 63,
@@ -2614,7 +2677,8 @@ data.order = [
     payment: { type: "Master Card", status: "Cancel" },
     status: "Success",
     discount: 0,
-    totalValue: 3087000
+    totalValue: 3087000,
+    warranty: "sunt aliqua ipsum laboris excepteur"
   }
 ];
 

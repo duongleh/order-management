@@ -4,9 +4,48 @@ const data = require("../data");
 
 const router = express.Router();
 
-// LIST ORDER ENDPOINTS
+// GET LIST ORDERS
 router.get(CONSTANTS.ENDPOINT.LISTORDER, (req, res) => {
-  res.json(data.orders);
+  let orders = data.orders.slice().reverse();
+  if (req.query["sort"] && req.query["sort"].toLowerCase() == "asc") {
+    orders.reverse();
+  }
+  if (req.query["status"]) {
+    orders = orders.filter(el => el.status == req.query["status"]);
+  }
+  if (req.query["product"]) {
+    orders = orders.filter(el =>
+      el.products.join().includes(req.query["product"])
+    );
+  }
+  if (req.query["beginTime"]) {
+    orders = orders.filter(el => {
+      date = el.deliveryDate.split(" ")[0].split("-");
+      return (
+        Date.parse(`${date[1]}-${date[0]}-${date[2]}`) >=
+        Date.parse(req.query["beginTime"])
+      );
+    });
+  }
+  if (req.query["endTime"]) {
+    orders = orders.filter(el => {
+      date = el.deliveryDate.split(" ")[0].split("-");
+      return (
+        Date.parse(`${date[1]}-${date[0]}-${date[2]}`) <=
+        Date.parse(req.query["endTime"])
+      );
+    });
+  }
+  if (req.query["beginValue"]) {
+    orders = orders.filter(el => el.value >= req.query["beginValue"]);
+  }
+  if (req.query["endValue"]) {
+    orders = orders.filter(el => el.value <= req.query["endValue"]);
+  }
+  if (req.query["count"]) {
+    orders = orders.slice(0, req.query["count"]);
+  }
+  res.json(orders);
 });
 
 // ORDER DETAIL ENDPOINTS

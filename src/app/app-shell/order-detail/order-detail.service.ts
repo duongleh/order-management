@@ -25,6 +25,7 @@ export interface IOrderDetail {
   status: string;
   discount: number;
   totalValue: number;
+  warranty: string;
 }
 
 export interface IUser {

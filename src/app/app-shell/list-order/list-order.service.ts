@@ -11,12 +11,8 @@ export class ListOrderService {
 
   constructor(private http: HttpClient) {}
 
-  getListOrder(): Observable<IListOrder[]> {
-    return this.http.get<IListOrder[]>(this.listOrderUrl);
-  }
-
-  searchOrder(input: string): Observable<IListOrder[]> {
-    return this.http.post<IListOrder[]>(this.listOrderUrl, input);
+  getListOrder(data): Observable<IListOrder[]> {
+    return this.http.get<IListOrder[]>(this.listOrderUrl, { params: data });
   }
 }
 
