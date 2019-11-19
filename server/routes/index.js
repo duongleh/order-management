@@ -1,41 +1,42 @@
 ﻿const CONSTANTS = require("../constants");
 const express = require("express");
-const sampleData = require("../sampleData");
+const data = require("../data");
 
 const router = express.Router();
 
 // LIST ORDER ENDPOINTS
-router.get(CONSTANTS.ENDPOINT.LISTORDER, function(req, res) {
-  res.json(sampleData.listOrders);
+router.get(CONSTANTS.ENDPOINT.LISTORDER, (req, res) => {
+  res.json(data.orders);
 });
 
 // ORDER DETAIL ENDPOINTS
-router.get(CONSTANTS.ENDPOINT.ORDERDETAIL + "/:_id", (req, res) => {
-  res.json(sampleData.orderDetail);
+router.get(CONSTANTS.ENDPOINT.ORDERDETAIL + "/:id", (req, res) => {
+  const id = req.params.id;
+  res.json(data.order[id]);
 });
 
 // LIST ENDPOINTS
-router.get(CONSTANTS.ENDPOINT.LIST, function(req, res) {
-  res.json(sampleData.listTextAssets);
+router.get(CONSTANTS.ENDPOINT.LIST, (req, res) => {
+  res.json(data.listTextAssets);
 });
 
-router.post(CONSTANTS.ENDPOINT.LIST, function(req, res) {
+router.post(CONSTANTS.ENDPOINT.LIST, (req, res) => {
   let listItem = {
     text: req.body.text,
-    _id: sampleData.listID
+    _id: data.listID
   };
-  sampleData.listTextAssets.unshift(listItem);
+  data.listTextAssets.unshift(listItem);
   res.json(listItem);
-  sampleData.listID++;
+  data.listID++;
 });
 
 router.delete(CONSTANTS.ENDPOINT.LIST + "/:_id", function(req, res) {
   const { _id } = req.params;
-  var index = sampleData.listTextAssets.findIndex(
+  var index = data.listTextAssets.findIndex(
     listItem => listItem._id === Number(_id)
   );
   if (index > -1) {
-    sampleData.listTextAssets.splice(index, 1);
+    data.listTextAssets.splice(index, 1);
     res.json({ _id: Number(_id), text: "This commented was deleted" });
   } else {
     res.status(404).send("Could not find item with id:" + _id);

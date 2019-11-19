@@ -17,24 +17,37 @@ export class OrderDetailService {
 }
 
 export interface IOrderDetail {
+  id: number;
+  user: IUser;
+  products: IProduct[];
+  delivery: IDelivery;
+  payment: IPayment;
+  status: string;
+  discount: number;
+  totalValue: number;
+}
+
+export interface IUser {
+  id: number;
   name: string;
-  address: string;
+  address: number;
   phone: string;
-  shippingType: string;
-  shippingStatus: string;
-  paymentType: string;
-  paymentStatus: string;
-  product: IProduct[];
-  preTotal: number;
-  totalDiscount: number;
-  shippingFee: number;
-  total: number;
 }
 
 export interface IProduct {
-  productName: string;
+  id: number;
+  name: string;
   price: number;
   amount: number;
-  discount: number;
   subTotal: number;
+}
+
+export interface IDelivery {
+  date: string;
+  status: string;
+}
+
+export interface IPayment {
+  type: string;
+  status: string;
 }

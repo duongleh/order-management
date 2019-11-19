@@ -8,7 +8,7 @@ import { ActivatedRoute } from "@angular/router";
   styleUrls: ["./order-detail.component.css"]
 })
 export class OrderDetailComponent implements OnInit {
-  orderDetail = {} as IOrderDetail;
+  order = {} as IOrderDetail;
   WarningMessageText = "Request to get list items failed:";
   WarningMessageOpen = false;
   id: number;
@@ -25,7 +25,7 @@ export class OrderDetailComponent implements OnInit {
 
     this.orderDetailService.getOrderDetail(this.id).subscribe(
       response => {
-        this.orderDetail = response;
+        this.order = response;
       },
       error => {
         this.WarningMessageOpen = true;

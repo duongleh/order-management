@@ -22,8 +22,8 @@ export class ListOrderService {
 
 export interface IListOrder {
   id: number;
-  date: string;
-  productName: string;
-  total: number;
+  deliveryDate: string;
+  products: string[];
   status: string;
+  value: number;
 }
