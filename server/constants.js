@@ -1,8 +1,7 @@
 ﻿const CONSTANTS = {
   ENDPOINT: {
     LISTORDER: "/orders",
-    ORDERDETAIL: "/order",
-    LIST: "/list"
+    ORDERDETAIL: "/order"
   },
   PORT: process.env.PORT || "3001"
 };

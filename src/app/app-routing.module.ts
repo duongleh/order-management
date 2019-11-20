@@ -16,11 +16,6 @@ const routes: Routes = [
       import("./app-shell/order-detail/order-detail.module").then(
         mod => mod.OrderDetailModule
       )
-  },
-  {
-    path: "list",
-    loadChildren: () =>
-      import("./app-shell/list/list.module").then(mod => mod.ListModule)
   }
 ];
 
