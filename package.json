@@ -50,10 +50,11 @@
     "nodemon": "^1.18.10"
   },
   "scripts": {
+    "init": "npm i && cd server && npm i",
     "start": "concurrently \"yarn start-frontend || npm run start-frontend\" \"yarn start-backend || npm run start-backend\"",
     "start-frontend": "ng serve --port=3000 --o --proxy-config proxy.config.json",
     "ng": "ng",
-    "build": "node ./buildScript",
+    "build": "npm run init && node ./buildScript",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
