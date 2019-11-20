@@ -46,6 +46,7 @@ export interface IProduct {
 export interface IDelivery {
   date: string;
   status: string;
+  fee: number;
 }
 
 export interface IPayment {
