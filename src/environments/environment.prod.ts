@@ -2,7 +2,6 @@
   production: true,
   endpoint: {
     listorder: "/api/orders",
-    orderdetail: "/api/order",
-    list: "/api/list"
+    orderdetail: "/api/order"
   }
 };
