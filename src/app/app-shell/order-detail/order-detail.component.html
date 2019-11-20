@@ -54,7 +54,7 @@
             <div class="checkout">
                 <div class="row">
                     <div class="col col-md-10 checkout-name"><b>Tạm tính</b></div>
-                    <div class="col col-md-2 checkout-price">{{order.totalValue - order.discount | currency:'VND'}}
+                    <div class="col col-md-2 checkout-price">{{order.totalValue + order.discount | currency:'VND'}}
                     </div>
                 </div>
                 <div class="row">
