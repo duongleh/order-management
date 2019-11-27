@@ -1,4 +1,5 @@
-﻿const CONSTANTS = require("../constants");
+﻿const axios = require("axios");
+const CONSTANTS = require("../constants");
 const express = require("express");
 const data = require("../data");
 
@@ -56,21 +57,37 @@ router.get(CONSTANTS.ENDPOINT.ORDERDETAIL + "/:id", (req, res) => {
 
 // ADD NEW ORDER
 router.post(CONSTANTS.ENDPOINT.ORDERDETAIL, (req, res) => {
+  let id = data.order[data.order.length - 1].id + 1;
   let item = {
-    id: data.order[data.order.length - 1].id + 1,
+    id,
     ...req.body
   };
 
   let listItem = {
-    id: data.order[data.order.length - 1].id + 1,
+    id,
     deliveryDate: req.body.delivery.date,
     status: req.body.status,
     value: req.body.totalValue,
     products: req.body.products.map(el => el.name)
   };
 
+  let requestDelivery = {
+    receiving_address: req.body.user.address,
+    receiver_phone: req.body.user.phone,
+    total_cost: req.body.totalValue
+  };
+
   data.order.push(item);
   data.orders.push(listItem);
+
+  axios
+    .post(CONSTANTS.ENDPOINT.DELIVERY + id, requestDelivery)
+    .then(res => {
+      console.log(`Delivery: ${(res.body, success)}`);
+    })
+    .catch(error => {
+      console.error(error);
+    });
   return res.status(200).json({ success: true });
 });
 

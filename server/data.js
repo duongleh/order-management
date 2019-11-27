@@ -6,7 +6,7 @@ data.order = [
     user: {
       id: 84,
       name: "Hutchinson Bean",
-      address: "429 Fiske Place, Bedias, Argentina}",
+      address: "429 Fiske Place, Bedias, Argentina",
       phone: "+84 (998) 423-2567"
     },
     products: [
@@ -62,7 +62,7 @@ data.order = [
     user: {
       id: 14,
       name: "Pratt Abbott",
-      address: "767 Chestnut Avenue, Jackpot, Netherlands Antilles}",
+      address: "767 Chestnut Avenue, Jackpot, Netherlands Antilles",
       phone: "+84 (838) 503-2268"
     },
     products: [
@@ -97,7 +97,7 @@ data.order = [
     user: {
       id: 85,
       name: "Rosalie Caldwell",
-      address: "695 Fairview Place, Hegins, Ghana}",
+      address: "695 Fairview Place, Hegins, Ghana",
       phone: "+84 (881) 473-3107"
     },
     products: [
@@ -146,7 +146,7 @@ data.order = [
     user: {
       id: 65,
       name: "Solomon Mueller",
-      address: "613 Brighton Avenue, Summertown, Iran}",
+      address: "613 Brighton Avenue, Summertown, Iran",
       phone: "+84 (909) 494-3537"
     },
     products: [
@@ -174,7 +174,7 @@ data.order = [
     user: {
       id: 87,
       name: "Josephine Powell",
-      address: "657 Bragg Street, Brady, Kazakhstan}",
+      address: "657 Bragg Street, Brady, Kazakhstan",
       phone: "+84 (963) 553-3798"
     },
     products: [
@@ -216,7 +216,7 @@ data.order = [
     user: {
       id: 10,
       name: "Ashley Cortez",
-      address: "984 McKibben Street, Camas, Azerbaijan}",
+      address: "984 McKibben Street, Camas, Azerbaijan",
       phone: "+84 (925) 532-2851"
     },
     products: [
@@ -265,7 +265,7 @@ data.order = [
     user: {
       id: 75,
       name: "Bridges Watts",
-      address: "628 Beaver Street, Nutrioso, Senegal}",
+      address: "628 Beaver Street, Nutrioso, Senegal",
       phone: "+84 (967) 530-2955"
     },
     products: [
@@ -314,7 +314,7 @@ data.order = [
     user: {
       id: 27,
       name: "Charity Everett",
-      address: "444 Batchelder Street, Websterville, New Zealand}",
+      address: "444 Batchelder Street, Websterville, New Zealand",
       phone: "+84 (967) 497-3028"
     },
     products: [
@@ -349,7 +349,7 @@ data.order = [
     user: {
       id: 82,
       name: "Kitty Cohen",
-      address: "872 Beadel Street, Datil, Bolivia}",
+      address: "872 Beadel Street, Datil, Bolivia",
       phone: "+84 (821) 533-2192"
     },
     products: [
@@ -384,7 +384,7 @@ data.order = [
     user: {
       id: 40,
       name: "Gabriela Stanley",
-      address: "819 Knickerbocker Avenue, Garfield, Norway}",
+      address: "819 Knickerbocker Avenue, Garfield, Norway",
       phone: "+84 (910) 469-2634"
     },
     products: [
@@ -433,7 +433,7 @@ data.order = [
     user: {
       id: 41,
       name: "Rose Stafford",
-      address: "228 Harbor Lane, Ernstville, Norfolk Island}",
+      address: "228 Harbor Lane, Ernstville, Norfolk Island",
       phone: "+84 (933) 524-3176"
     },
     products: [
@@ -468,7 +468,7 @@ data.order = [
     user: {
       id: 72,
       name: "Conley Espinoza",
-      address: "168 Nichols Avenue, Beyerville, Denmark}",
+      address: "168 Nichols Avenue, Beyerville, Denmark",
       phone: "+84 (864) 426-2656"
     },
     products: [
@@ -518,7 +518,7 @@ data.order = [
       id: 88,
       name: "Kris Guy",
       address:
-        "541 Wogan Terrace, Bridgetown, S. Georgia and S. Sandwich Isls.}",
+        "541 Wogan Terrace, Bridgetown, S. Georgia and S. Sandwich Isls.",
       phone: "+84 (890) 498-3081"
     },
     products: [
@@ -553,7 +553,7 @@ data.order = [
     user: {
       id: 14,
       name: "Davis Barnett",
-      address: "161 Dean Street, Churchill, Guinea-Bissau}",
+      address: "161 Dean Street, Churchill, Guinea-Bissau",
       phone: "+84 (931) 467-3471"
     },
     products: [
@@ -609,7 +609,7 @@ data.order = [
     user: {
       id: 97,
       name: "Maria Molina",
-      address: "304 Danforth Street, Tolu, Rwanda}",
+      address: "304 Danforth Street, Tolu, Rwanda",
       phone: "+84 (880) 561-2514"
     },
     products: [
@@ -658,7 +658,7 @@ data.order = [
     user: {
       id: 39,
       name: "Marjorie Farrell",
-      address: "315 Montague Street, Hailesboro, Cape Verde}",
+      address: "315 Montague Street, Hailesboro, Cape Verde",
       phone: "+84 (912) 551-2164"
     },
     products: [
@@ -700,7 +700,7 @@ data.order = [
     user: {
       id: 73,
       name: "Hopper Winters",
-      address: "204 Hewes Street, Mammoth, Samoa}",
+      address: "204 Hewes Street, Mammoth, Samoa",
       phone: "+84 (923) 567-2773"
     },
     products: [
@@ -749,7 +749,7 @@ data.order = [
     user: {
       id: 28,
       name: "Madeleine Chan",
-      address: "623 Driggs Avenue, Grenelefe, Iraq}",
+      address: "623 Driggs Avenue, Grenelefe, Iraq",
       phone: "+84 (975) 505-2130"
     },
     products: [
@@ -805,7 +805,7 @@ data.order = [
     user: {
       id: 56,
       name: "Mcleod Lamb",
-      address: "328 Howard Avenue, Hobucken, Macedonia}",
+      address: "328 Howard Avenue, Hobucken, Macedonia",
       phone: "+84 (972) 460-3282"
     },
     products: [
@@ -847,7 +847,7 @@ data.order = [
     user: {
       id: 56,
       name: "Meredith Rush",
-      address: "741 Dorset Street, Carlton, Bulgaria}",
+      address: "741 Dorset Street, Carlton, Bulgaria",
       phone: "+84 (954) 430-3367"
     },
     products: [
@@ -882,7 +882,7 @@ data.order = [
     user: {
       id: 65,
       name: "Meghan William",
-      address: "327 Nostrand Avenue, Beason, Belarus}",
+      address: "327 Nostrand Avenue, Beason, Belarus",
       phone: "+84 (854) 499-2503"
     },
     products: [
@@ -924,7 +924,7 @@ data.order = [
     user: {
       id: 87,
       name: "Hooper Burks",
-      address: "918 Hubbard Street, Frank, Sweden}",
+      address: "918 Hubbard Street, Frank, Sweden",
       phone: "+84 (801) 429-2667"
     },
     products: [
@@ -959,7 +959,7 @@ data.order = [
     user: {
       id: 47,
       name: "Aline Holden",
-      address: "596 Court Street, Ebro, Montserrat}",
+      address: "596 Court Street, Ebro, Montserrat",
       phone: "+84 (924) 543-2662"
     },
     products: [
@@ -1015,7 +1015,7 @@ data.order = [
     user: {
       id: 16,
       name: "Rene Sparks",
-      address: "738 Reed Street, Salunga, India}",
+      address: "738 Reed Street, Salunga, India",
       phone: "+84 (829) 563-2734"
     },
     products: [
@@ -1043,7 +1043,7 @@ data.order = [
     user: {
       id: 63,
       name: "Rhea Santiago",
-      address: "946 Himrod Street, Ronco, Moldova}",
+      address: "946 Himrod Street, Ronco, Moldova",
       phone: "+84 (880) 476-3670"
     },
     products: [
@@ -1099,7 +1099,7 @@ data.order = [
     user: {
       id: 19,
       name: "Stark Robinson",
-      address: "855 Harwood Place, Ripley, El Salvador}",
+      address: "855 Harwood Place, Ripley, El Salvador",
       phone: "+84 (957) 531-3756"
     },
     products: [
@@ -1148,7 +1148,7 @@ data.order = [
     user: {
       id: 91,
       name: "Wanda Murphy",
-      address: "240 Crooke Avenue, Cotopaxi, Afghanistan}",
+      address: "240 Crooke Avenue, Cotopaxi, Afghanistan",
       phone: "+84 (906) 446-2584"
     },
     products: [
@@ -1204,7 +1204,7 @@ data.order = [
     user: {
       id: 42,
       name: "Mercer Harding",
-      address: "805 Vanderveer Street, Logan, Egypt}",
+      address: "805 Vanderveer Street, Logan, Egypt",
       phone: "+84 (995) 441-3504"
     },
     products: [
@@ -1246,7 +1246,7 @@ data.order = [
     user: {
       id: 42,
       name: "Jacklyn Mack",
-      address: "389 Forbell Street, Whitehaven, Northern Mariana Islands}",
+      address: "389 Forbell Street, Whitehaven, Northern Mariana Islands",
       phone: "+84 (938) 485-3771"
     },
     products: [
@@ -1302,7 +1302,7 @@ data.order = [
     user: {
       id: 34,
       name: "Leonor Mercado",
-      address: "867 Prospect Place, Forestburg, Lithuania}",
+      address: "867 Prospect Place, Forestburg, Lithuania",
       phone: "+84 (913) 424-3211"
     },
     products: [
@@ -1351,7 +1351,7 @@ data.order = [
     user: {
       id: 40,
       name: "Vang Higgins",
-      address: "632 Waldorf Court, Windsor, Cayman Islands}",
+      address: "632 Waldorf Court, Windsor, Cayman Islands",
       phone: "+84 (866) 442-2117"
     },
     products: [
@@ -1393,7 +1393,7 @@ data.order = [
     user: {
       id: 29,
       name: "Rutledge Salinas",
-      address: "991 Harrison Avenue, Alden, Barbados}",
+      address: "991 Harrison Avenue, Alden, Barbados",
       phone: "+84 (857) 454-3206"
     },
     products: [
@@ -1428,7 +1428,7 @@ data.order = [
     user: {
       id: 90,
       name: "Shelby Vinson",
-      address: "251 Woodside Avenue, Coalmont, Antigua and Barbuda}",
+      address: "251 Woodside Avenue, Coalmont, Antigua and Barbuda",
       phone: "+84 (845) 485-3791"
     },
     products: [
@@ -1463,7 +1463,7 @@ data.order = [
     user: {
       id: 30,
       name: "Jill Mckee",
-      address: "408 Madeline Court, Frystown, Jordan}",
+      address: "408 Madeline Court, Frystown, Jordan",
       phone: "+84 (848) 555-2730"
     },
     products: [
@@ -1512,7 +1512,7 @@ data.order = [
     user: {
       id: 28,
       name: "Marilyn Carroll",
-      address: "440 Vanderbilt Avenue, Bergoo, Netherlands}",
+      address: "440 Vanderbilt Avenue, Bergoo, Netherlands",
       phone: "+84 (960) 553-3735"
     },
     products: [
@@ -1547,7 +1547,7 @@ data.order = [
     user: {
       id: 87,
       name: "Branch Kerr",
-      address: "801 Clarkson Avenue, Lumberton, Israel}",
+      address: "801 Clarkson Avenue, Lumberton, Israel",
       phone: "+84 (929) 471-3127"
     },
     products: [
@@ -1596,7 +1596,7 @@ data.order = [
     user: {
       id: 62,
       name: "Jodi Miles",
-      address: "867 Porter Avenue, Cuylerville, Palau}",
+      address: "867 Porter Avenue, Cuylerville, Palau",
       phone: "+84 (860) 516-3674"
     },
     products: [
@@ -1638,7 +1638,7 @@ data.order = [
     user: {
       id: 14,
       name: "Beverly Luna",
-      address: "928 Matthews Place, Clayville, Slovenia}",
+      address: "928 Matthews Place, Clayville, Slovenia",
       phone: "+84 (815) 598-3456"
     },
     products: [
@@ -1694,7 +1694,7 @@ data.order = [
     user: {
       id: 40,
       name: "Myrna Carlson",
-      address: "787 Tudor Terrace, Mulberry, Martinique}",
+      address: "787 Tudor Terrace, Mulberry, Martinique",
       phone: "+84 (816) 506-3065"
     },
     products: [
@@ -1743,7 +1743,7 @@ data.order = [
     user: {
       id: 13,
       name: "Woodward Mcpherson",
-      address: "184 Garnet Street, Evergreen, Ethiopia}",
+      address: "184 Garnet Street, Evergreen, Ethiopia",
       phone: "+84 (952) 452-2733"
     },
     products: [
@@ -1785,7 +1785,7 @@ data.order = [
     user: {
       id: 28,
       name: "Rodriquez Zimmerman",
-      address: "723 Havemeyer Street, Century, Algeria}",
+      address: "723 Havemeyer Street, Century, Algeria",
       phone: "+84 (835) 598-2948"
     },
     products: [
@@ -1813,7 +1813,7 @@ data.order = [
     user: {
       id: 62,
       name: "Patricia Hayes",
-      address: "160 Conover Street, Yorklyn, Bangladesh}",
+      address: "160 Conover Street, Yorklyn, Bangladesh",
       phone: "+84 (913) 425-2091"
     },
     products: [
@@ -1862,7 +1862,7 @@ data.order = [
     user: {
       id: 84,
       name: "Edith Gilbert",
-      address: "162 Beverly Road, Bagtown, Falkland Islands (Malvinas)}",
+      address: "162 Beverly Road, Bagtown, Falkland Islands (Malvinas)",
       phone: "+84 (928) 573-3669"
     },
     products: [
@@ -1904,7 +1904,7 @@ data.order = [
     user: {
       id: 35,
       name: "Beard Morton",
-      address: "832 Narrows Avenue, Ticonderoga, Chile}",
+      address: "832 Narrows Avenue, Ticonderoga, Chile",
       phone: "+84 (958) 578-3476"
     },
     products: [
@@ -1946,7 +1946,7 @@ data.order = [
     user: {
       id: 27,
       name: "Leola Herrera",
-      address: "291 Irvington Place, Movico, Guatemala}",
+      address: "291 Irvington Place, Movico, Guatemala",
       phone: "+84 (869) 437-3992"
     },
     products: [
@@ -1988,7 +1988,7 @@ data.order = [
     user: {
       id: 44,
       name: "Irwin Valdez",
-      address: "281 Meserole Avenue, Fairmount, Bahrain}",
+      address: "281 Meserole Avenue, Fairmount, Bahrain",
       phone: "+84 (997) 480-3731"
     },
     products: [
@@ -2023,7 +2023,7 @@ data.order = [
     user: {
       id: 10,
       name: "Melton Galloway",
-      address: "378 Bethel Loop, Ferney, Bosnia and Herzegovina}",
+      address: "378 Bethel Loop, Ferney, Bosnia and Herzegovina",
       phone: "+84 (944) 520-2001"
     },
     products: [
@@ -2072,7 +2072,7 @@ data.order = [
     user: {
       id: 48,
       name: "Merle Fry",
-      address: "247 Shale Street, Chelsea, Libya}",
+      address: "247 Shale Street, Chelsea, Libya",
       phone: "+84 (813) 522-2635"
     },
     products: [
@@ -2121,7 +2121,7 @@ data.order = [
     user: {
       id: 15,
       name: "Alta Wyatt",
-      address: "226 McClancy Place, Hachita, Andorra}",
+      address: "226 McClancy Place, Hachita, Andorra",
       phone: "+84 (958) 432-2665"
     },
     products: [
@@ -2156,7 +2156,7 @@ data.order = [
     user: {
       id: 44,
       name: "Lynn Guerra",
-      address: "196 Irving Place, Roy, Pakistan}",
+      address: "196 Irving Place, Roy, Pakistan",
       phone: "+84 (954) 458-3521"
     },
     products: [
@@ -2205,7 +2205,7 @@ data.order = [
     user: {
       id: 78,
       name: "June Gardner",
-      address: "117 Hancock Street, Imperial, Iceland}",
+      address: "117 Hancock Street, Imperial, Iceland",
       phone: "+84 (980) 566-2538"
     },
     products: [
@@ -2254,7 +2254,7 @@ data.order = [
     user: {
       id: 36,
       name: "Freeman Jimenez",
-      address: "930 Schweikerts Walk, Cochranville, South Africa}",
+      address: "930 Schweikerts Walk, Cochranville, South Africa",
       phone: "+84 (876) 586-3319"
     },
     products: [
@@ -2282,7 +2282,7 @@ data.order = [
     user: {
       id: 86,
       name: "Morrow Hudson",
-      address: "116 Chauncey Street, Wildwood, Nicaragua}",
+      address: "116 Chauncey Street, Wildwood, Nicaragua",
       phone: "+84 (978) 445-3397"
     },
     products: [
@@ -2331,7 +2331,7 @@ data.order = [
     user: {
       id: 45,
       name: "Ethel Mclaughlin",
-      address: "905 Nixon Court, Siglerville, Saudi Arabia}",
+      address: "905 Nixon Court, Siglerville, Saudi Arabia",
       phone: "+84 (819) 531-2085"
     },
     products: [
@@ -2359,7 +2359,7 @@ data.order = [
     user: {
       id: 35,
       name: "Sanford Waller",
-      address: "138 Taylor Street, Choctaw, Burkina Faso}",
+      address: "138 Taylor Street, Choctaw, Burkina Faso",
       phone: "+84 (949) 599-2645"
     },
     products: [
@@ -2387,7 +2387,7 @@ data.order = [
     user: {
       id: 56,
       name: "Medina Medina",
-      address: "971 Wortman Avenue, Dixonville, Eritrea}",
+      address: "971 Wortman Avenue, Dixonville, Eritrea",
       phone: "+84 (838) 412-3213"
     },
     products: [
@@ -2422,7 +2422,7 @@ data.order = [
     user: {
       id: 100,
       name: "Pam Leblanc",
-      address: "900 Wilson Street, Kerby, Switzerland}",
+      address: "900 Wilson Street, Kerby, Switzerland",
       phone: "+84 (869) 409-3096"
     },
     products: [
@@ -2464,7 +2464,7 @@ data.order = [
     user: {
       id: 86,
       name: "Hilda Ramos",
-      address: "766 Brown Street, Edenburg, Marshall Islands}",
+      address: "766 Brown Street, Edenburg, Marshall Islands",
       phone: "+84 (939) 505-2633"
     },
     products: [
@@ -2492,7 +2492,7 @@ data.order = [
     user: {
       id: 75,
       name: "Weeks Griffin",
-      address: "966 Allen Avenue, Loretto, Korea (South)}",
+      address: "966 Allen Avenue, Loretto, Korea (South)",
       phone: "+84 (952) 516-2202"
     },
     products: [
@@ -2548,7 +2548,7 @@ data.order = [
     user: {
       id: 58,
       name: "Everett Cook",
-      address: "117 Anthony Street, Tooleville, Croatia (Hrvatska)}",
+      address: "117 Anthony Street, Tooleville, Croatia (Hrvatska)",
       phone: "+84 (853) 444-2424"
     },
     products: [
@@ -2597,7 +2597,7 @@ data.order = [
     user: {
       id: 14,
       name: "Sally Garner",
-      address: "298 Ferry Place, Weedville, Greece}",
+      address: "298 Ferry Place, Weedville, Greece",
       phone: "+84 (805) 564-2327"
     },
     products: [
@@ -2646,7 +2646,7 @@ data.order = [
     user: {
       id: 93,
       name: "Greer Mcintyre",
-      address: "384 Williamsburg Street, Tuttle, Virgin Islands (British)}",
+      address: "384 Williamsburg Street, Tuttle, Virgin Islands (British)",
       phone: "+84 (837) 555-3648"
     },
     products: [
@@ -2681,7 +2681,7 @@ data.order = [
     user: {
       id: 21,
       name: "Dolly Willis",
-      address: "560 Roosevelt Court, Barrelville, French Guiana}",
+      address: "560 Roosevelt Court, Barrelville, French Guiana",
       phone: "+84 (940) 586-3361"
     },
     products: [
@@ -2723,7 +2723,7 @@ data.order = [
     user: {
       id: 99,
       name: "Sarah Atkinson",
-      address: "513 Williams Place, Wedgewood, Jamaica}",
+      address: "513 Williams Place, Wedgewood, Jamaica",
       phone: "+84 (879) 528-3378"
     },
     products: [

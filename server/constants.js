@@ -1,7 +1,8 @@
 ﻿const CONSTANTS = {
   ENDPOINT: {
     LISTORDER: "/orders",
-    ORDERDETAIL: "/order"
+    ORDERDETAIL: "/order",
+    DELIVERY: "https://online-selling-website.herokuapp.com/deliveries/"
   },
   PORT: process.env.PORT || "3001"
 };
