@@ -1,4 +1,6 @@
-﻿## Getting Started
+﻿# Order management service
+
+## Getting Started
 
 In the root directory of the project...
 
@@ -10,7 +12,7 @@ In the root directory of the project...
 The back-end is based on [Express Generator](https://expressjs.com/en/starter/generator.html).
 The front-end is based on [Angular cli "ng"](https://angular.io/cli).
 
-The front-end is served on http://localhost:3000/ and the back-end on http://localhost:3001/.
+The front-end is served on <http://localhost:3000/> and the back-end on <http://localhost:3001/>.
 
 ```
 .
@@ -27,12 +29,16 @@ The front-end is served on http://localhost:3000/ and the back-end on http://loc
 └── README.md
 ```
 
+## Deployment
+
+`git subtree split --branch production --prefix server`
+
 ## Additional Documentation
 
-- Angular Docs - https://angular.io/docs
-- Angular Router - https://angular.io/guide/router
+- Angular Docs - <https://angular.io/docs>
+- Angular Router - <https://angular.io/guide/router>
 
-- Bootstrap CSS - https://getbootstrap.com/
-- Express - https://expressjs.com/
+- Bootstrap CSS - <https://getbootstrap.com/>
+- Express - <https://expressjs.com/>
 
 This project was created using [Microsoft Web Template Studio](https://github.com/Microsoft/WebTemplateStudio).

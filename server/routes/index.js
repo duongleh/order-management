@@ -81,7 +81,6 @@ router.post(CONSTANTS.ENDPOINT.ORDERDETAIL, async (req, res) => {
       CONSTANTS.ENDPOINT.DELIVERY + id,
       requestDelivery
     );
-    console.log(deliveryRes.data);
     item.delivery = {
       fee: 30000,
       date: deliveryRes.data.expected_receving_date,
@@ -98,10 +97,9 @@ router.post(CONSTANTS.ENDPOINT.ORDERDETAIL, async (req, res) => {
     data.order.push(item);
     data.orders.push(listItem);
   } catch (error) {
-    console.log(error);
-    return res.status(400).json({ success: false });
+    return res.status(400).json(error.response.data);
   }
-  return res.status(400).json({ success: true });
+  return res.status(200).json({ success: true });
 });
 
 // UPDATE ORDER
