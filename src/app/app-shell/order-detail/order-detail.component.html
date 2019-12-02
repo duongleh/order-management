@@ -46,7 +46,7 @@
                     <tr *ngFor="let item of order.products">
                         <td>{{item?.name}}</td>
                         <td>{{item.price | currency:'VND'}}</td>
-                        <td>{{item.amount}}</td>
+                        <td>{{item.quantity}}</td>
                         <td>{{item.subTotal | currency:'VND'}}</td>
                     </tr>
                 </tbody>

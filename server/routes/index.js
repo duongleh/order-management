@@ -43,8 +43,8 @@ router.get(CONSTANTS.ENDPOINT.LISTORDER, (req, res) => {
   if (req.query["endValue"]) {
     orders = orders.filter(el => el.value <= req.query["endValue"]);
   }
-  if (req.query["count"]) {
-    orders = orders.slice(0, req.query["count"]);
+  if (req.query["quantity"]) {
+    orders = orders.slice(0, req.query["quantity"]);
   }
   return res.json(orders);
 });
@@ -56,7 +56,7 @@ router.get(CONSTANTS.ENDPOINT.ORDERDETAIL + "/:id", (req, res) => {
 });
 
 // ADD NEW ORDER
-router.post(CONSTANTS.ENDPOINT.ORDERDETAIL, (req, res) => {
+router.post(CONSTANTS.ENDPOINT.ORDERDETAIL, async (req, res) => {
   let id = data.order[data.order.length - 1].id + 1;
   let item = {
     id,
@@ -65,7 +65,6 @@ router.post(CONSTANTS.ENDPOINT.ORDERDETAIL, (req, res) => {
 
   let listItem = {
     id,
-    deliveryDate: req.body.delivery.date,
     status: req.body.status,
     value: req.body.totalValue,
     products: req.body.products.map(el => el.name)
@@ -77,18 +76,32 @@ router.post(CONSTANTS.ENDPOINT.ORDERDETAIL, (req, res) => {
     total_cost: req.body.totalValue
   };
 
-  data.order.push(item);
-  data.orders.push(listItem);
+  try {
+    let deliveryRes = await axios.post(
+      CONSTANTS.ENDPOINT.DELIVERY + id,
+      requestDelivery
+    );
+    console.log(deliveryRes.data);
+    item.delivery = {
+      fee: 30000,
+      date: deliveryRes.data.expected_receving_date,
+      status: deliveryRes.data.status
+    };
 
-  axios
-    .post(CONSTANTS.ENDPOINT.DELIVERY + id, requestDelivery)
-    .then(res => {
-      console.log(`Delivery: ${(res.body, success)}`);
-    })
-    .catch(error => {
-      console.error(error);
-    });
-  return res.status(200).json({ success: true });
+    item.products = item.products.map(el => ({
+      ...el,
+      subTotal: el.quantity * el.price
+    }));
+
+    listItem.deliveryDate = deliveryRes.data.expected_receving_date;
+
+    data.order.push(item);
+    data.orders.push(listItem);
+  } catch (error) {
+    console.log(error);
+    return res.status(400).json({ success: false });
+  }
+  return res.status(400).json({ success: true });
 });
 
 // UPDATE ORDER

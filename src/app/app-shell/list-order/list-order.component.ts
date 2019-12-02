@@ -18,7 +18,7 @@ export class ListOrderComponent implements OnInit {
 
   public params = {
     sort: "DSC",
-    count: 100,
+    quantity: 100,
     beginTime: this.beginTime || "",
     endTime: this.endTime || "",
     beginValue: this.beginValue || "",
