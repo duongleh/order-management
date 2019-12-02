@@ -38,10 +38,12 @@ router.get(CONSTANTS.ENDPOINT.LISTORDER, (req, res) => {
     });
   }
   if (req.query["beginValue"]) {
-    orders = orders.filter(el => el.value >= req.query["beginValue"]);
+    orders = orders.filter(
+      el => el.value.totalValue >= req.query["beginValue"]
+    );
   }
   if (req.query["endValue"]) {
-    orders = orders.filter(el => el.value <= req.query["endValue"]);
+    orders = orders.filter(el => el.value.totalValue <= req.query["endValue"]);
   }
   if (req.query["quantity"]) {
     orders = orders.slice(0, req.query["quantity"]);
@@ -66,14 +68,14 @@ router.post(CONSTANTS.ENDPOINT.ORDERDETAIL, async (req, res) => {
   let listItem = {
     id,
     status: req.body.status,
-    value: req.body.totalValue,
+    value: req.body.value.totalValue,
     products: req.body.products.map(el => el.name)
   };
 
   let requestDelivery = {
     receiving_address: req.body.user.address,
     receiver_phone: req.body.user.phone,
-    total_cost: req.body.totalValue
+    total_cost: req.body.value.totalValue
   };
 
   try {
@@ -81,8 +83,8 @@ router.post(CONSTANTS.ENDPOINT.ORDERDETAIL, async (req, res) => {
       CONSTANTS.ENDPOINT.DELIVERY + id,
       requestDelivery
     );
+
     item.delivery = {
-      fee: 30000,
       date: deliveryRes.data.expected_receving_date,
       status: deliveryRes.data.status
     };
@@ -91,7 +93,7 @@ router.post(CONSTANTS.ENDPOINT.ORDERDETAIL, async (req, res) => {
       ...el,
       subTotal: el.quantity * el.price
     }));
-
+    item.warranty = "Hạn bảo hành 2 năm từ ngày bán";
     listItem.deliveryDate = deliveryRes.data.expected_receving_date;
 
     data.order.push(item);
@@ -107,10 +109,12 @@ router.put(CONSTANTS.ENDPOINT.ORDERDETAIL + "/:id", (req, res) => {
   const { id } = req.params;
   const defaultStat = ["Success", "Pending", "Cancel"];
   let order = data.order.find(el => el.id === Number(id));
+  let orders = data.orders.find(el => el.id === Number(id));
 
   if (req.query["status"]) {
     if (defaultStat.includes(req.query["status"])) {
       order.status = req.query["status"];
+      orders.status = req.query["status"];
     } else {
       return res
         .status(400)
@@ -132,6 +136,7 @@ router.put(CONSTANTS.ENDPOINT.ORDERDETAIL + "/:id", (req, res) => {
     if (Date.parse(req.query["deliveryDate"])) {
       order.delivery.status = req.query["deliveryStatus"];
       order.delivery.date = req.query["deliveryDate"];
+      orders.deliveryDate = req.query["deliveryDate"];
     } else {
       return res
         .status(400)

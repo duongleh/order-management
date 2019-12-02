@@ -47,15 +47,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "05-05-18 12:54:56",
-      status: "ipsum aliquip ullamco irure occaecat",
-      fee: 25000
+      date: "05-05-18",
+      status: "ipsum aliquip ullamco irure occaecat"
     },
-    payment: { type: "Master Card", status: "Success" },
+    payment: {
+      type: "Master Card",
+      status: "Success"
+    },
+    warranty: "mollit reprehenderit nulla reprehenderit consectetur",
     status: "Pending",
-    discount: 3000,
-    totalValue: 4512000,
-    warranty: "mollit reprehenderit nulla reprehenderit consectetur"
+    value: {
+      discount: 3000,
+      shipping: 25000,
+      totalValue: 4961000,
+      subTotal: 4490000,
+      tax: 449000
+    }
   },
   {
     id: 1,
@@ -82,15 +89,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "26-04-19 03:54:00",
-      status: "culpa eu sunt excepteur reprehenderit",
-      fee: 50000
+      date: "26-04-19",
+      status: "culpa eu sunt excepteur reprehenderit"
     },
-    payment: { type: "VISA", status: "Success" },
+    payment: {
+      type: "VISA",
+      status: "Success"
+    },
+    warranty: "aliquip ullamco cupidatat Lorem non",
     status: "Cancel",
-    discount: 26000,
-    totalValue: 1137000,
-    warranty: "aliquip ullamco cupidatat Lorem non"
+    value: {
+      discount: 26000,
+      shipping: 50000,
+      totalValue: 1248300,
+      subTotal: 1113000,
+      tax: 111300
+    }
   },
   {
     id: 2,
@@ -131,15 +145,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "11-02-18 10:53:46",
-      status: "deserunt proident sint quis voluptate",
-      fee: 41000
+      date: "11-02-18",
+      status: "deserunt proident sint quis voluptate"
     },
-    payment: { type: "COD", status: "Success" },
+    payment: {
+      type: "COD",
+      status: "Success"
+    },
+    warranty: "laboris occaecat voluptate consequat anim",
     status: "Success",
-    discount: 28000,
-    totalValue: 3029000,
-    warranty: "laboris occaecat voluptate consequat anim"
+    value: {
+      discount: 28000,
+      shipping: 41000,
+      totalValue: 3330600,
+      subTotal: 3016000,
+      tax: 301600
+    }
   },
   {
     id: 3,
@@ -159,15 +180,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "04-10-18 10:36:44",
-      status: "mollit ex eiusmod ut et",
-      fee: 43000
+      date: "04-10-18",
+      status: "mollit ex eiusmod ut et"
     },
-    payment: { type: "Online Banking", status: "Success" },
+    payment: {
+      type: "Online Banking",
+      status: "Success"
+    },
+    warranty: "ullamco qui esse tempor cillum",
     status: "Success",
-    discount: 3000,
-    totalValue: 1350000,
-    warranty: "ullamco qui esse tempor cillum"
+    value: {
+      discount: 3000,
+      shipping: 43000,
+      totalValue: 1481000,
+      subTotal: 1310000,
+      tax: 131000
+    }
   },
   {
     id: 4,
@@ -201,15 +229,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "06-01-15 12:36:02",
-      status: "nostrud incididunt mollit est adipisicing",
-      fee: 32000
+      date: "06-01-15",
+      status: "nostrud incididunt mollit est adipisicing"
     },
-    payment: { type: "VISA", status: "Pending" },
+    payment: {
+      type: "VISA",
+      status: "Pending"
+    },
+    warranty: "officia exercitation elit laboris sit",
     status: "Success",
-    discount: 84000,
-    totalValue: 4062000,
-    warranty: "officia exercitation elit laboris sit"
+    value: {
+      discount: 84000,
+      shipping: 32000,
+      totalValue: 4473400,
+      subTotal: 4114000,
+      tax: 411400
+    }
   },
   {
     id: 5,
@@ -250,15 +285,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "09-04-15 06:21:39",
-      status: "tempor aute magna est cillum",
-      fee: 54000
+      date: "09-04-15",
+      status: "tempor aute magna est cillum"
     },
-    payment: { type: "Master Card", status: "Pending" },
+    payment: {
+      type: "Master Card",
+      status: "Pending"
+    },
+    warranty: "adipisicing occaecat elit mollit dolore",
     status: "Success",
-    discount: 94000,
-    totalValue: 2672000,
-    warranty: "adipisicing occaecat elit mollit dolore"
+    value: {
+      discount: 94000,
+      shipping: 54000,
+      totalValue: 2943200,
+      subTotal: 2712000,
+      tax: 271200
+    }
   },
   {
     id: 6,
@@ -299,16 +341,24 @@ data.order = [
       }
     ],
     delivery: {
-      date: "11-06-18 02:50:02",
-      status: "dolor enim in minim et",
-      fee: 52000
+      date: "11-06-18",
+      status: "dolor enim in minim et"
     },
-    payment: { type: "Online Banking", status: "Pending" },
+    payment: {
+      type: "Online Banking",
+      status: "Pending"
+    },
+    warranty: "minim sint consectetur sint est",
     status: "Success",
-    discount: 93000,
-    totalValue: 2890000,
-    warranty: "minim sint consectetur sint est"
+    value: {
+      discount: 93000,
+      shipping: 52000,
+      totalValue: 3183100,
+      subTotal: 2931000,
+      tax: 293100
+    }
   },
+
   {
     id: 7,
     user: {
@@ -334,15 +384,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "20-09-16 05:36:23",
-      status: "in et duis fugiat laboris",
-      fee: 30000
+      date: "20-09-16",
+      status: "in et duis fugiat laboris"
     },
-    payment: { type: "Online Banking", status: "Success" },
+    payment: {
+      type: "Online Banking",
+      status: "Success"
+    },
+    warranty: "eu duis dolore magna ut",
     status: "Cancel",
-    discount: 50000,
-    totalValue: 1448000,
-    warranty: "eu duis dolore magna ut"
+    value: {
+      discount: 50000,
+      shipping: 30000,
+      totalValue: 1594800,
+      subTotal: 1468000,
+      tax: 146800
+    }
   },
   {
     id: 8,
@@ -369,15 +426,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "07-03-19 07:05:09",
-      status: "ipsum et esse tempor nulla",
-      fee: 23000
+      date: "07-03-19",
+      status: "ipsum et esse tempor nulla"
     },
-    payment: { type: "Master Card", status: "Cancel" },
+    payment: {
+      type: "Master Card",
+      status: "Cancel"
+    },
+    warranty: "non non nulla et laboris",
     status: "Cancel",
-    discount: 86000,
-    totalValue: 1649000,
-    warranty: "non non nulla et laboris"
+    value: {
+      discount: 86000,
+      shipping: 23000,
+      totalValue: 1820200,
+      subTotal: 1712000,
+      tax: 171200
+    }
   },
   {
     id: 9,
@@ -418,15 +482,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "24-08-15 02:58:09",
-      status: "fugiat reprehenderit nisi magna duis",
-      fee: 36000
+      date: "24-08-15",
+      status: "fugiat reprehenderit nisi magna duis"
     },
-    payment: { type: "Online Banking", status: "Success" },
+    payment: {
+      type: "Online Banking",
+      status: "Success"
+    },
+    warranty: "voluptate reprehenderit Lorem consectetur anim",
     status: "Success",
-    discount: 29000,
-    totalValue: 4300000,
-    warranty: "voluptate reprehenderit Lorem consectetur anim"
+    value: {
+      discount: 29000,
+      shipping: 36000,
+      totalValue: 4729300,
+      subTotal: 4293000,
+      tax: 429300
+    }
   },
   {
     id: 10,
@@ -453,15 +524,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "10-02-19 04:17:30",
-      status: "et qui amet eiusmod tempor",
-      fee: 21000
+      date: "10-02-19",
+      status: "et qui amet eiusmod tempor"
     },
-    payment: { type: "VISA", status: "Success" },
+    payment: {
+      type: "VISA",
+      status: "Success"
+    },
+    warranty: "magna culpa incididunt dolore magna",
     status: "Cancel",
-    discount: 41000,
-    totalValue: 1381000,
-    warranty: "magna culpa incididunt dolore magna"
+    value: {
+      discount: 41000,
+      shipping: 21000,
+      totalValue: 1521100,
+      subTotal: 1401000,
+      tax: 140100
+    }
   },
   {
     id: 11,
@@ -502,15 +580,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "17-08-14 11:44:39",
-      status: "magna Lorem duis dolore reprehenderit",
-      fee: 54000
+      date: "17-08-14",
+      status: "magna Lorem duis dolore reprehenderit"
     },
-    payment: { type: "Online Banking", status: "Cancel" },
+    payment: {
+      type: "Online Banking",
+      status: "Cancel"
+    },
+    warranty: "veniam aute veniam excepteur irure",
     status: "Pending",
-    discount: 74000,
-    totalValue: 3419000,
-    warranty: "veniam aute veniam excepteur irure"
+    value: {
+      discount: 74000,
+      shipping: 54000,
+      totalValue: 3762900,
+      subTotal: 3439000,
+      tax: 343900
+    }
   },
   {
     id: 12,
@@ -538,15 +623,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "25-04-16 07:06:29",
-      status: "eiusmod esse aliquip in amet",
-      fee: 20000
+      date: "25-04-16",
+      status: "eiusmod esse aliquip in amet"
     },
-    payment: { type: "Online Banking", status: "Success" },
+    payment: {
+      type: "Online Banking",
+      status: "Success"
+    },
+    warranty: "Lorem Lorem excepteur non sit",
     status: "Cancel",
-    discount: 19000,
-    totalValue: 1453000,
-    warranty: "Lorem Lorem excepteur non sit"
+    value: {
+      discount: 19000,
+      shipping: 20000,
+      totalValue: 1598200,
+      subTotal: 1452000,
+      tax: 145200
+    }
   },
   {
     id: 13,
@@ -594,15 +686,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "13-07-19 12:44:25",
-      status: "nisi cillum adipisicing culpa proident",
-      fee: 47000
+      date: "13-07-19",
+      status: "nisi cillum adipisicing culpa proident"
     },
-    payment: { type: "VISA", status: "Cancel" },
+    payment: {
+      type: "VISA",
+      status: "Cancel"
+    },
+    warranty: "veniam magna excepteur dolore eiusmod",
     status: "Success",
-    discount: 0,
-    totalValue: 5399000,
-    warranty: "veniam magna excepteur dolore eiusmod"
+    value: {
+      discount: 0,
+      shipping: 47000,
+      totalValue: 5934200,
+      subTotal: 5352000,
+      tax: 535200
+    }
   },
   {
     id: 14,
@@ -643,15 +742,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "20-11-15 03:21:14",
-      status: "eu officia cupidatat voluptate officia",
-      fee: 56000
+      date: "20-11-15",
+      status: "eu officia cupidatat voluptate officia"
     },
-    payment: { type: "COD", status: "Pending" },
+    payment: {
+      type: "COD",
+      status: "Pending"
+    },
+    warranty: "minim cupidatat do nisi irure",
     status: "Pending",
-    discount: 58000,
-    totalValue: 1900000,
-    warranty: "minim cupidatat do nisi irure"
+    value: {
+      discount: 58000,
+      shipping: 56000,
+      totalValue: 2090200,
+      subTotal: 1902000,
+      tax: 190200
+    }
   },
   {
     id: 15,
@@ -685,15 +791,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "15-10-15 12:34:09",
-      status: "mollit incididunt incididunt eu anim",
-      fee: 30000
+      date: "15-10-15",
+      status: "mollit incididunt incididunt eu anim"
     },
-    payment: { type: "Master Card", status: "Pending" },
+    payment: {
+      type: "Master Card",
+      status: "Pending"
+    },
+    warranty: "irure commodo esse deserunt velit",
     status: "Cancel",
-    discount: 5000,
-    totalValue: 2652000,
-    warranty: "irure commodo esse deserunt velit"
+    value: {
+      discount: 5000,
+      shipping: 30000,
+      totalValue: 2914700,
+      subTotal: 2627000,
+      tax: 262700
+    }
   },
   {
     id: 16,
@@ -734,15 +847,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "24-01-18 04:45:27",
-      status: "cillum cillum magna nostrud incididunt",
-      fee: 36000
+      date: "24-01-18",
+      status: "cillum cillum magna nostrud incididunt"
     },
-    payment: { type: "Master Card", status: "Pending" },
+    payment: {
+      type: "Master Card",
+      status: "Pending"
+    },
+    warranty: "minim minim in est labore",
     status: "Pending",
-    discount: 8000,
-    totalValue: 2998000,
-    warranty: "minim minim in est labore"
+    value: {
+      discount: 8000,
+      shipping: 36000,
+      totalValue: 3295000,
+      subTotal: 2970000,
+      tax: 297000
+    }
   },
   {
     id: 17,
@@ -790,15 +910,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "24-09-16 05:39:39",
-      status: "laboris deserunt veniam irure nulla",
-      fee: 37000
+      date: "24-09-16",
+      status: "laboris deserunt veniam irure nulla"
     },
-    payment: { type: "COD", status: "Success" },
+    payment: {
+      type: "COD",
+      status: "Success"
+    },
+    warranty: "incididunt sit qui veniam sint",
     status: "Pending",
-    discount: 60000,
-    totalValue: 4260000,
-    warranty: "incididunt sit qui veniam sint"
+    value: {
+      discount: 60000,
+      shipping: 37000,
+      totalValue: 4688300,
+      subTotal: 4283000,
+      tax: 428300
+    }
   },
   {
     id: 18,
@@ -832,15 +959,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "05-03-19 10:05:21",
-      status: "proident nostrud consequat amet ut",
-      fee: 22000
+      date: "05-03-19",
+      status: "proident nostrud consequat amet ut"
     },
-    payment: { type: "Master Card", status: "Cancel" },
+    payment: {
+      type: "Master Card",
+      status: "Cancel"
+    },
+    warranty: "consequat consequat elit proident eiusmod",
     status: "Cancel",
-    discount: 1000,
-    totalValue: 2536000,
-    warranty: "consequat consequat elit proident eiusmod"
+    value: {
+      discount: 1000,
+      shipping: 22000,
+      totalValue: 2787500,
+      subTotal: 2515000,
+      tax: 251500
+    }
   },
   {
     id: 19,
@@ -867,15 +1001,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "19-02-14 08:08:22",
-      status: "officia nulla nulla incididunt anim",
-      fee: 37000
+      date: "19-02-14",
+      status: "officia nulla nulla incididunt anim"
     },
-    payment: { type: "COD", status: "Cancel" },
+    payment: {
+      type: "COD",
+      status: "Cancel"
+    },
+    warranty: "minim aliqua minim nulla dolore",
     status: "Cancel",
-    discount: 35000,
-    totalValue: 1979000,
-    warranty: "minim aliqua minim nulla dolore"
+    value: {
+      discount: 35000,
+      shipping: 37000,
+      totalValue: 2176700,
+      subTotal: 1977000,
+      tax: 197700
+    }
   },
   {
     id: 20,
@@ -909,15 +1050,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "02-10-14 06:35:28",
-      status: "nisi aute eiusmod velit pariatur",
-      fee: 20000
+      date: "02-10-14",
+      status: "nisi aute eiusmod velit pariatur"
     },
-    payment: { type: "COD", status: "Cancel" },
+    payment: {
+      type: "COD",
+      status: "Cancel"
+    },
+    warranty: "laborum duis qui aliqua reprehenderit",
     status: "Success",
-    discount: 58000,
-    totalValue: 1619000,
-    warranty: "laborum duis qui aliqua reprehenderit"
+    value: {
+      discount: 58000,
+      shipping: 20000,
+      totalValue: 1784700,
+      subTotal: 1657000,
+      tax: 165700
+    }
   },
   {
     id: 21,
@@ -944,15 +1092,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "06-04-18 06:25:51",
-      status: "laboris Lorem velit irure enim",
-      fee: 52000
+      date: "06-04-18",
+      status: "laboris Lorem velit irure enim"
     },
-    payment: { type: "Online Banking", status: "Success" },
+    payment: {
+      type: "Online Banking",
+      status: "Success"
+    },
+    warranty: "do enim ad cillum quis",
     status: "Pending",
-    discount: 89000,
-    totalValue: 1851000,
-    warranty: "do enim ad cillum quis"
+    value: {
+      discount: 89000,
+      shipping: 52000,
+      totalValue: 2039800,
+      subTotal: 1888000,
+      tax: 188800
+    }
   },
   {
     id: 22,
@@ -1000,15 +1155,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "19-09-15 01:36:43",
-      status: "in qui cillum deserunt mollit",
-      fee: 36000
+      date: "19-09-15",
+      status: "in qui cillum deserunt mollit"
     },
-    payment: { type: "VISA", status: "Cancel" },
+    payment: {
+      type: "VISA",
+      status: "Cancel"
+    },
+    warranty: "amet sunt amet dolore nostrud",
     status: "Success",
-    discount: 75000,
-    totalValue: 5279000,
-    warranty: "amet sunt amet dolore nostrud"
+    value: {
+      discount: 75000,
+      shipping: 36000,
+      totalValue: 5810800,
+      subTotal: 5318000,
+      tax: 531800
+    }
   },
   {
     id: 23,
@@ -1028,15 +1190,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "08-02-14 02:04:40",
-      status: "aliqua quis adipisicing tempor quis",
-      fee: 35000
+      date: "08-02-14",
+      status: "aliqua quis adipisicing tempor quis"
     },
-    payment: { type: "VISA", status: "Cancel" },
+    payment: {
+      type: "VISA",
+      status: "Cancel"
+    },
+    warranty: "fugiat ut laboris ullamco nostrud",
     status: "Success",
-    discount: 71000,
-    totalValue: 406000,
-    warranty: "fugiat ut laboris ullamco nostrud"
+    value: {
+      discount: 71000,
+      shipping: 35000,
+      totalValue: 450200,
+      subTotal: 442000,
+      tax: 44200
+    }
   },
   {
     id: 24,
@@ -1084,15 +1253,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "14-11-15 12:27:38",
-      status: "exercitation aliqua elit irure aliqua",
-      fee: 39000
+      date: "14-11-15",
+      status: "exercitation aliqua elit irure aliqua"
     },
-    payment: { type: "Online Banking", status: "Cancel" },
+    payment: {
+      type: "Online Banking",
+      status: "Cancel"
+    },
+    warranty: "incididunt nulla proident id laborum",
     status: "Pending",
-    discount: 96000,
-    totalValue: 3176000,
-    warranty: "incididunt nulla proident id laborum"
+    value: {
+      discount: 96000,
+      shipping: 39000,
+      totalValue: 3499300,
+      subTotal: 3233000,
+      tax: 323300
+    }
   },
   {
     id: 25,
@@ -1133,15 +1309,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "29-06-19 09:11:48",
-      status: "nisi labore fugiat ipsum eu",
-      fee: 47000
+      date: "29-06-19",
+      status: "nisi labore fugiat ipsum eu"
     },
-    payment: { type: "Online Banking", status: "Success" },
+    payment: {
+      type: "Online Banking",
+      status: "Success"
+    },
+    warranty: "dolore ullamco dolore excepteur esse",
     status: "Cancel",
-    discount: 32000,
-    totalValue: 5856000,
-    warranty: "dolore ullamco dolore excepteur esse"
+    value: {
+      discount: 32000,
+      shipping: 47000,
+      totalValue: 6440100,
+      subTotal: 5841000,
+      tax: 584100
+    }
   },
   {
     id: 26,
@@ -1189,15 +1372,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "27-11-15 04:18:31",
-      status: "qui aute proident consequat dolor",
-      fee: 34000
+      date: "27-11-15",
+      status: "qui aute proident consequat dolor"
     },
-    payment: { type: "Master Card", status: "Success" },
+    payment: {
+      type: "Master Card",
+      status: "Success"
+    },
+    warranty: "elit aute elit duis mollit",
     status: "Pending",
-    discount: 59000,
-    totalValue: 1570000,
-    warranty: "elit aute elit duis mollit"
+    value: {
+      discount: 59000,
+      shipping: 34000,
+      totalValue: 1729500,
+      subTotal: 1595000,
+      tax: 159500
+    }
   },
   {
     id: 27,
@@ -1231,15 +1421,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "30-03-17 09:18:47",
-      status: "nulla velit elit consectetur proident",
-      fee: 24000
+      date: "30-03-17",
+      status: "nulla velit elit consectetur proident"
     },
-    payment: { type: "VISA", status: "Success" },
+    payment: {
+      type: "VISA",
+      status: "Success"
+    },
+    warranty: "proident cupidatat aliquip aute nostrud",
     status: "Success",
-    discount: 17000,
-    totalValue: 3658000,
-    warranty: "proident cupidatat aliquip aute nostrud"
+    value: {
+      discount: 17000,
+      shipping: 24000,
+      totalValue: 4023100,
+      subTotal: 3651000,
+      tax: 365100
+    }
   },
   {
     id: 28,
@@ -1287,15 +1484,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "26-05-14 07:44:46",
-      status: "culpa reprehenderit dolor est culpa",
-      fee: 27000
+      date: "26-05-14",
+      status: "culpa reprehenderit dolor est culpa"
     },
-    payment: { type: "Master Card", status: "Pending" },
+    payment: {
+      type: "Master Card",
+      status: "Pending"
+    },
+    warranty: "cupidatat irure veniam cillum pariatur",
     status: "Success",
-    discount: 30000,
-    totalValue: 4072000,
-    warranty: "cupidatat irure veniam cillum pariatur"
+    value: {
+      discount: 30000,
+      shipping: 27000,
+      totalValue: 4479500,
+      subTotal: 4075000,
+      tax: 407500
+    }
   },
   {
     id: 29,
@@ -1336,15 +1540,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "06-11-14 07:44:32",
-      status: "commodo duis laboris fugiat incididunt",
-      fee: 25000
+      date: "06-11-14",
+      status: "commodo duis laboris fugiat incididunt"
     },
-    payment: { type: "COD", status: "Success" },
+    payment: {
+      type: "COD",
+      status: "Success"
+    },
+    warranty: "reprehenderit aliquip do eiusmod dolor",
     status: "Success",
-    discount: 23000,
-    totalValue: 2064000,
-    warranty: "reprehenderit aliquip do eiusmod dolor"
+    value: {
+      discount: 23000,
+      shipping: 25000,
+      totalValue: 2270200,
+      subTotal: 2062000,
+      tax: 206200
+    }
   },
   {
     id: 30,
@@ -1378,15 +1589,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "19-06-15 10:17:43",
-      status: "nisi non nostrud ut qui",
-      fee: 34000
+      date: "19-06-15",
+      status: "nisi non nostrud ut qui"
     },
-    payment: { type: "COD", status: "Pending" },
+    payment: {
+      type: "COD",
+      status: "Pending"
+    },
+    warranty: "consectetur aliquip elit est dolore",
     status: "Cancel",
-    discount: 97000,
-    totalValue: 1140000,
-    warranty: "consectetur aliquip elit est dolore"
+    value: {
+      discount: 97000,
+      shipping: 34000,
+      totalValue: 1260300,
+      subTotal: 1203000,
+      tax: 120300
+    }
   },
   {
     id: 31,
@@ -1413,15 +1631,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "31-08-17 06:27:29",
-      status: "ad dolore nisi laborum eiusmod",
-      fee: 34000
+      date: "31-08-17",
+      status: "ad dolore nisi laborum eiusmod"
     },
-    payment: { type: "COD", status: "Cancel" },
+    payment: {
+      type: "COD",
+      status: "Cancel"
+    },
+    warranty: "reprehenderit irure aliqua ex voluptate",
     status: "Cancel",
-    discount: 36000,
-    totalValue: 2113000,
-    warranty: "reprehenderit irure aliqua ex voluptate"
+    value: {
+      discount: 36000,
+      shipping: 34000,
+      totalValue: 2324500,
+      subTotal: 2115000,
+      tax: 211500
+    }
   },
   {
     id: 32,
@@ -1448,15 +1673,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "30-01-18 03:35:17",
-      status: "deserunt id in duis duis",
-      fee: 47000
+      date: "30-01-18",
+      status: "deserunt id in duis duis"
     },
-    payment: { type: "Online Banking", status: "Pending" },
+    payment: {
+      type: "Online Banking",
+      status: "Pending"
+    },
+    warranty: "pariatur cillum amet in incididunt",
     status: "Cancel",
-    discount: 82000,
-    totalValue: 2299000,
-    warranty: "pariatur cillum amet in incididunt"
+    value: {
+      discount: 82000,
+      shipping: 47000,
+      totalValue: 2532400,
+      subTotal: 2334000,
+      tax: 233400
+    }
   },
   {
     id: 33,
@@ -1497,15 +1729,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "19-06-15 06:33:01",
-      status: "officia exercitation proident aliquip irure",
-      fee: 20000
+      date: "19-06-15",
+      status: "officia exercitation proident aliquip irure"
     },
-    payment: { type: "Online Banking", status: "Success" },
+    payment: {
+      type: "Online Banking",
+      status: "Success"
+    },
+    warranty: "est nostrud reprehenderit Lorem irure",
     status: "Pending",
-    discount: 41000,
-    totalValue: 2563000,
-    warranty: "est nostrud reprehenderit Lorem irure"
+    value: {
+      discount: 41000,
+      shipping: 20000,
+      totalValue: 2821400,
+      subTotal: 2584000,
+      tax: 258400
+    }
   },
   {
     id: 34,
@@ -1532,15 +1771,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "28-08-18 01:26:00",
-      status: "pariatur occaecat ex laborum Lorem",
-      fee: 32000
+      date: "28-08-18",
+      status: "pariatur occaecat ex laborum Lorem"
     },
-    payment: { type: "VISA", status: "Cancel" },
+    payment: {
+      type: "VISA",
+      status: "Cancel"
+    },
+    warranty: "excepteur nostrud pariatur irure velit",
     status: "Pending",
-    discount: 3000,
-    totalValue: 1639000,
-    warranty: "excepteur nostrud pariatur irure velit"
+    value: {
+      discount: 3000,
+      shipping: 32000,
+      totalValue: 1800000,
+      subTotal: 1610000,
+      tax: 161000
+    }
   },
   {
     id: 35,
@@ -1581,15 +1827,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "11-12-14 06:00:40",
-      status: "quis nostrud labore mollit adipisicing",
-      fee: 48000
+      date: "11-12-14",
+      status: "quis nostrud labore mollit adipisicing"
     },
-    payment: { type: "VISA", status: "Success" },
+    payment: {
+      type: "VISA",
+      status: "Success"
+    },
+    warranty: "esse laboris cillum non proident",
     status: "Cancel",
-    discount: 35000,
-    totalValue: 1911000,
-    warranty: "esse laboris cillum non proident"
+    value: {
+      discount: 35000,
+      shipping: 48000,
+      totalValue: 2100800,
+      subTotal: 1898000,
+      tax: 189800
+    }
   },
   {
     id: 36,
@@ -1623,15 +1876,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "29-06-17 02:21:31",
-      status: "do incididunt aute eu aliquip",
-      fee: 20000
+      date: "29-06-17",
+      status: "do incididunt aute eu aliquip"
     },
-    payment: { type: "COD", status: "Pending" },
+    payment: {
+      type: "COD",
+      status: "Pending"
+    },
+    warranty: "voluptate consequat quis consectetur ea",
     status: "Cancel",
-    discount: 13000,
-    totalValue: 2853000,
-    warranty: "voluptate consequat quis consectetur ea"
+    value: {
+      discount: 13000,
+      shipping: 20000,
+      totalValue: 3137600,
+      subTotal: 2846000,
+      tax: 284600
+    }
   },
   {
     id: 37,
@@ -1679,15 +1939,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "04-06-18 08:55:08",
-      status: "officia deserunt cillum magna veniam",
-      fee: 43000
+      date: "04-06-18",
+      status: "officia deserunt cillum magna veniam"
     },
-    payment: { type: "VISA", status: "Success" },
+    payment: {
+      type: "VISA",
+      status: "Success"
+    },
+    warranty: "voluptate in elit mollit excepteur",
     status: "Pending",
-    discount: 20000,
-    totalValue: 5300000,
-    warranty: "voluptate in elit mollit excepteur"
+    value: {
+      discount: 20000,
+      shipping: 43000,
+      totalValue: 5827700,
+      subTotal: 5277000,
+      tax: 527700
+    }
   },
   {
     id: 38,
@@ -1728,15 +1995,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "16-12-16 01:42:16",
-      status: "exercitation occaecat in velit nostrud",
-      fee: 59000
+      date: "16-12-16",
+      status: "exercitation occaecat in velit nostrud"
     },
-    payment: { type: "COD", status: "Pending" },
+    payment: {
+      type: "COD",
+      status: "Pending"
+    },
+    warranty: "quis deserunt ullamco ad nostrud",
     status: "Success",
-    discount: 62000,
-    totalValue: 2437000,
-    warranty: "quis deserunt ullamco ad nostrud"
+    value: {
+      discount: 62000,
+      shipping: 59000,
+      totalValue: 2681000,
+      subTotal: 2440000,
+      tax: 244000
+    }
   },
   {
     id: 39,
@@ -1770,15 +2044,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "28-04-19 01:25:44",
-      status: "aliquip id aute non ex",
-      fee: 42000
+      date: "28-04-19",
+      status: "aliquip id aute non ex"
     },
-    payment: { type: "Online Banking", status: "Success" },
+    payment: {
+      type: "Online Banking",
+      status: "Success"
+    },
+    warranty: "minim velit non id ex",
     status: "Cancel",
-    discount: 60000,
-    totalValue: 1446000,
-    warranty: "minim velit non id ex"
+    value: {
+      discount: 60000,
+      shipping: 42000,
+      totalValue: 1592400,
+      subTotal: 1464000,
+      tax: 146400
+    }
   },
   {
     id: 40,
@@ -1798,15 +2079,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "04-08-18 07:06:12",
-      status: "amet ut qui mollit est",
-      fee: 48000
+      date: "04-08-18",
+      status: "amet ut qui mollit est"
     },
-    payment: { type: "VISA", status: "Pending" },
+    payment: {
+      type: "VISA",
+      status: "Pending"
+    },
+    warranty: "incididunt velit enim enim magna",
     status: "Pending",
-    discount: 24000,
-    totalValue: 666000,
-    warranty: "incididunt velit enim enim magna"
+    value: {
+      discount: 24000,
+      shipping: 48000,
+      totalValue: 730200,
+      subTotal: 642000,
+      tax: 64200
+    }
   },
   {
     id: 41,
@@ -1847,15 +2135,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "18-01-19 04:51:16",
-      status: "reprehenderit amet excepteur amet proident",
-      fee: 43000
+      date: "18-01-19",
+      status: "reprehenderit amet excepteur amet proident"
     },
-    payment: { type: "VISA", status: "Success" },
+    payment: {
+      type: "VISA",
+      status: "Success"
+    },
+    warranty: "reprehenderit aute cillum magna minim",
     status: "Pending",
-    discount: 84000,
-    totalValue: 1962000,
-    warranty: "reprehenderit aute cillum magna minim"
+    value: {
+      discount: 84000,
+      shipping: 43000,
+      totalValue: 2162300,
+      subTotal: 2003000,
+      tax: 200300
+    }
   },
   {
     id: 42,
@@ -1889,15 +2184,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "07-04-19 06:41:14",
-      status: "do id irure do excepteur",
-      fee: 35000
+      date: "07-04-19",
+      status: "do id irure do excepteur"
     },
-    payment: { type: "COD", status: "Success" },
+    payment: {
+      type: "COD",
+      status: "Success"
+    },
+    warranty: "eu nulla commodo proident in",
     status: "Success",
-    discount: 41000,
-    totalValue: 3438000,
-    warranty: "eu nulla commodo proident in"
+    value: {
+      discount: 41000,
+      shipping: 35000,
+      totalValue: 3782400,
+      subTotal: 3444000,
+      tax: 344400
+    }
   },
   {
     id: 43,
@@ -1931,15 +2233,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "14-02-16 12:12:37",
-      status: "esse commodo exercitation ea in",
-      fee: 35000
+      date: "14-02-16",
+      status: "esse commodo exercitation ea in"
     },
-    payment: { type: "Master Card", status: "Success" },
+    payment: {
+      type: "Master Card",
+      status: "Success"
+    },
+    warranty: "laborum aliqua culpa eiusmod exercitation",
     status: "Pending",
-    discount: 90000,
-    totalValue: 3240000,
-    warranty: "laborum aliqua culpa eiusmod exercitation"
+    value: {
+      discount: 90000,
+      shipping: 35000,
+      totalValue: 3569500,
+      subTotal: 3295000,
+      tax: 329500
+    }
   },
   {
     id: 44,
@@ -1973,15 +2282,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "09-10-18 02:36:15",
-      status: "minim minim occaecat dolore elit",
-      fee: 21000
+      date: "09-10-18",
+      status: "minim minim occaecat dolore elit"
     },
-    payment: { type: "COD", status: "Success" },
+    payment: {
+      type: "COD",
+      status: "Success"
+    },
+    warranty: "enim qui do sit tempor",
     status: "Pending",
-    discount: 29000,
-    totalValue: 4491000,
-    warranty: "enim qui do sit tempor"
+    value: {
+      discount: 29000,
+      shipping: 21000,
+      totalValue: 4940900,
+      subTotal: 4499000,
+      tax: 449900
+    }
   },
   {
     id: 45,
@@ -2008,15 +2324,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "30-04-14 03:45:10",
-      status: "esse incididunt commodo commodo irure",
-      fee: 56000
+      date: "30-04-14",
+      status: "esse incididunt commodo commodo irure"
     },
-    payment: { type: "Online Banking", status: "Pending" },
+    payment: {
+      type: "Online Banking",
+      status: "Pending"
+    },
+    warranty: "aliqua eiusmod ea dolor cupidatat",
     status: "Pending",
-    discount: 61000,
-    totalValue: 1670000,
-    warranty: "aliqua eiusmod ea dolor cupidatat"
+    value: {
+      discount: 61000,
+      shipping: 56000,
+      totalValue: 1837500,
+      subTotal: 1675000,
+      tax: 167500
+    }
   },
   {
     id: 46,
@@ -2057,15 +2380,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "28-03-16 08:16:59",
-      status: "laborum nisi proident occaecat adipisicing",
-      fee: 48000
+      date: "28-03-16",
+      status: "laborum nisi proident occaecat adipisicing"
     },
-    payment: { type: "Online Banking", status: "Pending" },
+    payment: {
+      type: "Online Banking",
+      status: "Pending"
+    },
+    warranty: "ex sunt officia duis ex",
     status: "Success",
-    discount: 8000,
-    totalValue: 3905000,
-    warranty: "ex sunt officia duis ex"
+    value: {
+      discount: 8000,
+      shipping: 48000,
+      totalValue: 4291500,
+      subTotal: 3865000,
+      tax: 386500
+    }
   },
   {
     id: 47,
@@ -2106,15 +2436,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "12-02-17 05:16:29",
-      status: "est commodo ullamco deserunt nulla",
-      fee: 22000
+      date: "12-02-17",
+      status: "est commodo ullamco deserunt nulla"
     },
-    payment: { type: "VISA", status: "Cancel" },
+    payment: {
+      type: "VISA",
+      status: "Cancel"
+    },
+    warranty: "officia esse aute anim velit",
     status: "Success",
-    discount: 19000,
-    totalValue: 4501000,
-    warranty: "officia esse aute anim velit"
+    value: {
+      discount: 19000,
+      shipping: 22000,
+      totalValue: 4950800,
+      subTotal: 4498000,
+      tax: 449800
+    }
   },
   {
     id: 48,
@@ -2141,15 +2478,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "20-02-18 02:04:57",
-      status: "consectetur sit irure sit est",
-      fee: 49000
+      date: "20-02-18",
+      status: "consectetur sit irure sit est"
     },
-    payment: { type: "Online Banking", status: "Cancel" },
+    payment: {
+      type: "Online Banking",
+      status: "Cancel"
+    },
+    warranty: "sunt laboris veniam pariatur duis",
     status: "Cancel",
-    discount: 48000,
-    totalValue: 1725000,
-    warranty: "sunt laboris veniam pariatur duis"
+    value: {
+      discount: 48000,
+      shipping: 49000,
+      totalValue: 1897400,
+      subTotal: 1724000,
+      tax: 172400
+    }
   },
   {
     id: 49,
@@ -2190,15 +2534,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "03-06-18 07:12:58",
-      status: "voluptate anim ad aute fugiat",
-      fee: 59000
+      date: "03-06-18",
+      status: "voluptate anim ad aute fugiat"
     },
-    payment: { type: "Online Banking", status: "Cancel" },
+    payment: {
+      type: "Online Banking",
+      status: "Cancel"
+    },
+    warranty: "cupidatat et nisi dolore elit",
     status: "Pending",
-    discount: 12000,
-    totalValue: 2072000,
-    warranty: "cupidatat et nisi dolore elit"
+    value: {
+      discount: 12000,
+      shipping: 59000,
+      totalValue: 2274500,
+      subTotal: 2025000,
+      tax: 202500
+    }
   },
   {
     id: 50,
@@ -2239,15 +2590,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "22-06-14 09:28:30",
-      status: "irure non nulla sit irure",
-      fee: 59000
+      date: "22-06-14",
+      status: "irure non nulla sit irure"
     },
-    payment: { type: "Online Banking", status: "Success" },
+    payment: {
+      type: "Online Banking",
+      status: "Success"
+    },
+    warranty: "consectetur eu anim ea minim",
     status: "Pending",
-    discount: 11000,
-    totalValue: 2135000,
-    warranty: "consectetur eu anim ea minim"
+    value: {
+      discount: 11000,
+      shipping: 59000,
+      totalValue: 2343700,
+      subTotal: 2087000,
+      tax: 208700
+    }
   },
   {
     id: 51,
@@ -2267,15 +2625,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "03-09-17 12:34:15",
-      status: "amet consectetur officia magna incididunt",
-      fee: 33000
+      date: "03-09-17",
+      status: "amet consectetur officia magna incididunt"
     },
-    payment: { type: "COD", status: "Pending" },
+    payment: {
+      type: "COD",
+      status: "Pending"
+    },
+    warranty: "quis sunt Lorem commodo dolore",
     status: "Pending",
-    discount: 96000,
-    totalValue: 927000,
-    warranty: "quis sunt Lorem commodo dolore"
+    value: {
+      discount: 96000,
+      shipping: 33000,
+      totalValue: 1026000,
+      subTotal: 990000,
+      tax: 99000
+    }
   },
   {
     id: 52,
@@ -2316,15 +2681,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "10-03-14 01:01:48",
-      status: "ipsum qui exercitation dolore duis",
-      fee: 37000
+      date: "10-03-14",
+      status: "ipsum qui exercitation dolore duis"
     },
-    payment: { type: "Master Card", status: "Cancel" },
+    payment: {
+      type: "Master Card",
+      status: "Cancel"
+    },
+    warranty: "amet sit labore dolor dolore",
     status: "Pending",
-    discount: 98000,
-    totalValue: 4062000,
-    warranty: "amet sit labore dolor dolore"
+    value: {
+      discount: 98000,
+      shipping: 37000,
+      totalValue: 4474300,
+      subTotal: 4123000,
+      tax: 412300
+    }
   },
   {
     id: 53,
@@ -2344,15 +2716,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "04-07-16 07:33:56",
-      status: "proident non quis sint tempor",
-      fee: 48000
+      date: "04-07-16",
+      status: "proident non quis sint tempor"
     },
-    payment: { type: "Online Banking", status: "Cancel" },
+    payment: {
+      type: "Online Banking",
+      status: "Cancel"
+    },
+    warranty: "qui proident Lorem duis nulla",
     status: "Cancel",
-    discount: 77000,
-    totalValue: 836000,
-    warranty: "qui proident Lorem duis nulla"
+    value: {
+      discount: 77000,
+      shipping: 48000,
+      totalValue: 922500,
+      subTotal: 865000,
+      tax: 86500
+    }
   },
   {
     id: 54,
@@ -2372,15 +2751,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "19-10-15 03:05:10",
-      status: "excepteur sunt culpa deserunt velit",
-      fee: 48000
+      date: "19-10-15",
+      status: "excepteur sunt culpa deserunt velit"
     },
-    payment: { type: "Online Banking", status: "Success" },
+    payment: {
+      type: "Online Banking",
+      status: "Success"
+    },
+    warranty: "quis commodo eiusmod occaecat aliquip",
     status: "Success",
-    discount: 94000,
-    totalValue: 1504000,
-    warranty: "quis commodo eiusmod occaecat aliquip"
+    value: {
+      discount: 94000,
+      shipping: 48000,
+      totalValue: 1659000,
+      subTotal: 1550000,
+      tax: 155000
+    }
   },
   {
     id: 55,
@@ -2407,15 +2793,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "19-12-15 09:54:49",
-      status: "incididunt quis irure voluptate deserunt",
-      fee: 25000
+      date: "19-12-15",
+      status: "incididunt quis irure voluptate deserunt"
     },
-    payment: { type: "Online Banking", status: "Cancel" },
+    payment: {
+      type: "Online Banking",
+      status: "Cancel"
+    },
+    warranty: "deserunt mollit fugiat elit tempor",
     status: "Cancel",
-    discount: 95000,
-    totalValue: 2425000,
-    warranty: "deserunt mollit fugiat elit tempor"
+    value: {
+      discount: 95000,
+      shipping: 25000,
+      totalValue: 2674500,
+      subTotal: 2495000,
+      tax: 249500
+    }
   },
   {
     id: 56,
@@ -2449,15 +2842,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "17-11-17 11:58:46",
-      status: "deserunt tempor eiusmod quis reprehenderit",
-      fee: 55000
+      date: "17-11-17",
+      status: "deserunt tempor eiusmod quis reprehenderit"
     },
-    payment: { type: "Online Banking", status: "Cancel" },
+    payment: {
+      type: "Online Banking",
+      status: "Cancel"
+    },
+    warranty: "in cillum anim amet minim",
     status: "Success",
-    discount: 71000,
-    totalValue: 3505000,
-    warranty: "in cillum anim amet minim"
+    value: {
+      discount: 71000,
+      shipping: 55000,
+      totalValue: 3857100,
+      subTotal: 3521000,
+      tax: 352100
+    }
   },
   {
     id: 57,
@@ -2477,15 +2877,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "07-04-17 10:53:43",
-      status: "enim minim eiusmod officia ullamco",
-      fee: 49000
+      date: "07-04-17",
+      status: "enim minim eiusmod officia ullamco"
     },
-    payment: { type: "VISA", status: "Cancel" },
+    payment: {
+      type: "VISA",
+      status: "Cancel"
+    },
+    warranty: "velit ipsum nisi deserunt officia",
     status: "Pending",
-    discount: 3000,
-    totalValue: 238000,
-    warranty: "velit ipsum nisi deserunt officia"
+    value: {
+      discount: 3000,
+      shipping: 49000,
+      totalValue: 257200,
+      subTotal: 192000,
+      tax: 19200
+    }
   },
   {
     id: 58,
@@ -2533,15 +2940,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "20-09-15 10:19:37",
-      status: "ad ut aute dolor sit",
-      fee: 41000
+      date: "20-09-15",
+      status: "ad ut aute dolor sit"
     },
-    payment: { type: "Online Banking", status: "Pending" },
+    payment: {
+      type: "Online Banking",
+      status: "Pending"
+    },
+    warranty: "nulla cillum culpa irure aliquip",
     status: "Cancel",
-    discount: 61000,
-    totalValue: 4107000,
-    warranty: "nulla cillum culpa irure aliquip"
+    value: {
+      discount: 61000,
+      shipping: 41000,
+      totalValue: 4519700,
+      subTotal: 4127000,
+      tax: 412700
+    }
   },
   {
     id: 59,
@@ -2582,15 +2996,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "15-09-15 10:15:51",
-      status: "labore enim magna consequat ad",
-      fee: 35000
+      date: "15-09-15",
+      status: "labore enim magna consequat ad"
     },
-    payment: { type: "Master Card", status: "Pending" },
+    payment: {
+      type: "Master Card",
+      status: "Pending"
+    },
+    warranty: "veniam proident in sunt excepteur",
     status: "Cancel",
-    discount: 40000,
-    totalValue: 3622000,
-    warranty: "veniam proident in sunt excepteur"
+    value: {
+      discount: 40000,
+      shipping: 35000,
+      totalValue: 3984700,
+      subTotal: 3627000,
+      tax: 362700
+    }
   },
   {
     id: 60,
@@ -2631,15 +3052,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "28-05-19 03:18:28",
-      status: "ipsum deserunt officia qui excepteur",
-      fee: 35000
+      date: "28-05-19",
+      status: "ipsum deserunt officia qui excepteur"
     },
-    payment: { type: "VISA", status: "Cancel" },
+    payment: {
+      type: "VISA",
+      status: "Cancel"
+    },
+    warranty: "consequat exercitation ex et ullamco",
     status: "Cancel",
-    discount: 80000,
-    totalValue: 5335000,
-    warranty: "consequat exercitation ex et ullamco"
+    value: {
+      discount: 80000,
+      shipping: 35000,
+      totalValue: 5873000,
+      subTotal: 5380000,
+      tax: 538000
+    }
   },
   {
     id: 61,
@@ -2666,15 +3094,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "20-07-14 07:56:00",
-      status: "esse cupidatat in sint tempor",
-      fee: 30000
+      date: "20-07-14",
+      status: "esse cupidatat in sint tempor"
     },
-    payment: { type: "VISA", status: "Cancel" },
+    payment: {
+      type: "VISA",
+      status: "Cancel"
+    },
+    warranty: "magna aliquip sunt sit commodo",
     status: "Success",
-    discount: 42000,
-    totalValue: 1120000,
-    warranty: "magna aliquip sunt sit commodo"
+    value: {
+      discount: 42000,
+      shipping: 30000,
+      totalValue: 1233200,
+      subTotal: 1132000,
+      tax: 113200
+    }
   },
   {
     id: 62,
@@ -2708,15 +3143,22 @@ data.order = [
       }
     ],
     delivery: {
-      date: "11-07-19 07:52:09",
-      status: "non officia Lorem culpa sunt",
-      fee: 49000
+      date: "11-07-19",
+      status: "non officia Lorem culpa sunt"
     },
-    payment: { type: "COD", status: "Pending" },
+    payment: {
+      type: "COD",
+      status: "Pending"
+    },
+    warranty: "aute Lorem commodo laborum nisi",
     status: "Pending",
-    discount: 81000,
-    totalValue: 2713000,
-    warranty: "aute Lorem commodo laborum nisi"
+    value: {
+      discount: 81000,
+      shipping: 49000,
+      totalValue: 2987500,
+      subTotal: 2745000,
+      tax: 274500
+    }
   },
   {
     id: 63,
@@ -2743,22 +3185,29 @@ data.order = [
       }
     ],
     delivery: {
-      date: "23-12-18 09:30:02",
-      status: "dolore consequat commodo reprehenderit esse",
-      fee: 35000
+      date: "23-12-18",
+      status: "dolore consequat commodo reprehenderit esse"
     },
-    payment: { type: "Master Card", status: "Cancel" },
+    payment: {
+      type: "Master Card",
+      status: "Cancel"
+    },
+    warranty: "sunt aliqua ipsum laboris excepteur",
     status: "Success",
-    discount: 0,
-    totalValue: 3122000,
-    warranty: "sunt aliqua ipsum laboris excepteur"
+    value: {
+      discount: 0,
+      shipping: 35000,
+      totalValue: 3430700,
+      subTotal: 3087000,
+      tax: 308700
+    }
   }
 ];
 
 data.orders = [
   {
     id: 0,
-    deliveryDate: "05-05-18 12:54:56",
+    deliveryDate: "05-05-18",
     status: "Pending",
     products: [
       "reprehenderit nisi aute ea",
@@ -2767,21 +3216,21 @@ data.orders = [
       "fugiat minim ipsum Lorem",
       "elit fugiat proident deserunt"
     ],
-    value: 4512000
+    value: 4961000
   },
   {
     id: 1,
-    deliveryDate: "26-04-19 03:54:00",
+    deliveryDate: "26-04-19",
     status: "Cancel",
     products: [
       "minim cillum voluptate pariatur",
       "anim reprehenderit fugiat nulla"
     ],
-    value: 1137000
+    value: 1248300
   },
   {
     id: 2,
-    deliveryDate: "11-02-18 10:53:46",
+    deliveryDate: "11-02-18",
     status: "Success",
     products: [
       "Lorem consequat tempor reprehenderit",
@@ -2789,29 +3238,29 @@ data.orders = [
       "duis veniam dolor ex",
       "aute pariatur quis et"
     ],
-    value: 3029000
+    value: 3330600
   },
   {
     id: 3,
-    deliveryDate: "04-10-18 10:36:44",
+    deliveryDate: "04-10-18",
     status: "Success",
     products: ["culpa non sint dolor"],
-    value: 1350000
+    value: 1481000
   },
   {
     id: 4,
-    deliveryDate: "06-01-15 12:36:02",
+    deliveryDate: "06-01-15",
     status: "Success",
     products: [
       "officia nisi non est",
       "qui proident mollit amet",
       "officia est anim minim"
     ],
-    value: 4062000
+    value: 4473400
   },
   {
     id: 5,
-    deliveryDate: "09-04-15 06:21:39",
+    deliveryDate: "09-04-15",
     status: "Success",
     products: [
       "do adipisicing sint ex",
@@ -2819,11 +3268,11 @@ data.orders = [
       "nostrud id elit consectetur",
       "nisi qui nulla sit"
     ],
-    value: 2672000
+    value: 2943200
   },
   {
     id: 6,
-    deliveryDate: "11-06-18 02:50:02",
+    deliveryDate: "11-06-18",
     status: "Success",
     products: [
       "aliquip elit quis mollit",
@@ -2831,25 +3280,25 @@ data.orders = [
       "sit proident elit aliquip",
       "reprehenderit aliquip mollit sint"
     ],
-    value: 2890000
+    value: 3183100
   },
   {
     id: 7,
-    deliveryDate: "20-09-16 05:36:23",
+    deliveryDate: "20-09-16",
     status: "Cancel",
     products: ["commodo in nisi minim", "occaecat aute sint proident"],
-    value: 1448000
+    value: 1594800
   },
   {
     id: 8,
-    deliveryDate: "07-03-19 07:05:09",
+    deliveryDate: "07-03-19",
     status: "Cancel",
     products: ["anim culpa labore deserunt", "mollit sint ipsum dolor"],
-    value: 1649000
+    value: 1820200
   },
   {
     id: 9,
-    deliveryDate: "24-08-15 02:58:09",
+    deliveryDate: "24-08-15",
     status: "Success",
     products: [
       "deserunt enim fugiat ea",
@@ -2857,18 +3306,18 @@ data.orders = [
       "officia exercitation ea aute",
       "commodo ea tempor officia"
     ],
-    value: 4300000
+    value: 4729300
   },
   {
     id: 10,
-    deliveryDate: "10-02-19 04:17:30",
+    deliveryDate: "10-02-19",
     status: "Cancel",
     products: ["do eiusmod tempor fugiat", "ipsum sint cillum exercitation"],
-    value: 1381000
+    value: 1521100
   },
   {
     id: 11,
-    deliveryDate: "17-08-14 11:44:39",
+    deliveryDate: "17-08-14",
     status: "Pending",
     products: [
       "veniam dolor velit amet",
@@ -2876,18 +3325,18 @@ data.orders = [
       "occaecat commodo quis sint",
       "aliqua ad amet Lorem"
     ],
-    value: 3419000
+    value: 3762900
   },
   {
     id: 12,
-    deliveryDate: "25-04-16 07:06:29",
+    deliveryDate: "25-04-16",
     status: "Cancel",
     products: ["voluptate qui in fugiat", "tempor incididunt in laboris"],
-    value: 1453000
+    value: 1598200
   },
   {
     id: 13,
-    deliveryDate: "13-07-19 12:44:25",
+    deliveryDate: "13-07-19",
     status: "Success",
     products: [
       "Lorem sit ex nulla",
@@ -2896,11 +3345,11 @@ data.orders = [
       "qui labore laborum velit",
       "officia nisi incididunt enim"
     ],
-    value: 5399000
+    value: 5934200
   },
   {
     id: 14,
-    deliveryDate: "20-11-15 03:21:14",
+    deliveryDate: "20-11-15",
     status: "Pending",
     products: [
       "incididunt dolore qui commodo",
@@ -2908,22 +3357,22 @@ data.orders = [
       "irure est excepteur velit",
       "magna aute duis irure"
     ],
-    value: 1900000
+    value: 2090200
   },
   {
     id: 15,
-    deliveryDate: "15-10-15 12:34:09",
+    deliveryDate: "15-10-15",
     status: "Cancel",
     products: [
       "ea ad excepteur nulla",
       "adipisicing nisi laboris ad",
       "qui commodo eu laborum"
     ],
-    value: 2652000
+    value: 2914700
   },
   {
     id: 16,
-    deliveryDate: "24-01-18 04:45:27",
+    deliveryDate: "24-01-18",
     status: "Pending",
     products: [
       "ut officia in mollit",
@@ -2931,11 +3380,11 @@ data.orders = [
       "tempor Lorem cillum enim",
       "duis velit sit sit"
     ],
-    value: 2998000
+    value: 3295000
   },
   {
     id: 17,
-    deliveryDate: "24-09-16 05:39:39",
+    deliveryDate: "24-09-16",
     status: "Pending",
     products: [
       "ad laboris tempor velit",
@@ -2944,47 +3393,47 @@ data.orders = [
       "excepteur ea consequat sit",
       "et irure exercitation nulla"
     ],
-    value: 4260000
+    value: 4688300
   },
   {
     id: 18,
-    deliveryDate: "05-03-19 10:05:21",
+    deliveryDate: "05-03-19",
     status: "Cancel",
     products: [
       "occaecat velit occaecat dolor",
       "aute ullamco aute ad",
       "est nostrud sunt eiusmod"
     ],
-    value: 2536000
+    value: 2787500
   },
   {
     id: 19,
-    deliveryDate: "19-02-14 08:08:22",
+    deliveryDate: "19-02-14",
     status: "Cancel",
     products: ["magna enim nulla voluptate", "sint excepteur sunt veniam"],
-    value: 1979000
+    value: 2176700
   },
   {
     id: 20,
-    deliveryDate: "02-10-14 06:35:28",
+    deliveryDate: "02-10-14",
     status: "Success",
     products: [
       "consequat velit velit et",
       "velit reprehenderit velit anim",
       "sunt duis deserunt commodo"
     ],
-    value: 1619000
+    value: 1784700
   },
   {
     id: 21,
-    deliveryDate: "06-04-18 06:25:51",
+    deliveryDate: "06-04-18",
     status: "Pending",
     products: ["non reprehenderit fugiat aute", "adipisicing minim Lorem est"],
-    value: 1851000
+    value: 2039800
   },
   {
     id: 22,
-    deliveryDate: "19-09-15 01:36:43",
+    deliveryDate: "19-09-15",
     status: "Success",
     products: [
       "exercitation laboris veniam eiusmod",
@@ -2993,18 +3442,18 @@ data.orders = [
       "anim incididunt magna magna",
       "velit velit velit incididunt"
     ],
-    value: 5279000
+    value: 5810800
   },
   {
     id: 23,
-    deliveryDate: "08-02-14 02:04:40",
+    deliveryDate: "08-02-14",
     status: "Success",
     products: ["Lorem ea nostrud deserunt"],
-    value: 406000
+    value: 450200
   },
   {
     id: 24,
-    deliveryDate: "14-11-15 12:27:38",
+    deliveryDate: "14-11-15",
     status: "Pending",
     products: [
       "labore tempor mollit ullamco",
@@ -3013,11 +3462,11 @@ data.orders = [
       "proident laborum nostrud sit",
       "commodo ipsum reprehenderit aliqua"
     ],
-    value: 3176000
+    value: 3499300
   },
   {
     id: 25,
-    deliveryDate: "29-06-19 09:11:48",
+    deliveryDate: "29-06-19",
     status: "Cancel",
     products: [
       "magna esse sint aliquip",
@@ -3025,11 +3474,11 @@ data.orders = [
       "nisi reprehenderit anim ullamco",
       "consequat ea Lorem irure"
     ],
-    value: 5856000
+    value: 6440100
   },
   {
     id: 26,
-    deliveryDate: "27-11-15 04:18:31",
+    deliveryDate: "27-11-15",
     status: "Pending",
     products: [
       "sunt fugiat voluptate minim",
@@ -3038,22 +3487,22 @@ data.orders = [
       "esse sunt cillum nostrud",
       "id mollit ullamco pariatur"
     ],
-    value: 1570000
+    value: 1729500
   },
   {
     id: 27,
-    deliveryDate: "30-03-17 09:18:47",
+    deliveryDate: "30-03-17",
     status: "Success",
     products: [
       "elit incididunt voluptate ut",
       "nisi aute fugiat amet",
       "cillum sit do ipsum"
     ],
-    value: 3658000
+    value: 4023100
   },
   {
     id: 28,
-    deliveryDate: "26-05-14 07:44:46",
+    deliveryDate: "26-05-14",
     status: "Success",
     products: [
       "mollit deserunt nostrud ad",
@@ -3062,11 +3511,11 @@ data.orders = [
       "eu reprehenderit aute est",
       "do dolore anim sit"
     ],
-    value: 4072000
+    value: 4479500
   },
   {
     id: 29,
-    deliveryDate: "06-11-14 07:44:32",
+    deliveryDate: "06-11-14",
     status: "Success",
     products: [
       "consequat dolor pariatur reprehenderit",
@@ -3074,36 +3523,36 @@ data.orders = [
       "non quis proident ipsum",
       "veniam nostrud reprehenderit do"
     ],
-    value: 2064000
+    value: 2270200
   },
   {
     id: 30,
-    deliveryDate: "19-06-15 10:17:43",
+    deliveryDate: "19-06-15",
     status: "Cancel",
     products: [
       "ad consectetur ea et",
       "exercitation pariatur ipsum consequat",
       "qui Lorem laboris exercitation"
     ],
-    value: 1140000
+    value: 1260300
   },
   {
     id: 31,
-    deliveryDate: "31-08-17 06:27:29",
+    deliveryDate: "31-08-17",
     status: "Cancel",
     products: ["et sint laboris elit", "velit excepteur reprehenderit quis"],
-    value: 2113000
+    value: 2324500
   },
   {
     id: 32,
-    deliveryDate: "30-01-18 03:35:17",
+    deliveryDate: "30-01-18",
     status: "Cancel",
     products: ["voluptate laboris ea reprehenderit", "aute veniam ut occaecat"],
-    value: 2299000
+    value: 2532400
   },
   {
     id: 33,
-    deliveryDate: "19-06-15 06:33:01",
+    deliveryDate: "19-06-15",
     status: "Pending",
     products: [
       "pariatur anim anim id",
@@ -3111,18 +3560,18 @@ data.orders = [
       "do officia nulla velit",
       "ullamco est dolor elit"
     ],
-    value: 2563000
+    value: 2821400
   },
   {
     id: 34,
-    deliveryDate: "28-08-18 01:26:00",
+    deliveryDate: "28-08-18",
     status: "Pending",
     products: ["veniam labore esse veniam", "aute voluptate minim Lorem"],
-    value: 1639000
+    value: 1800000
   },
   {
     id: 35,
-    deliveryDate: "11-12-14 06:00:40",
+    deliveryDate: "11-12-14",
     status: "Cancel",
     products: [
       "ipsum fugiat in et",
@@ -3130,18 +3579,18 @@ data.orders = [
       "laboris eu do magna",
       "laborum culpa dolor ex"
     ],
-    value: 1911000
+    value: 2100800
   },
   {
     id: 36,
-    deliveryDate: "29-06-17 02:21:31",
+    deliveryDate: "29-06-17",
     status: "Cancel",
     products: ["ut aute non culpa", "ex ad magna est", "id eu est elit"],
-    value: 2853000
+    value: 3137600
   },
   {
     id: 37,
-    deliveryDate: "04-06-18 08:55:08",
+    deliveryDate: "04-06-18",
     status: "Pending",
     products: [
       "ut mollit cupidatat cupidatat",
@@ -3150,11 +3599,11 @@ data.orders = [
       "sint sunt et veniam",
       "et do mollit ad"
     ],
-    value: 5300000
+    value: 5827700
   },
   {
     id: 38,
-    deliveryDate: "16-12-16 01:42:16",
+    deliveryDate: "16-12-16",
     status: "Success",
     products: [
       "laboris nulla ut sunt",
@@ -3162,29 +3611,29 @@ data.orders = [
       "incididunt quis in exercitation",
       "enim et in laborum"
     ],
-    value: 2437000
+    value: 2681000
   },
   {
     id: 39,
-    deliveryDate: "28-04-19 01:25:44",
+    deliveryDate: "28-04-19",
     status: "Cancel",
     products: [
       "veniam labore occaecat officia",
       "quis consectetur cillum eu",
       "deserunt cupidatat tempor commodo"
     ],
-    value: 1446000
+    value: 1592400
   },
   {
     id: 40,
-    deliveryDate: "04-08-18 07:06:12",
+    deliveryDate: "04-08-18",
     status: "Pending",
     products: ["ea ea consectetur aute"],
-    value: 666000
+    value: 730200
   },
   {
     id: 41,
-    deliveryDate: "18-01-19 04:51:16",
+    deliveryDate: "18-01-19",
     status: "Pending",
     products: [
       "tempor proident anim excepteur",
@@ -3192,51 +3641,51 @@ data.orders = [
       "sint consectetur consectetur aute",
       "amet occaecat mollit eiusmod"
     ],
-    value: 1962000
+    value: 2162300
   },
   {
     id: 42,
-    deliveryDate: "07-04-19 06:41:14",
+    deliveryDate: "07-04-19",
     status: "Success",
     products: [
       "fugiat veniam esse ea",
       "dolore id cupidatat pariatur",
       "ea commodo ut excepteur"
     ],
-    value: 3438000
+    value: 3782400
   },
   {
     id: 43,
-    deliveryDate: "14-02-16 12:12:37",
+    deliveryDate: "14-02-16",
     status: "Pending",
     products: [
       "cupidatat voluptate mollit pariatur",
       "veniam cupidatat duis dolore",
       "sint Lorem eu esse"
     ],
-    value: 3240000
+    value: 3569500
   },
   {
     id: 44,
-    deliveryDate: "09-10-18 02:36:15",
+    deliveryDate: "09-10-18",
     status: "Pending",
     products: [
       "ea id mollit non",
       "deserunt aute occaecat consectetur",
       "mollit adipisicing veniam id"
     ],
-    value: 4491000
+    value: 4940900
   },
   {
     id: 45,
-    deliveryDate: "30-04-14 03:45:10",
+    deliveryDate: "30-04-14",
     status: "Pending",
     products: ["est labore incididunt proident", "culpa ut occaecat velit"],
-    value: 1670000
+    value: 1837500
   },
   {
     id: 46,
-    deliveryDate: "28-03-16 08:16:59",
+    deliveryDate: "28-03-16",
     status: "Success",
     products: [
       "consequat cupidatat amet qui",
@@ -3244,11 +3693,11 @@ data.orders = [
       "est aute occaecat ex",
       "consequat consequat anim tempor"
     ],
-    value: 3905000
+    value: 4291500
   },
   {
     id: 47,
-    deliveryDate: "12-02-17 05:16:29",
+    deliveryDate: "12-02-17",
     status: "Success",
     products: [
       "mollit consectetur cupidatat consequat",
@@ -3256,18 +3705,18 @@ data.orders = [
       "pariatur aute reprehenderit incididunt",
       "minim eiusmod tempor exercitation"
     ],
-    value: 4501000
+    value: 4950800
   },
   {
     id: 48,
-    deliveryDate: "20-02-18 02:04:57",
+    deliveryDate: "20-02-18",
     status: "Cancel",
     products: ["do ad do est", "minim consequat aliquip cupidatat"],
-    value: 1725000
+    value: 1897400
   },
   {
     id: 49,
-    deliveryDate: "03-06-18 07:12:58",
+    deliveryDate: "03-06-18",
     status: "Pending",
     products: [
       "dolor ut excepteur velit",
@@ -3275,11 +3724,11 @@ data.orders = [
       "minim enim consequat sunt",
       "aliquip culpa ad minim"
     ],
-    value: 2072000
+    value: 2274500
   },
   {
     id: 50,
-    deliveryDate: "22-06-14 09:28:30",
+    deliveryDate: "22-06-14",
     status: "Pending",
     products: [
       "pariatur irure aliquip nisi",
@@ -3287,18 +3736,18 @@ data.orders = [
       "sunt commodo deserunt veniam",
       "consectetur officia duis proident"
     ],
-    value: 2135000
+    value: 2343700
   },
   {
     id: 51,
-    deliveryDate: "03-09-17 12:34:15",
+    deliveryDate: "03-09-17",
     status: "Pending",
     products: ["quis velit qui est"],
-    value: 927000
+    value: 1026000
   },
   {
     id: 52,
-    deliveryDate: "10-03-14 01:01:48",
+    deliveryDate: "10-03-14",
     status: "Pending",
     products: [
       "magna enim eu laboris",
@@ -3306,50 +3755,50 @@ data.orders = [
       "sit id duis ex",
       "consectetur elit labore voluptate"
     ],
-    value: 4062000
+    value: 4474300
   },
   {
     id: 53,
-    deliveryDate: "04-07-16 07:33:56",
+    deliveryDate: "04-07-16",
     status: "Cancel",
     products: ["anim nulla reprehenderit in"],
-    value: 836000
+    value: 922500
   },
   {
     id: 54,
-    deliveryDate: "19-10-15 03:05:10",
+    deliveryDate: "19-10-15",
     status: "Success",
     products: ["fugiat dolore eiusmod exercitation"],
-    value: 1504000
+    value: 1659000
   },
   {
     id: 55,
-    deliveryDate: "19-12-15 09:54:49",
+    deliveryDate: "19-12-15",
     status: "Cancel",
     products: ["laborum anim minim Lorem", "amet ullamco esse dolore"],
-    value: 2425000
+    value: 2674500
   },
   {
     id: 56,
-    deliveryDate: "17-11-17 11:58:46",
+    deliveryDate: "17-11-17",
     status: "Success",
     products: [
       "ut fugiat elit nostrud",
       "sunt amet laborum fugiat",
       "irure voluptate id aliquip"
     ],
-    value: 3505000
+    value: 3857100
   },
   {
     id: 57,
-    deliveryDate: "07-04-17 10:53:43",
+    deliveryDate: "07-04-17",
     status: "Pending",
     products: ["ipsum adipisicing occaecat sint"],
-    value: 238000
+    value: 257200
   },
   {
     id: 58,
-    deliveryDate: "20-09-15 10:19:37",
+    deliveryDate: "20-09-15",
     status: "Cancel",
     products: [
       "id ad magna adipisicing",
@@ -3358,11 +3807,11 @@ data.orders = [
       "minim eu eu qui",
       "sint non cillum dolore"
     ],
-    value: 4107000
+    value: 4519700
   },
   {
     id: 59,
-    deliveryDate: "15-09-15 10:15:51",
+    deliveryDate: "15-09-15",
     status: "Cancel",
     products: [
       "veniam mollit exercitation cillum",
@@ -3370,11 +3819,11 @@ data.orders = [
       "cillum dolor ullamco culpa",
       "consequat mollit sit labore"
     ],
-    value: 3622000
+    value: 3984700
   },
   {
     id: 60,
-    deliveryDate: "28-05-19 03:18:28",
+    deliveryDate: "28-05-19",
     status: "Cancel",
     products: [
       "excepteur velit incididunt pariatur",
@@ -3382,35 +3831,36 @@ data.orders = [
       "officia deserunt fugiat anim",
       "anim qui dolor non"
     ],
-    value: 5335000
+    value: 5873000
   },
   {
     id: 61,
-    deliveryDate: "20-07-14 07:56:00",
+    deliveryDate: "20-07-14",
     status: "Success",
     products: ["aliquip duis aute sint", "pariatur id id occaecat"],
-    value: 1120000
+    value: 1233200
   },
   {
     id: 62,
-    deliveryDate: "11-07-19 07:52:09",
+    deliveryDate: "11-07-19",
     status: "Pending",
     products: [
       "mollit enim eiusmod officia",
       "amet consequat pariatur consequat",
       "exercitation ea duis est"
     ],
-    value: 2713000
+    value: 2987500
   },
   {
     id: 63,
-    deliveryDate: "23-12-18 09:30:02",
+    deliveryDate: "23-12-18",
     status: "Success",
     products: [
       "culpa incididunt occaecat sint",
       "do consectetur reprehenderit proident"
     ],
-    value: 3122000
+    value: 3430700
   }
 ];
+
 module.exports = data;

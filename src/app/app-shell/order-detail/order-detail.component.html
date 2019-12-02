@@ -8,8 +8,8 @@
                 <h5 class="card-title">Địa chỉ người nhận</h5>
                 <p class="card-text">
                     <b>{{order.user?.name}}</b><br>
-                    Địa chỉ: {{order.user?.address}}<br>
-                    Điện thoại: {{order.user?.phone}}
+                    <b>Địa chỉ:</b> {{order.user?.address}}<br>
+                    <b>Điện thoại:</b> {{order.user?.phone}}
                 </p>
             </div>
         </div>
@@ -17,8 +17,8 @@
             <div class="card-body">
                 <h5 class="card-title">Tình trạng giao hàng</h5>
                 <p class="card-text">
-                    {{order.delivery?.date}}<br>
-                    Tình trạng: {{order.delivery?.status}}</p>
+                    <b>Ngày giao hàng:</b> {{order.delivery?.date}}<br>
+                    <b>Tình trạng:</b> {{order.delivery?.status}}</p>
             </div>
         </div>
         <div class="card">
@@ -26,7 +26,7 @@
                 <h5 class="card-title">Hình thức thanh toán</h5>
                 <p class="card-text">
                     Thanh toán bằng <b>{{order.payment?.type}}</b><br>
-                    Tình trạng: {{order.payment?.status}}</p>
+                    <b>Tình trạng:</b> {{order.payment?.status}}</p>
             </div>
         </div>
     </div>
@@ -54,21 +54,23 @@
             <div class="checkout">
                 <div class="row">
                     <div class="col col-md-10 checkout-name"><b>Tạm tính</b></div>
-                    <div class="col col-md-2 checkout-price">
-                        {{order.totalValue + order.discount -order.delivery.fee| currency:'VND'}}
-                    </div>
+                    <div class="col col-md-2 checkout-price">{{order.value?.subTotal | currency:'VND'}}</div>
                 </div>
                 <div class="row">
                     <div class="col col-md-10col-md-10 checkout-name"><b>Giảm giá</b></div>
-                    <div class="col col-md-2 checkout-price">{{order.discount | currency:'VND'}}</div>
+                    <div class="col col-md-2 checkout-price">{{order.value?.discount | currency:'VND'}}</div>
+                </div>
+                <div class="row">
+                    <div class="col col-md-10col-md-10 checkout-name"><b>Thuế</b></div>
+                    <div class="col col-md-2 checkout-price">{{order.value?.tax | currency:'VND'}}</div>
                 </div>
                 <div class="row">
                     <div class="col col-md-10col-md-10 checkout-name"><b>Phí vận chuyển</b></div>
-                    <div class="col col-md-2 checkout-price">{{order.delivery.fee | currency:'VND'}}</div>
+                    <div class="col col-md-2 checkout-price">{{order.value?.shipping | currency:'VND'}}</div>
                 </div>
                 <div class="row">
                     <div class="col col-md-10col-md-10 checkout-name"><b>Tổng cộng</b></div>
-                    <div class="col col-md-2 checkout-price">{{order.totalValue | currency:'VND'}}</div>
+                    <div class="col col-md-2 checkout-price">{{order.value?.totalValue | currency:'VND'}}</div>
                 </div>
             </div>
         </div>

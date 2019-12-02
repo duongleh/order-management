@@ -32,7 +32,7 @@
           <tr *ngFor="let order of listOrders">
             <th scope="row"> <a href="/order-detail/{{order.id}}">{{order.id}}</a></th>
             <td>{{order.deliveryDate}}</td>
-            <td>{{order.products}}</td>
+            <td>{{order.products.join(", ")}}</td>
             <td>{{order.value | currency:'VND'}}</td>
             <td>{{order.status}}</td>
           </tr>

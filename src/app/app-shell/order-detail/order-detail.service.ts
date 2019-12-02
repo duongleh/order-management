@@ -22,10 +22,9 @@ export interface IOrderDetail {
   products: IProduct[];
   delivery: IDelivery;
   payment: IPayment;
-  status: string;
-  discount: number;
-  totalValue: number;
   warranty: string;
+  status: string;
+  value: IValue;
 }
 
 export interface IUser {
@@ -46,10 +45,17 @@ export interface IProduct {
 export interface IDelivery {
   date: string;
   status: string;
-  fee: number;
 }
 
 export interface IPayment {
   type: string;
   status: string;
+}
+
+export interface IValue {
+  subTotal: number;
+  discount: number;
+  tax: number;
+  shipping: number;
+  totalValue: number;
 }
