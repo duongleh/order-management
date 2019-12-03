@@ -1,5 +1,7 @@
-import { Component, OnInit } from "@angular/core";
-import { ListOrderService, IListOrder } from "./list-order.service";
+import { Component, OnInit, ViewChild } from "@angular/core";
+import { ListOrderService } from "./list-order.service";
+import { MatPaginator } from "@angular/material/paginator";
+import { MatTableDataSource } from "@angular/material/table";
 
 @Component({
   selector: "app-list-order",
@@ -7,25 +9,27 @@ import { ListOrderService, IListOrder } from "./list-order.service";
   styleUrls: ["./list-order.component.css"]
 })
 export class ListOrderComponent implements OnInit {
-  public listOrders: IListOrder[] = [];
+  @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
+
   public WarningMessageText = "Request to get list items failed:";
   public WarningMessageOpen = false;
-  public beginTime;
-  public endTime;
-  public beginValue;
-  public endValue;
-  public status;
+  public startValue: number;
+  public endValue: number;
+  public status: string;
+  public displayedColumns = ["id", "date", "products", "value", "status"];
+  public dataSource: any;
 
   public params = {
     sort: "DSC",
     quantity: 100,
-    beginTime: this.beginTime || "",
-    endTime: this.endTime || "",
-    beginValue: this.beginValue || "",
+    startTime: "",
+    endTime: "",
+    startValue: this.startValue || "",
     endValue: this.endValue || "",
     status: this.status || "",
     product: ""
   };
+
   constructor(private listOrderService: ListOrderService) {}
 
   ngOnInit() {
@@ -35,7 +39,14 @@ export class ListOrderComponent implements OnInit {
   renderList() {
     this.listOrderService.getListOrder(this.params).subscribe(
       response => {
-        this.listOrders = response;
+        console.log(response);
+        response.forEach(
+          el =>
+            (el.productsName = el.products.map(prod => prod.name).join(", "))
+        );
+        console.log(response);
+        this.dataSource = new MatTableDataSource(response);
+        this.dataSource.paginator = this.paginator;
       },
       error => {
         this.WarningMessageOpen = true;
@@ -54,5 +65,11 @@ export class ListOrderComponent implements OnInit {
       this.params.status = value;
       this.renderList();
     }
+  }
+
+  onDateChange(event: any) {
+    this.params.startTime = event.startDate;
+    this.params.endTime = event.endDate;
+    this.renderList();
   }
 }

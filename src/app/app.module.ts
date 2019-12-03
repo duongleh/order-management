@@ -8,6 +8,7 @@ import { NavBarComponent } from "./app-shell/nav-bar/nav-bar.component";
 import { FooterComponent } from "./app-shell/footer/footer.component";
 import { ListOrderModule } from "./app-shell/list-order/list-order.module";
 import { OrderDetailModule } from "./app-shell/order-detail/order-detail.module";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [AppComponent, NavBarComponent, FooterComponent],
@@ -16,7 +17,8 @@ import { OrderDetailModule } from "./app-shell/order-detail/order-detail.module"
     HttpClientModule,
     AppRoutingModule,
     ListOrderModule,
-    OrderDetailModule
+    OrderDetailModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

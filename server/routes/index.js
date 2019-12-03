@@ -19,12 +19,12 @@ router.get(CONSTANTS.ENDPOINT.LISTORDER, (req, res) => {
       el.products.join().includes(req.query["product"])
     );
   }
-  if (req.query["beginTime"]) {
+  if (req.query["startTime"]) {
     orders = orders.filter(el => {
       date = el.deliveryDate.split(" ")[0].split("-");
       return (
         Date.parse(`${date[1]}-${date[0]}-${date[2]}`) >=
-        Date.parse(req.query["beginTime"])
+        Date.parse(req.query["startTime"])
       );
     });
   }
@@ -37,9 +37,9 @@ router.get(CONSTANTS.ENDPOINT.LISTORDER, (req, res) => {
       );
     });
   }
-  if (req.query["beginValue"]) {
+  if (req.query["startValue"]) {
     orders = orders.filter(
-      el => el.value.totalValue >= req.query["beginValue"]
+      el => el.value.totalValue >= req.query["startValue"]
     );
   }
   if (req.query["endValue"]) {

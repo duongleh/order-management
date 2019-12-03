@@ -15,16 +15,16 @@ export class ListSearchComponent implements OnInit {
 
   ngOnInit() {
     this.listForm = new FormGroup({
-      content: new FormControl("")
+      query: new FormControl("")
     });
   }
 
-  get content() {
-    return this.listForm.get("content");
+  get query() {
+    return this.listForm.get("query");
   }
 
   onSubmit() {
-    this.inputText.emit(this.listForm.get("content").value);
+    this.inputText.emit(this.listForm.get("query").value);
     this.listForm.reset();
   }
 }

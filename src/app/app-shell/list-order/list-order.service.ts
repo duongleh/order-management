@@ -19,7 +19,13 @@ export class ListOrderService {
 export interface IListOrder {
   id: number;
   deliveryDate: string;
-  products: string[];
+  products: IProduct[];
   status: string;
   value: number;
+  productsName: string;
+}
+
+export interface IProduct {
+  id: number;
+  name: string;
 }

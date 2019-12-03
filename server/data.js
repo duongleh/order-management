@@ -3210,11 +3210,11 @@ data.orders = [
     deliveryDate: "05-05-18",
     status: "Pending",
     products: [
-      "reprehenderit nisi aute ea",
-      "qui excepteur velit sunt",
-      "ea anim dolor occaecat",
-      "fugiat minim ipsum Lorem",
-      "elit fugiat proident deserunt"
+      { id: 1651, name: "reprehenderit nisi aute ea" },
+      { id: 3094, name: "qui excepteur velit sunt" },
+      { id: 3854, name: "ea anim dolor occaecat" },
+      { id: 3445, name: "fugiat minim ipsum Lorem" },
+      { id: 2248, name: "elit fugiat proident deserunt" }
     ],
     value: 4961000
   },
@@ -3223,8 +3223,8 @@ data.orders = [
     deliveryDate: "26-04-19",
     status: "Cancel",
     products: [
-      "minim cillum voluptate pariatur",
-      "anim reprehenderit fugiat nulla"
+      { id: 3411, name: "minim cillum voluptate pariatur" },
+      { id: 1013, name: "anim reprehenderit fugiat nulla" }
     ],
     value: 1248300
   },
@@ -3233,10 +3233,10 @@ data.orders = [
     deliveryDate: "11-02-18",
     status: "Success",
     products: [
-      "Lorem consequat tempor reprehenderit",
-      "laborum proident ipsum adipisicing",
-      "duis veniam dolor ex",
-      "aute pariatur quis et"
+      { id: 2783, name: "Lorem consequat tempor reprehenderit" },
+      { id: 3250, name: "laborum proident ipsum adipisicing" },
+      { id: 1046, name: "duis veniam dolor ex" },
+      { id: 3266, name: "aute pariatur quis et" }
     ],
     value: 3330600
   },
@@ -3244,7 +3244,7 @@ data.orders = [
     id: 3,
     deliveryDate: "04-10-18",
     status: "Success",
-    products: ["culpa non sint dolor"],
+    products: [{ id: 2329, name: "culpa non sint dolor" }],
     value: 1481000
   },
   {
@@ -3252,9 +3252,9 @@ data.orders = [
     deliveryDate: "06-01-15",
     status: "Success",
     products: [
-      "officia nisi non est",
-      "qui proident mollit amet",
-      "officia est anim minim"
+      { id: 3081, name: "officia nisi non est" },
+      { id: 3263, name: "qui proident mollit amet" },
+      { id: 1867, name: "officia est anim minim" }
     ],
     value: 4473400
   },
@@ -3263,10 +3263,10 @@ data.orders = [
     deliveryDate: "09-04-15",
     status: "Success",
     products: [
-      "do adipisicing sint ex",
-      "sit voluptate Lorem aute",
-      "nostrud id elit consectetur",
-      "nisi qui nulla sit"
+      { id: 2848, name: "do adipisicing sint ex" },
+      { id: 1688, name: "sit voluptate Lorem aute" },
+      { id: 3392, name: "nostrud id elit consectetur" },
+      { id: 2621, name: "nisi qui nulla sit" }
     ],
     value: 2943200
   },
@@ -3275,10 +3275,10 @@ data.orders = [
     deliveryDate: "11-06-18",
     status: "Success",
     products: [
-      "aliquip elit quis mollit",
-      "ut reprehenderit veniam aliqua",
-      "sit proident elit aliquip",
-      "reprehenderit aliquip mollit sint"
+      { id: 3338, name: "aliquip elit quis mollit" },
+      { id: 3946, name: "ut reprehenderit veniam aliqua" },
+      { id: 1807, name: "sit proident elit aliquip" },
+      { id: 2846, name: "reprehenderit aliquip mollit sint" }
     ],
     value: 3183100
   },
@@ -3286,14 +3286,20 @@ data.orders = [
     id: 7,
     deliveryDate: "20-09-16",
     status: "Cancel",
-    products: ["commodo in nisi minim", "occaecat aute sint proident"],
+    products: [
+      { id: 3845, name: "commodo in nisi minim" },
+      { id: 3461, name: "occaecat aute sint proident" }
+    ],
     value: 1594800
   },
   {
     id: 8,
     deliveryDate: "07-03-19",
     status: "Cancel",
-    products: ["anim culpa labore deserunt", "mollit sint ipsum dolor"],
+    products: [
+      { id: 3945, name: "anim culpa labore deserunt" },
+      { id: 1728, name: "mollit sint ipsum dolor" }
+    ],
     value: 1820200
   },
   {
@@ -3301,10 +3307,10 @@ data.orders = [
     deliveryDate: "24-08-15",
     status: "Success",
     products: [
-      "deserunt enim fugiat ea",
-      "eiusmod est proident incididunt",
-      "officia exercitation ea aute",
-      "commodo ea tempor officia"
+      { id: 2931, name: "deserunt enim fugiat ea" },
+      { id: 3193, name: "eiusmod est proident incididunt" },
+      { id: 2416, name: "officia exercitation ea aute" },
+      { id: 2656, name: "commodo ea tempor officia" }
     ],
     value: 4729300
   },
@@ -3312,7 +3318,10 @@ data.orders = [
     id: 10,
     deliveryDate: "10-02-19",
     status: "Cancel",
-    products: ["do eiusmod tempor fugiat", "ipsum sint cillum exercitation"],
+    products: [
+      { id: 3233, name: "do eiusmod tempor fugiat" },
+      { id: 2568, name: "ipsum sint cillum exercitation" }
+    ],
     value: 1521100
   },
   {
@@ -3320,10 +3329,10 @@ data.orders = [
     deliveryDate: "17-08-14",
     status: "Pending",
     products: [
-      "veniam dolor velit amet",
-      "do anim culpa qui",
-      "occaecat commodo quis sint",
-      "aliqua ad amet Lorem"
+      { id: 1877, name: "veniam dolor velit amet" },
+      { id: 3154, name: "do anim culpa qui" },
+      { id: 2602, name: "occaecat commodo quis sint" },
+      { id: 1976, name: "aliqua ad amet Lorem" }
     ],
     value: 3762900
   },
@@ -3331,7 +3340,10 @@ data.orders = [
     id: 12,
     deliveryDate: "25-04-16",
     status: "Cancel",
-    products: ["voluptate qui in fugiat", "tempor incididunt in laboris"],
+    products: [
+      { id: 1141, name: "voluptate qui in fugiat" },
+      { id: 1749, name: "tempor incididunt in laboris" }
+    ],
     value: 1598200
   },
   {
@@ -3339,11 +3351,11 @@ data.orders = [
     deliveryDate: "13-07-19",
     status: "Success",
     products: [
-      "Lorem sit ex nulla",
-      "cupidatat et fugiat proident",
-      "commodo mollit occaecat cillum",
-      "qui labore laborum velit",
-      "officia nisi incididunt enim"
+      { id: 3937, name: "Lorem sit ex nulla" },
+      { id: 1994, name: "cupidatat et fugiat proident" },
+      { id: 1335, name: "commodo mollit occaecat cillum" },
+      { id: 2015, name: "qui labore laborum velit" },
+      { id: 2536, name: "officia nisi incididunt enim" }
     ],
     value: 5934200
   },
@@ -3352,10 +3364,10 @@ data.orders = [
     deliveryDate: "20-11-15",
     status: "Pending",
     products: [
-      "incididunt dolore qui commodo",
-      "ullamco fugiat et irure",
-      "irure est excepteur velit",
-      "magna aute duis irure"
+      { id: 2754, name: "incididunt dolore qui commodo" },
+      { id: 1466, name: "ullamco fugiat et irure" },
+      { id: 3645, name: "irure est excepteur velit" },
+      { id: 1383, name: "magna aute duis irure" }
     ],
     value: 2090200
   },
@@ -3364,9 +3376,9 @@ data.orders = [
     deliveryDate: "15-10-15",
     status: "Cancel",
     products: [
-      "ea ad excepteur nulla",
-      "adipisicing nisi laboris ad",
-      "qui commodo eu laborum"
+      { id: 3291, name: "ea ad excepteur nulla" },
+      { id: 1374, name: "adipisicing nisi laboris ad" },
+      { id: 3115, name: "qui commodo eu laborum" }
     ],
     value: 2914700
   },
@@ -3375,10 +3387,10 @@ data.orders = [
     deliveryDate: "24-01-18",
     status: "Pending",
     products: [
-      "ut officia in mollit",
-      "velit minim cillum labore",
-      "tempor Lorem cillum enim",
-      "duis velit sit sit"
+      { id: 1041, name: "ut officia in mollit" },
+      { id: 2338, name: "velit minim cillum labore" },
+      { id: 2835, name: "tempor Lorem cillum enim" },
+      { id: 1038, name: "duis velit sit sit" }
     ],
     value: 3295000
   },
@@ -3387,11 +3399,11 @@ data.orders = [
     deliveryDate: "24-09-16",
     status: "Pending",
     products: [
-      "ad laboris tempor velit",
-      "adipisicing duis veniam laboris",
-      "minim consectetur ad ea",
-      "excepteur ea consequat sit",
-      "et irure exercitation nulla"
+      { id: 2508, name: "ad laboris tempor velit" },
+      { id: 2882, name: "adipisicing duis veniam laboris" },
+      { id: 2661, name: "minim consectetur ad ea" },
+      { id: 1318, name: "excepteur ea consequat sit" },
+      { id: 1471, name: "et irure exercitation nulla" }
     ],
     value: 4688300
   },
@@ -3400,9 +3412,9 @@ data.orders = [
     deliveryDate: "05-03-19",
     status: "Cancel",
     products: [
-      "occaecat velit occaecat dolor",
-      "aute ullamco aute ad",
-      "est nostrud sunt eiusmod"
+      { id: 1150, name: "occaecat velit occaecat dolor" },
+      { id: 1298, name: "aute ullamco aute ad" },
+      { id: 1014, name: "est nostrud sunt eiusmod" }
     ],
     value: 2787500
   },
@@ -3410,7 +3422,10 @@ data.orders = [
     id: 19,
     deliveryDate: "19-02-14",
     status: "Cancel",
-    products: ["magna enim nulla voluptate", "sint excepteur sunt veniam"],
+    products: [
+      { id: 1320, name: "magna enim nulla voluptate" },
+      { id: 1081, name: "sint excepteur sunt veniam" }
+    ],
     value: 2176700
   },
   {
@@ -3418,9 +3433,9 @@ data.orders = [
     deliveryDate: "02-10-14",
     status: "Success",
     products: [
-      "consequat velit velit et",
-      "velit reprehenderit velit anim",
-      "sunt duis deserunt commodo"
+      { id: 2621, name: "consequat velit velit et" },
+      { id: 3789, name: "velit reprehenderit velit anim" },
+      { id: 1924, name: "sunt duis deserunt commodo" }
     ],
     value: 1784700
   },
@@ -3428,7 +3443,10 @@ data.orders = [
     id: 21,
     deliveryDate: "06-04-18",
     status: "Pending",
-    products: ["non reprehenderit fugiat aute", "adipisicing minim Lorem est"],
+    products: [
+      { id: 2954, name: "non reprehenderit fugiat aute" },
+      { id: 2256, name: "adipisicing minim Lorem est" }
+    ],
     value: 2039800
   },
   {
@@ -3436,11 +3454,11 @@ data.orders = [
     deliveryDate: "19-09-15",
     status: "Success",
     products: [
-      "exercitation laboris veniam eiusmod",
-      "ad commodo veniam velit",
-      "amet cupidatat dolor amet",
-      "anim incididunt magna magna",
-      "velit velit velit incididunt"
+      { id: 1184, name: "exercitation laboris veniam eiusmod" },
+      { id: 2144, name: "ad commodo veniam velit" },
+      { id: 1154, name: "amet cupidatat dolor amet" },
+      { id: 3446, name: "anim incididunt magna magna" },
+      { id: 1435, name: "velit velit velit incididunt" }
     ],
     value: 5810800
   },
@@ -3448,7 +3466,7 @@ data.orders = [
     id: 23,
     deliveryDate: "08-02-14",
     status: "Success",
-    products: ["Lorem ea nostrud deserunt"],
+    products: [{ id: 3822, name: "Lorem ea nostrud deserunt" }],
     value: 450200
   },
   {
@@ -3456,11 +3474,11 @@ data.orders = [
     deliveryDate: "14-11-15",
     status: "Pending",
     products: [
-      "labore tempor mollit ullamco",
-      "nisi adipisicing dolore exercitation",
-      "consequat aliqua nisi eu",
-      "proident laborum nostrud sit",
-      "commodo ipsum reprehenderit aliqua"
+      { id: 3849, name: "labore tempor mollit ullamco" },
+      { id: 2582, name: "nisi adipisicing dolore exercitation" },
+      { id: 2522, name: "consequat aliqua nisi eu" },
+      { id: 2694, name: "proident laborum nostrud sit" },
+      { id: 2379, name: "commodo ipsum reprehenderit aliqua" }
     ],
     value: 3499300
   },
@@ -3469,10 +3487,10 @@ data.orders = [
     deliveryDate: "29-06-19",
     status: "Cancel",
     products: [
-      "magna esse sint aliquip",
-      "nulla amet dolor excepteur",
-      "nisi reprehenderit anim ullamco",
-      "consequat ea Lorem irure"
+      { id: 1378, name: "magna esse sint aliquip" },
+      { id: 2708, name: "nulla amet dolor excepteur" },
+      { id: 1882, name: "nisi reprehenderit anim ullamco" },
+      { id: 2273, name: "consequat ea Lorem irure" }
     ],
     value: 6440100
   },
@@ -3481,11 +3499,11 @@ data.orders = [
     deliveryDate: "27-11-15",
     status: "Pending",
     products: [
-      "sunt fugiat voluptate minim",
-      "dolor adipisicing laborum duis",
-      "elit sint dolore cillum",
-      "esse sunt cillum nostrud",
-      "id mollit ullamco pariatur"
+      { id: 2532, name: "sunt fugiat voluptate minim" },
+      { id: 2031, name: "dolor adipisicing laborum duis" },
+      { id: 1043, name: "elit sint dolore cillum" },
+      { id: 2947, name: "esse sunt cillum nostrud" },
+      { id: 3085, name: "id mollit ullamco pariatur" }
     ],
     value: 1729500
   },
@@ -3494,9 +3512,9 @@ data.orders = [
     deliveryDate: "30-03-17",
     status: "Success",
     products: [
-      "elit incididunt voluptate ut",
-      "nisi aute fugiat amet",
-      "cillum sit do ipsum"
+      { id: 2480, name: "elit incididunt voluptate ut" },
+      { id: 2509, name: "nisi aute fugiat amet" },
+      { id: 1292, name: "cillum sit do ipsum" }
     ],
     value: 4023100
   },
@@ -3505,11 +3523,11 @@ data.orders = [
     deliveryDate: "26-05-14",
     status: "Success",
     products: [
-      "mollit deserunt nostrud ad",
-      "adipisicing nostrud ea aliqua",
-      "cillum cupidatat eiusmod veniam",
-      "eu reprehenderit aute est",
-      "do dolore anim sit"
+      { id: 3491, name: "mollit deserunt nostrud ad" },
+      { id: 1892, name: "adipisicing nostrud ea aliqua" },
+      { id: 3359, name: "cillum cupidatat eiusmod veniam" },
+      { id: 3551, name: "eu reprehenderit aute est" },
+      { id: 3116, name: "do dolore anim sit" }
     ],
     value: 4479500
   },
@@ -3518,10 +3536,10 @@ data.orders = [
     deliveryDate: "06-11-14",
     status: "Success",
     products: [
-      "consequat dolor pariatur reprehenderit",
-      "aute dolore minim eu",
-      "non quis proident ipsum",
-      "veniam nostrud reprehenderit do"
+      { id: 3736, name: "consequat dolor pariatur reprehenderit" },
+      { id: 3281, name: "aute dolore minim eu" },
+      { id: 2495, name: "non quis proident ipsum" },
+      { id: 2640, name: "veniam nostrud reprehenderit do" }
     ],
     value: 2270200
   },
@@ -3530,9 +3548,9 @@ data.orders = [
     deliveryDate: "19-06-15",
     status: "Cancel",
     products: [
-      "ad consectetur ea et",
-      "exercitation pariatur ipsum consequat",
-      "qui Lorem laboris exercitation"
+      { id: 2687, name: "ad consectetur ea et" },
+      { id: 2098, name: "exercitation pariatur ipsum consequat" },
+      { id: 3552, name: "qui Lorem laboris exercitation" }
     ],
     value: 1260300
   },
@@ -3540,14 +3558,20 @@ data.orders = [
     id: 31,
     deliveryDate: "31-08-17",
     status: "Cancel",
-    products: ["et sint laboris elit", "velit excepteur reprehenderit quis"],
+    products: [
+      { id: 2633, name: "et sint laboris elit" },
+      { id: 3790, name: "velit excepteur reprehenderit quis" }
+    ],
     value: 2324500
   },
   {
     id: 32,
     deliveryDate: "30-01-18",
     status: "Cancel",
-    products: ["voluptate laboris ea reprehenderit", "aute veniam ut occaecat"],
+    products: [
+      { id: 2706, name: "voluptate laboris ea reprehenderit" },
+      { id: 2108, name: "aute veniam ut occaecat" }
+    ],
     value: 2532400
   },
   {
@@ -3555,10 +3579,10 @@ data.orders = [
     deliveryDate: "19-06-15",
     status: "Pending",
     products: [
-      "pariatur anim anim id",
-      "officia excepteur nostrud esse",
-      "do officia nulla velit",
-      "ullamco est dolor elit"
+      { id: 3903, name: "pariatur anim anim id" },
+      { id: 3802, name: "officia excepteur nostrud esse" },
+      { id: 1602, name: "do officia nulla velit" },
+      { id: 2642, name: "ullamco est dolor elit" }
     ],
     value: 2821400
   },
@@ -3566,7 +3590,10 @@ data.orders = [
     id: 34,
     deliveryDate: "28-08-18",
     status: "Pending",
-    products: ["veniam labore esse veniam", "aute voluptate minim Lorem"],
+    products: [
+      { id: 3262, name: "veniam labore esse veniam" },
+      { id: 1863, name: "aute voluptate minim Lorem" }
+    ],
     value: 1800000
   },
   {
@@ -3574,10 +3601,10 @@ data.orders = [
     deliveryDate: "11-12-14",
     status: "Cancel",
     products: [
-      "ipsum fugiat in et",
-      "consequat consectetur occaecat nisi",
-      "laboris eu do magna",
-      "laborum culpa dolor ex"
+      { id: 1882, name: "ipsum fugiat in et" },
+      { id: 1082, name: "consequat consectetur occaecat nisi" },
+      { id: 3447, name: "laboris eu do magna" },
+      { id: 3837, name: "laborum culpa dolor ex" }
     ],
     value: 2100800
   },
@@ -3585,7 +3612,11 @@ data.orders = [
     id: 36,
     deliveryDate: "29-06-17",
     status: "Cancel",
-    products: ["ut aute non culpa", "ex ad magna est", "id eu est elit"],
+    products: [
+      { id: 3561, name: "ut aute non culpa" },
+      { id: 1815, name: "ex ad magna est" },
+      { id: 3981, name: "id eu est elit" }
+    ],
     value: 3137600
   },
   {
@@ -3593,11 +3624,11 @@ data.orders = [
     deliveryDate: "04-06-18",
     status: "Pending",
     products: [
-      "ut mollit cupidatat cupidatat",
-      "Lorem duis est laborum",
-      "nulla aliqua et ut",
-      "sint sunt et veniam",
-      "et do mollit ad"
+      { id: 1622, name: "ut mollit cupidatat cupidatat" },
+      { id: 2106, name: "Lorem duis est laborum" },
+      { id: 3639, name: "nulla aliqua et ut" },
+      { id: 2533, name: "sint sunt et veniam" },
+      { id: 2118, name: "et do mollit ad" }
     ],
     value: 5827700
   },
@@ -3606,10 +3637,10 @@ data.orders = [
     deliveryDate: "16-12-16",
     status: "Success",
     products: [
-      "laboris nulla ut sunt",
-      "amet eiusmod laborum minim",
-      "incididunt quis in exercitation",
-      "enim et in laborum"
+      { id: 3028, name: "laboris nulla ut sunt" },
+      { id: 3880, name: "amet eiusmod laborum minim" },
+      { id: 2455, name: "incididunt quis in exercitation" },
+      { id: 2971, name: "enim et in laborum" }
     ],
     value: 2681000
   },
@@ -3618,9 +3649,9 @@ data.orders = [
     deliveryDate: "28-04-19",
     status: "Cancel",
     products: [
-      "veniam labore occaecat officia",
-      "quis consectetur cillum eu",
-      "deserunt cupidatat tempor commodo"
+      { id: 3299, name: "veniam labore occaecat officia" },
+      { id: 3405, name: "quis consectetur cillum eu" },
+      { id: 2232, name: "deserunt cupidatat tempor commodo" }
     ],
     value: 1592400
   },
@@ -3628,7 +3659,7 @@ data.orders = [
     id: 40,
     deliveryDate: "04-08-18",
     status: "Pending",
-    products: ["ea ea consectetur aute"],
+    products: [{ id: 3513, name: "ea ea consectetur aute" }],
     value: 730200
   },
   {
@@ -3636,10 +3667,10 @@ data.orders = [
     deliveryDate: "18-01-19",
     status: "Pending",
     products: [
-      "tempor proident anim excepteur",
-      "minim nulla consequat magna",
-      "sint consectetur consectetur aute",
-      "amet occaecat mollit eiusmod"
+      { id: 2998, name: "tempor proident anim excepteur" },
+      { id: 3149, name: "minim nulla consequat magna" },
+      { id: 2720, name: "sint consectetur consectetur aute" },
+      { id: 2115, name: "amet occaecat mollit eiusmod" }
     ],
     value: 2162300
   },
@@ -3648,9 +3679,9 @@ data.orders = [
     deliveryDate: "07-04-19",
     status: "Success",
     products: [
-      "fugiat veniam esse ea",
-      "dolore id cupidatat pariatur",
-      "ea commodo ut excepteur"
+      { id: 3600, name: "fugiat veniam esse ea" },
+      { id: 1746, name: "dolore id cupidatat pariatur" },
+      { id: 1231, name: "ea commodo ut excepteur" }
     ],
     value: 3782400
   },
@@ -3659,9 +3690,9 @@ data.orders = [
     deliveryDate: "14-02-16",
     status: "Pending",
     products: [
-      "cupidatat voluptate mollit pariatur",
-      "veniam cupidatat duis dolore",
-      "sint Lorem eu esse"
+      { id: 2848, name: "cupidatat voluptate mollit pariatur" },
+      { id: 2374, name: "veniam cupidatat duis dolore" },
+      { id: 1543, name: "sint Lorem eu esse" }
     ],
     value: 3569500
   },
@@ -3670,9 +3701,9 @@ data.orders = [
     deliveryDate: "09-10-18",
     status: "Pending",
     products: [
-      "ea id mollit non",
-      "deserunt aute occaecat consectetur",
-      "mollit adipisicing veniam id"
+      { id: 2917, name: "ea id mollit non" },
+      { id: 1368, name: "deserunt aute occaecat consectetur" },
+      { id: 2739, name: "mollit adipisicing veniam id" }
     ],
     value: 4940900
   },
@@ -3680,7 +3711,10 @@ data.orders = [
     id: 45,
     deliveryDate: "30-04-14",
     status: "Pending",
-    products: ["est labore incididunt proident", "culpa ut occaecat velit"],
+    products: [
+      { id: 3244, name: "est labore incididunt proident" },
+      { id: 1127, name: "culpa ut occaecat velit" }
+    ],
     value: 1837500
   },
   {
@@ -3688,10 +3722,10 @@ data.orders = [
     deliveryDate: "28-03-16",
     status: "Success",
     products: [
-      "consequat cupidatat amet qui",
-      "fugiat aute laborum officia",
-      "est aute occaecat ex",
-      "consequat consequat anim tempor"
+      { id: 2957, name: "consequat cupidatat amet qui" },
+      { id: 2925, name: "fugiat aute laborum officia" },
+      { id: 2538, name: "est aute occaecat ex" },
+      { id: 3654, name: "consequat consequat anim tempor" }
     ],
     value: 4291500
   },
@@ -3700,10 +3734,10 @@ data.orders = [
     deliveryDate: "12-02-17",
     status: "Success",
     products: [
-      "mollit consectetur cupidatat consequat",
-      "pariatur id eiusmod nulla",
-      "pariatur aute reprehenderit incididunt",
-      "minim eiusmod tempor exercitation"
+      { id: 3377, name: "mollit consectetur cupidatat consequat" },
+      { id: 3754, name: "pariatur id eiusmod nulla" },
+      { id: 2062, name: "pariatur aute reprehenderit incididunt" },
+      { id: 2421, name: "minim eiusmod tempor exercitation" }
     ],
     value: 4950800
   },
@@ -3711,7 +3745,10 @@ data.orders = [
     id: 48,
     deliveryDate: "20-02-18",
     status: "Cancel",
-    products: ["do ad do est", "minim consequat aliquip cupidatat"],
+    products: [
+      { id: 3468, name: "do ad do est" },
+      { id: 1944, name: "minim consequat aliquip cupidatat" }
+    ],
     value: 1897400
   },
   {
@@ -3719,10 +3756,10 @@ data.orders = [
     deliveryDate: "03-06-18",
     status: "Pending",
     products: [
-      "dolor ut excepteur velit",
-      "magna do eiusmod in",
-      "minim enim consequat sunt",
-      "aliquip culpa ad minim"
+      { id: 1359, name: "dolor ut excepteur velit" },
+      { id: 3238, name: "magna do eiusmod in" },
+      { id: 2538, name: "minim enim consequat sunt" },
+      { id: 2424, name: "aliquip culpa ad minim" }
     ],
     value: 2274500
   },
@@ -3731,10 +3768,10 @@ data.orders = [
     deliveryDate: "22-06-14",
     status: "Pending",
     products: [
-      "pariatur irure aliquip nisi",
-      "consectetur cupidatat ad Lorem",
-      "sunt commodo deserunt veniam",
-      "consectetur officia duis proident"
+      { id: 2500, name: "pariatur irure aliquip nisi" },
+      { id: 3194, name: "consectetur cupidatat ad Lorem" },
+      { id: 1400, name: "sunt commodo deserunt veniam" },
+      { id: 2250, name: "consectetur officia duis proident" }
     ],
     value: 2343700
   },
@@ -3742,7 +3779,7 @@ data.orders = [
     id: 51,
     deliveryDate: "03-09-17",
     status: "Pending",
-    products: ["quis velit qui est"],
+    products: [{ id: 1574, name: "quis velit qui est" }],
     value: 1026000
   },
   {
@@ -3750,10 +3787,10 @@ data.orders = [
     deliveryDate: "10-03-14",
     status: "Pending",
     products: [
-      "magna enim eu laboris",
-      "pariatur officia duis aliquip",
-      "sit id duis ex",
-      "consectetur elit labore voluptate"
+      { id: 2243, name: "magna enim eu laboris" },
+      { id: 1463, name: "pariatur officia duis aliquip" },
+      { id: 3934, name: "sit id duis ex" },
+      { id: 3425, name: "consectetur elit labore voluptate" }
     ],
     value: 4474300
   },
@@ -3761,21 +3798,24 @@ data.orders = [
     id: 53,
     deliveryDate: "04-07-16",
     status: "Cancel",
-    products: ["anim nulla reprehenderit in"],
+    products: [{ id: 2280, name: "anim nulla reprehenderit in" }],
     value: 922500
   },
   {
     id: 54,
     deliveryDate: "19-10-15",
     status: "Success",
-    products: ["fugiat dolore eiusmod exercitation"],
+    products: [{ id: 2188, name: "fugiat dolore eiusmod exercitation" }],
     value: 1659000
   },
   {
     id: 55,
     deliveryDate: "19-12-15",
     status: "Cancel",
-    products: ["laborum anim minim Lorem", "amet ullamco esse dolore"],
+    products: [
+      { id: 3680, name: "laborum anim minim Lorem" },
+      { id: 1149, name: "amet ullamco esse dolore" }
+    ],
     value: 2674500
   },
   {
@@ -3783,9 +3823,9 @@ data.orders = [
     deliveryDate: "17-11-17",
     status: "Success",
     products: [
-      "ut fugiat elit nostrud",
-      "sunt amet laborum fugiat",
-      "irure voluptate id aliquip"
+      { id: 3327, name: "ut fugiat elit nostrud" },
+      { id: 3105, name: "sunt amet laborum fugiat" },
+      { id: 1651, name: "irure voluptate id aliquip" }
     ],
     value: 3857100
   },
@@ -3793,7 +3833,7 @@ data.orders = [
     id: 57,
     deliveryDate: "07-04-17",
     status: "Pending",
-    products: ["ipsum adipisicing occaecat sint"],
+    products: [{ id: 2911, name: "ipsum adipisicing occaecat sint" }],
     value: 257200
   },
   {
@@ -3801,11 +3841,11 @@ data.orders = [
     deliveryDate: "20-09-15",
     status: "Cancel",
     products: [
-      "id ad magna adipisicing",
-      "dolor consectetur commodo duis",
-      "exercitation adipisicing id proident",
-      "minim eu eu qui",
-      "sint non cillum dolore"
+      { id: 1666, name: "id ad magna adipisicing" },
+      { id: 2572, name: "dolor consectetur commodo duis" },
+      { id: 2635, name: "exercitation adipisicing id proident" },
+      { id: 2533, name: "minim eu eu qui" },
+      { id: 3831, name: "sint non cillum dolore" }
     ],
     value: 4519700
   },
@@ -3814,10 +3854,10 @@ data.orders = [
     deliveryDate: "15-09-15",
     status: "Cancel",
     products: [
-      "veniam mollit exercitation cillum",
-      "do est officia elit",
-      "cillum dolor ullamco culpa",
-      "consequat mollit sit labore"
+      { id: 1489, name: "veniam mollit exercitation cillum" },
+      { id: 1014, name: "do est officia elit" },
+      { id: 3088, name: "cillum dolor ullamco culpa" },
+      { id: 3919, name: "consequat mollit sit labore" }
     ],
     value: 3984700
   },
@@ -3826,10 +3866,10 @@ data.orders = [
     deliveryDate: "28-05-19",
     status: "Cancel",
     products: [
-      "excepteur velit incididunt pariatur",
-      "anim deserunt ea est",
-      "officia deserunt fugiat anim",
-      "anim qui dolor non"
+      { id: 3843, name: "excepteur velit incididunt pariatur" },
+      { id: 1961, name: "anim deserunt ea est" },
+      { id: 1894, name: "officia deserunt fugiat anim" },
+      { id: 2932, name: "anim qui dolor non" }
     ],
     value: 5873000
   },
@@ -3837,7 +3877,10 @@ data.orders = [
     id: 61,
     deliveryDate: "20-07-14",
     status: "Success",
-    products: ["aliquip duis aute sint", "pariatur id id occaecat"],
+    products: [
+      { id: 1266, name: "aliquip duis aute sint" },
+      { id: 2464, name: "pariatur id id occaecat" }
+    ],
     value: 1233200
   },
   {
@@ -3845,9 +3888,9 @@ data.orders = [
     deliveryDate: "11-07-19",
     status: "Pending",
     products: [
-      "mollit enim eiusmod officia",
-      "amet consequat pariatur consequat",
-      "exercitation ea duis est"
+      { id: 1664, name: "mollit enim eiusmod officia" },
+      { id: 2444, name: "amet consequat pariatur consequat" },
+      { id: 3220, name: "exercitation ea duis est" }
     ],
     value: 2987500
   },
@@ -3856,8 +3899,8 @@ data.orders = [
     deliveryDate: "23-12-18",
     status: "Success",
     products: [
-      "culpa incididunt occaecat sint",
-      "do consectetur reprehenderit proident"
+      { id: 2697, name: "culpa incididunt occaecat sint" },
+      { id: 1540, name: "do consectetur reprehenderit proident" }
     ],
     value: 3430700
   }
