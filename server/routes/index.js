@@ -23,22 +23,14 @@ router.get(CONSTANTS.ENDPOINT.LISTORDER, (req, res) => {
     );
   }
   if (req.query["startTime"]) {
-    orders = orders.filter(el => {
-      date = el.deliveryDate.split(" ")[0].split("-");
-      return (
-        Date.parse(`${date[1]}-${date[0]}-${date[2]}`) >=
-        Date.parse(req.query["startTime"])
-      );
-    });
+    orders = orders.filter(
+      el => Date.parse(el.deliveryDate) >= Date.parse(req.query["startTime"])
+    );
   }
   if (req.query["endTime"]) {
-    orders = orders.filter(el => {
-      date = el.deliveryDate.split(" ")[0].split("-");
-      return (
-        Date.parse(`${date[1]}-${date[0]}-${date[2]}`) <=
-        Date.parse(req.query["endTime"])
-      );
-    });
+    orders = orders.filter(
+      el => Date.parse(el.deliveryDate) <= Date.parse(req.query["endTime"])
+    );
   }
   if (req.query["startValue"]) {
     orders = orders.filter(
@@ -72,17 +64,20 @@ router.post(CONSTANTS.ENDPOINT.ORDERDETAIL, async (req, res) => {
     id,
     status: req.body.status,
     value: req.body.value.totalValue,
-    products: req.body.products.map(el => el.name)
+    products: req.body.products.map(el => ({
+      id: el.product_id,
+      name: el.name
+    }))
   };
 
-  let requestDelivery = {
+  const requestDelivery = {
     receiving_address: req.body.user.address,
     receiver_phone: req.body.user.phone,
     total_cost: req.body.value.totalValue
   };
 
   try {
-    let deliveryRes = await axios.post(
+    const deliveryRes = await axios.post(
       CONSTANTS.ENDPOINT.DELIVERY + id,
       requestDelivery
     );
@@ -91,12 +86,11 @@ router.post(CONSTANTS.ENDPOINT.ORDERDETAIL, async (req, res) => {
       date: deliveryRes.data.expected_receving_date,
       status: deliveryRes.data.status
     };
-
     item.products = item.products.map(el => ({
       ...el,
       subTotal: el.quantity * el.price
     }));
-    item.warranty = "Hạn bảo hành 2 năm từ ngày bán";
+    item.warranty = "Bảo hành có hiệu lực trong vòng 02 năm kể từ ngày bán";
     listItem.deliveryDate = deliveryRes.data.expected_receving_date;
 
     data.order.push(item);

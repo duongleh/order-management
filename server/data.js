@@ -47,7 +47,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "05-05-18",
+      date: "2018-05-05",
       status: "ipsum aliquip ullamco irure occaecat"
     },
     payment: {
@@ -89,7 +89,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "26-04-19",
+      date: "2019-04-26",
       status: "culpa eu sunt excepteur reprehenderit"
     },
     payment: {
@@ -145,7 +145,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "11-02-18",
+      date: "2018-02-11",
       status: "deserunt proident sint quis voluptate"
     },
     payment: {
@@ -180,7 +180,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "04-10-18",
+      date: "2018-10-04",
       status: "mollit ex eiusmod ut et"
     },
     payment: {
@@ -229,7 +229,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "06-01-15",
+      date: "2015-01-06",
       status: "nostrud incididunt mollit est adipisicing"
     },
     payment: {
@@ -285,7 +285,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "09-04-15",
+      date: "2015-04-09",
       status: "tempor aute magna est cillum"
     },
     payment: {
@@ -341,7 +341,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "11-06-18",
+      date: "2018-06-11",
       status: "dolor enim in minim et"
     },
     payment: {
@@ -384,7 +384,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "20-09-16",
+      date: "2016-09-20",
       status: "in et duis fugiat laboris"
     },
     payment: {
@@ -426,7 +426,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "07-03-19",
+      date: "2019-03-07",
       status: "ipsum et esse tempor nulla"
     },
     payment: {
@@ -482,7 +482,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "24-08-15",
+      date: "2015-08-24",
       status: "fugiat reprehenderit nisi magna duis"
     },
     payment: {
@@ -524,7 +524,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "10-02-19",
+      date: "2019-02-10",
       status: "et qui amet eiusmod tempor"
     },
     payment: {
@@ -580,7 +580,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "17-08-14",
+      date: "2014-08-17",
       status: "magna Lorem duis dolore reprehenderit"
     },
     payment: {
@@ -623,7 +623,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "25-04-16",
+      date: "2016-04-25",
       status: "eiusmod esse aliquip in amet"
     },
     payment: {
@@ -686,7 +686,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "13-07-19",
+      date: "2019-07-13",
       status: "nisi cillum adipisicing culpa proident"
     },
     payment: {
@@ -742,7 +742,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "20-11-15",
+      date: "2015-11-20",
       status: "eu officia cupidatat voluptate officia"
     },
     payment: {
@@ -791,7 +791,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "15-10-15",
+      date: "2015-10-15",
       status: "mollit incididunt incididunt eu anim"
     },
     payment: {
@@ -847,7 +847,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "24-01-18",
+      date: "2018-01-24",
       status: "cillum cillum magna nostrud incididunt"
     },
     payment: {
@@ -910,7 +910,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "24-09-16",
+      date: "2016-09-24",
       status: "laboris deserunt veniam irure nulla"
     },
     payment: {
@@ -959,7 +959,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "05-03-19",
+      date: "2019-03-05",
       status: "proident nostrud consequat amet ut"
     },
     payment: {
@@ -1001,7 +1001,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "19-02-14",
+      date: "2014-02-19",
       status: "officia nulla nulla incididunt anim"
     },
     payment: {
@@ -1050,7 +1050,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "02-10-14",
+      date: "2014-10-02",
       status: "nisi aute eiusmod velit pariatur"
     },
     payment: {
@@ -1092,7 +1092,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "06-04-18",
+      date: "2018-04-06",
       status: "laboris Lorem velit irure enim"
     },
     payment: {
@@ -1155,7 +1155,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "19-09-15",
+      date: "2015-09-19",
       status: "in qui cillum deserunt mollit"
     },
     payment: {
@@ -1190,7 +1190,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "08-02-14",
+      date: "2014-02-08",
       status: "aliqua quis adipisicing tempor quis"
     },
     payment: {
@@ -1253,7 +1253,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "14-11-15",
+      date: "2015-11-14",
       status: "exercitation aliqua elit irure aliqua"
     },
     payment: {
@@ -1309,7 +1309,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "29-06-19",
+      date: "2019-06-29",
       status: "nisi labore fugiat ipsum eu"
     },
     payment: {
@@ -1372,7 +1372,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "27-11-15",
+      date: "2015-11-27",
       status: "qui aute proident consequat dolor"
     },
     payment: {
@@ -1421,7 +1421,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "30-03-17",
+      date: "2017-03-30",
       status: "nulla velit elit consectetur proident"
     },
     payment: {
@@ -1484,7 +1484,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "26-05-14",
+      date: "2014-05-26",
       status: "culpa reprehenderit dolor est culpa"
     },
     payment: {
@@ -1540,7 +1540,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "06-11-14",
+      date: "2014-11-06",
       status: "commodo duis laboris fugiat incididunt"
     },
     payment: {
@@ -1589,7 +1589,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "19-06-15",
+      date: "2015-06-19",
       status: "nisi non nostrud ut qui"
     },
     payment: {
@@ -1631,7 +1631,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "31-08-17",
+      date: "2017-08-31",
       status: "ad dolore nisi laborum eiusmod"
     },
     payment: {
@@ -1673,7 +1673,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "30-01-18",
+      date: "2018-01-30",
       status: "deserunt id in duis duis"
     },
     payment: {
@@ -1729,7 +1729,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "19-06-15",
+      date: "2015-06-19",
       status: "officia exercitation proident aliquip irure"
     },
     payment: {
@@ -1771,7 +1771,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "28-08-18",
+      date: "2018-08-28",
       status: "pariatur occaecat ex laborum Lorem"
     },
     payment: {
@@ -1827,7 +1827,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "11-12-14",
+      date: "2014-12-11",
       status: "quis nostrud labore mollit adipisicing"
     },
     payment: {
@@ -1876,7 +1876,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "29-06-17",
+      date: "2017-06-29",
       status: "do incididunt aute eu aliquip"
     },
     payment: {
@@ -1939,7 +1939,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "04-06-18",
+      date: "2018-06-04",
       status: "officia deserunt cillum magna veniam"
     },
     payment: {
@@ -1995,7 +1995,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "16-12-16",
+      date: "2016-12-16",
       status: "exercitation occaecat in velit nostrud"
     },
     payment: {
@@ -2044,7 +2044,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "28-04-19",
+      date: "2019-04-28",
       status: "aliquip id aute non ex"
     },
     payment: {
@@ -2079,7 +2079,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "04-08-18",
+      date: "2018-08-04",
       status: "amet ut qui mollit est"
     },
     payment: {
@@ -2135,7 +2135,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "18-01-19",
+      date: "2019-01-18",
       status: "reprehenderit amet excepteur amet proident"
     },
     payment: {
@@ -2184,7 +2184,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "07-04-19",
+      date: "2019-04-07",
       status: "do id irure do excepteur"
     },
     payment: {
@@ -2233,7 +2233,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "14-02-16",
+      date: "2016-02-14",
       status: "esse commodo exercitation ea in"
     },
     payment: {
@@ -2282,7 +2282,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "09-10-18",
+      date: "2018-10-09",
       status: "minim minim occaecat dolore elit"
     },
     payment: {
@@ -2324,7 +2324,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "30-04-14",
+      date: "2014-04-30",
       status: "esse incididunt commodo commodo irure"
     },
     payment: {
@@ -2380,7 +2380,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "28-03-16",
+      date: "2016-03-28",
       status: "laborum nisi proident occaecat adipisicing"
     },
     payment: {
@@ -2436,7 +2436,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "12-02-17",
+      date: "2017-02-12",
       status: "est commodo ullamco deserunt nulla"
     },
     payment: {
@@ -2478,7 +2478,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "20-02-18",
+      date: "2018-02-20",
       status: "consectetur sit irure sit est"
     },
     payment: {
@@ -2534,7 +2534,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "03-06-18",
+      date: "2018-06-03",
       status: "voluptate anim ad aute fugiat"
     },
     payment: {
@@ -2590,7 +2590,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "22-06-14",
+      date: "2014-06-22",
       status: "irure non nulla sit irure"
     },
     payment: {
@@ -2625,7 +2625,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "03-09-17",
+      date: "2017-09-03",
       status: "amet consectetur officia magna incididunt"
     },
     payment: {
@@ -2681,7 +2681,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "10-03-14",
+      date: "2014-03-10",
       status: "ipsum qui exercitation dolore duis"
     },
     payment: {
@@ -2716,7 +2716,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "04-07-16",
+      date: "2016-07-04",
       status: "proident non quis sint tempor"
     },
     payment: {
@@ -2751,7 +2751,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "19-10-15",
+      date: "2015-10-19",
       status: "excepteur sunt culpa deserunt velit"
     },
     payment: {
@@ -2793,7 +2793,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "19-12-15",
+      date: "2015-12-19",
       status: "incididunt quis irure voluptate deserunt"
     },
     payment: {
@@ -2842,7 +2842,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "17-11-17",
+      date: "2017-11-17",
       status: "deserunt tempor eiusmod quis reprehenderit"
     },
     payment: {
@@ -2877,7 +2877,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "07-04-17",
+      date: "2017-04-07",
       status: "enim minim eiusmod officia ullamco"
     },
     payment: {
@@ -2940,7 +2940,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "20-09-15",
+      date: "2015-09-20",
       status: "ad ut aute dolor sit"
     },
     payment: {
@@ -2996,7 +2996,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "15-09-15",
+      date: "2015-09-15",
       status: "labore enim magna consequat ad"
     },
     payment: {
@@ -3052,7 +3052,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "28-05-19",
+      date: "2019-05-28",
       status: "ipsum deserunt officia qui excepteur"
     },
     payment: {
@@ -3094,7 +3094,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "20-07-14",
+      date: "2014-07-20",
       status: "esse cupidatat in sint tempor"
     },
     payment: {
@@ -3143,7 +3143,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "11-07-19",
+      date: "2019-07-11",
       status: "non officia Lorem culpa sunt"
     },
     payment: {
@@ -3185,7 +3185,7 @@ data.order = [
       }
     ],
     delivery: {
-      date: "23-12-18",
+      date: "2018-12-23",
       status: "dolore consequat commodo reprehenderit esse"
     },
     payment: {
@@ -3207,7 +3207,7 @@ data.order = [
 data.orders = [
   {
     id: 0,
-    deliveryDate: "05-05-18",
+    deliveryDate: "2018-05-05",
     status: "Pending",
     products: [
       { id: 1651, name: "reprehenderit nisi aute ea" },
@@ -3220,7 +3220,7 @@ data.orders = [
   },
   {
     id: 1,
-    deliveryDate: "26-04-19",
+    deliveryDate: "2019-04-26",
     status: "Cancel",
     products: [
       { id: 3411, name: "minim cillum voluptate pariatur" },
@@ -3230,7 +3230,7 @@ data.orders = [
   },
   {
     id: 2,
-    deliveryDate: "11-02-18",
+    deliveryDate: "2018-02-11",
     status: "Success",
     products: [
       { id: 2783, name: "Lorem consequat tempor reprehenderit" },
@@ -3242,14 +3242,14 @@ data.orders = [
   },
   {
     id: 3,
-    deliveryDate: "04-10-18",
+    deliveryDate: "2018-10-04",
     status: "Success",
     products: [{ id: 2329, name: "culpa non sint dolor" }],
     value: 1481000
   },
   {
     id: 4,
-    deliveryDate: "06-01-15",
+    deliveryDate: "2015-01-06",
     status: "Success",
     products: [
       { id: 3081, name: "officia nisi non est" },
@@ -3260,7 +3260,7 @@ data.orders = [
   },
   {
     id: 5,
-    deliveryDate: "09-04-15",
+    deliveryDate: "2015-04-09",
     status: "Success",
     products: [
       { id: 2848, name: "do adipisicing sint ex" },
@@ -3272,7 +3272,7 @@ data.orders = [
   },
   {
     id: 6,
-    deliveryDate: "11-06-18",
+    deliveryDate: "2018-06-11",
     status: "Success",
     products: [
       { id: 3338, name: "aliquip elit quis mollit" },
@@ -3284,7 +3284,7 @@ data.orders = [
   },
   {
     id: 7,
-    deliveryDate: "20-09-16",
+    deliveryDate: "2016-09-20",
     status: "Cancel",
     products: [
       { id: 3845, name: "commodo in nisi minim" },
@@ -3294,7 +3294,7 @@ data.orders = [
   },
   {
     id: 8,
-    deliveryDate: "07-03-19",
+    deliveryDate: "2019-03-07",
     status: "Cancel",
     products: [
       { id: 3945, name: "anim culpa labore deserunt" },
@@ -3304,7 +3304,7 @@ data.orders = [
   },
   {
     id: 9,
-    deliveryDate: "24-08-15",
+    deliveryDate: "2015-08-24",
     status: "Success",
     products: [
       { id: 2931, name: "deserunt enim fugiat ea" },
@@ -3316,7 +3316,7 @@ data.orders = [
   },
   {
     id: 10,
-    deliveryDate: "10-02-19",
+    deliveryDate: "2019-02-10",
     status: "Cancel",
     products: [
       { id: 3233, name: "do eiusmod tempor fugiat" },
@@ -3326,7 +3326,7 @@ data.orders = [
   },
   {
     id: 11,
-    deliveryDate: "17-08-14",
+    deliveryDate: "2014-08-17",
     status: "Pending",
     products: [
       { id: 1877, name: "veniam dolor velit amet" },
@@ -3338,7 +3338,7 @@ data.orders = [
   },
   {
     id: 12,
-    deliveryDate: "25-04-16",
+    deliveryDate: "2016-04-25",
     status: "Cancel",
     products: [
       { id: 1141, name: "voluptate qui in fugiat" },
@@ -3348,7 +3348,7 @@ data.orders = [
   },
   {
     id: 13,
-    deliveryDate: "13-07-19",
+    deliveryDate: "2019-07-13",
     status: "Success",
     products: [
       { id: 3937, name: "Lorem sit ex nulla" },
@@ -3361,7 +3361,7 @@ data.orders = [
   },
   {
     id: 14,
-    deliveryDate: "20-11-15",
+    deliveryDate: "2015-11-20",
     status: "Pending",
     products: [
       { id: 2754, name: "incididunt dolore qui commodo" },
@@ -3373,7 +3373,7 @@ data.orders = [
   },
   {
     id: 15,
-    deliveryDate: "15-10-15",
+    deliveryDate: "2015-10-15",
     status: "Cancel",
     products: [
       { id: 3291, name: "ea ad excepteur nulla" },
@@ -3384,7 +3384,7 @@ data.orders = [
   },
   {
     id: 16,
-    deliveryDate: "24-01-18",
+    deliveryDate: "2018-01-24",
     status: "Pending",
     products: [
       { id: 1041, name: "ut officia in mollit" },
@@ -3396,7 +3396,7 @@ data.orders = [
   },
   {
     id: 17,
-    deliveryDate: "24-09-16",
+    deliveryDate: "2016-09-24",
     status: "Pending",
     products: [
       { id: 2508, name: "ad laboris tempor velit" },
@@ -3409,7 +3409,7 @@ data.orders = [
   },
   {
     id: 18,
-    deliveryDate: "05-03-19",
+    deliveryDate: "2019-03-05",
     status: "Cancel",
     products: [
       { id: 1150, name: "occaecat velit occaecat dolor" },
@@ -3420,7 +3420,7 @@ data.orders = [
   },
   {
     id: 19,
-    deliveryDate: "19-02-14",
+    deliveryDate: "2014-02-19",
     status: "Cancel",
     products: [
       { id: 1320, name: "magna enim nulla voluptate" },
@@ -3430,7 +3430,7 @@ data.orders = [
   },
   {
     id: 20,
-    deliveryDate: "02-10-14",
+    deliveryDate: "2014-10-02",
     status: "Success",
     products: [
       { id: 2621, name: "consequat velit velit et" },
@@ -3441,7 +3441,7 @@ data.orders = [
   },
   {
     id: 21,
-    deliveryDate: "06-04-18",
+    deliveryDate: "2018-04-06",
     status: "Pending",
     products: [
       { id: 2954, name: "non reprehenderit fugiat aute" },
@@ -3451,7 +3451,7 @@ data.orders = [
   },
   {
     id: 22,
-    deliveryDate: "19-09-15",
+    deliveryDate: "2015-09-19",
     status: "Success",
     products: [
       { id: 1184, name: "exercitation laboris veniam eiusmod" },
@@ -3464,14 +3464,14 @@ data.orders = [
   },
   {
     id: 23,
-    deliveryDate: "08-02-14",
+    deliveryDate: "2014-02-08",
     status: "Success",
     products: [{ id: 3822, name: "Lorem ea nostrud deserunt" }],
     value: 450200
   },
   {
     id: 24,
-    deliveryDate: "14-11-15",
+    deliveryDate: "2015-11-14",
     status: "Pending",
     products: [
       { id: 3849, name: "labore tempor mollit ullamco" },
@@ -3484,7 +3484,7 @@ data.orders = [
   },
   {
     id: 25,
-    deliveryDate: "29-06-19",
+    deliveryDate: "2019-06-29",
     status: "Cancel",
     products: [
       { id: 1378, name: "magna esse sint aliquip" },
@@ -3496,7 +3496,7 @@ data.orders = [
   },
   {
     id: 26,
-    deliveryDate: "27-11-15",
+    deliveryDate: "2015-11-27",
     status: "Pending",
     products: [
       { id: 2532, name: "sunt fugiat voluptate minim" },
@@ -3509,7 +3509,7 @@ data.orders = [
   },
   {
     id: 27,
-    deliveryDate: "30-03-17",
+    deliveryDate: "2017-03-30",
     status: "Success",
     products: [
       { id: 2480, name: "elit incididunt voluptate ut" },
@@ -3520,7 +3520,7 @@ data.orders = [
   },
   {
     id: 28,
-    deliveryDate: "26-05-14",
+    deliveryDate: "2014-05-26",
     status: "Success",
     products: [
       { id: 3491, name: "mollit deserunt nostrud ad" },
@@ -3533,7 +3533,7 @@ data.orders = [
   },
   {
     id: 29,
-    deliveryDate: "06-11-14",
+    deliveryDate: "2014-11-06",
     status: "Success",
     products: [
       { id: 3736, name: "consequat dolor pariatur reprehenderit" },
@@ -3545,7 +3545,7 @@ data.orders = [
   },
   {
     id: 30,
-    deliveryDate: "19-06-15",
+    deliveryDate: "2015-06-19",
     status: "Cancel",
     products: [
       { id: 2687, name: "ad consectetur ea et" },
@@ -3556,7 +3556,7 @@ data.orders = [
   },
   {
     id: 31,
-    deliveryDate: "31-08-17",
+    deliveryDate: "2017-08-31",
     status: "Cancel",
     products: [
       { id: 2633, name: "et sint laboris elit" },
@@ -3566,7 +3566,7 @@ data.orders = [
   },
   {
     id: 32,
-    deliveryDate: "30-01-18",
+    deliveryDate: "2018-01-30",
     status: "Cancel",
     products: [
       { id: 2706, name: "voluptate laboris ea reprehenderit" },
@@ -3576,7 +3576,7 @@ data.orders = [
   },
   {
     id: 33,
-    deliveryDate: "19-06-15",
+    deliveryDate: "2015-06-19",
     status: "Pending",
     products: [
       { id: 3903, name: "pariatur anim anim id" },
@@ -3588,7 +3588,7 @@ data.orders = [
   },
   {
     id: 34,
-    deliveryDate: "28-08-18",
+    deliveryDate: "2018-08-28",
     status: "Pending",
     products: [
       { id: 3262, name: "veniam labore esse veniam" },
@@ -3598,7 +3598,7 @@ data.orders = [
   },
   {
     id: 35,
-    deliveryDate: "11-12-14",
+    deliveryDate: "2014-12-11",
     status: "Cancel",
     products: [
       { id: 1882, name: "ipsum fugiat in et" },
@@ -3610,7 +3610,7 @@ data.orders = [
   },
   {
     id: 36,
-    deliveryDate: "29-06-17",
+    deliveryDate: "2017-06-29",
     status: "Cancel",
     products: [
       { id: 3561, name: "ut aute non culpa" },
@@ -3621,7 +3621,7 @@ data.orders = [
   },
   {
     id: 37,
-    deliveryDate: "04-06-18",
+    deliveryDate: "2018-06-04",
     status: "Pending",
     products: [
       { id: 1622, name: "ut mollit cupidatat cupidatat" },
@@ -3634,7 +3634,7 @@ data.orders = [
   },
   {
     id: 38,
-    deliveryDate: "16-12-16",
+    deliveryDate: "2016-12-16",
     status: "Success",
     products: [
       { id: 3028, name: "laboris nulla ut sunt" },
@@ -3646,7 +3646,7 @@ data.orders = [
   },
   {
     id: 39,
-    deliveryDate: "28-04-19",
+    deliveryDate: "2019-04-28",
     status: "Cancel",
     products: [
       { id: 3299, name: "veniam labore occaecat officia" },
@@ -3657,14 +3657,14 @@ data.orders = [
   },
   {
     id: 40,
-    deliveryDate: "04-08-18",
+    deliveryDate: "2018-08-04",
     status: "Pending",
     products: [{ id: 3513, name: "ea ea consectetur aute" }],
     value: 730200
   },
   {
     id: 41,
-    deliveryDate: "18-01-19",
+    deliveryDate: "2019-01-18",
     status: "Pending",
     products: [
       { id: 2998, name: "tempor proident anim excepteur" },
@@ -3676,7 +3676,7 @@ data.orders = [
   },
   {
     id: 42,
-    deliveryDate: "07-04-19",
+    deliveryDate: "2019-04-07",
     status: "Success",
     products: [
       { id: 3600, name: "fugiat veniam esse ea" },
@@ -3687,7 +3687,7 @@ data.orders = [
   },
   {
     id: 43,
-    deliveryDate: "14-02-16",
+    deliveryDate: "2016-02-14",
     status: "Pending",
     products: [
       { id: 2848, name: "cupidatat voluptate mollit pariatur" },
@@ -3698,7 +3698,7 @@ data.orders = [
   },
   {
     id: 44,
-    deliveryDate: "09-10-18",
+    deliveryDate: "2018-10-09",
     status: "Pending",
     products: [
       { id: 2917, name: "ea id mollit non" },
@@ -3709,7 +3709,7 @@ data.orders = [
   },
   {
     id: 45,
-    deliveryDate: "30-04-14",
+    deliveryDate: "2014-04-30",
     status: "Pending",
     products: [
       { id: 3244, name: "est labore incididunt proident" },
@@ -3719,7 +3719,7 @@ data.orders = [
   },
   {
     id: 46,
-    deliveryDate: "28-03-16",
+    deliveryDate: "2016-03-28",
     status: "Success",
     products: [
       { id: 2957, name: "consequat cupidatat amet qui" },
@@ -3731,7 +3731,7 @@ data.orders = [
   },
   {
     id: 47,
-    deliveryDate: "12-02-17",
+    deliveryDate: "2017-02-12",
     status: "Success",
     products: [
       { id: 3377, name: "mollit consectetur cupidatat consequat" },
@@ -3743,7 +3743,7 @@ data.orders = [
   },
   {
     id: 48,
-    deliveryDate: "20-02-18",
+    deliveryDate: "2018-02-20",
     status: "Cancel",
     products: [
       { id: 3468, name: "do ad do est" },
@@ -3753,7 +3753,7 @@ data.orders = [
   },
   {
     id: 49,
-    deliveryDate: "03-06-18",
+    deliveryDate: "2018-06-03",
     status: "Pending",
     products: [
       { id: 1359, name: "dolor ut excepteur velit" },
@@ -3765,7 +3765,7 @@ data.orders = [
   },
   {
     id: 50,
-    deliveryDate: "22-06-14",
+    deliveryDate: "2014-06-22",
     status: "Pending",
     products: [
       { id: 2500, name: "pariatur irure aliquip nisi" },
@@ -3777,14 +3777,14 @@ data.orders = [
   },
   {
     id: 51,
-    deliveryDate: "03-09-17",
+    deliveryDate: "2017-09-03",
     status: "Pending",
     products: [{ id: 1574, name: "quis velit qui est" }],
     value: 1026000
   },
   {
     id: 52,
-    deliveryDate: "10-03-14",
+    deliveryDate: "2014-03-10",
     status: "Pending",
     products: [
       { id: 2243, name: "magna enim eu laboris" },
@@ -3796,21 +3796,21 @@ data.orders = [
   },
   {
     id: 53,
-    deliveryDate: "04-07-16",
+    deliveryDate: "2016-07-04",
     status: "Cancel",
     products: [{ id: 2280, name: "anim nulla reprehenderit in" }],
     value: 922500
   },
   {
     id: 54,
-    deliveryDate: "19-10-15",
+    deliveryDate: "2015-10-19",
     status: "Success",
     products: [{ id: 2188, name: "fugiat dolore eiusmod exercitation" }],
     value: 1659000
   },
   {
     id: 55,
-    deliveryDate: "19-12-15",
+    deliveryDate: "2015-12-19",
     status: "Cancel",
     products: [
       { id: 3680, name: "laborum anim minim Lorem" },
@@ -3820,7 +3820,7 @@ data.orders = [
   },
   {
     id: 56,
-    deliveryDate: "17-11-17",
+    deliveryDate: "2017-11-17",
     status: "Success",
     products: [
       { id: 3327, name: "ut fugiat elit nostrud" },
@@ -3831,14 +3831,14 @@ data.orders = [
   },
   {
     id: 57,
-    deliveryDate: "07-04-17",
+    deliveryDate: "2017-04-07",
     status: "Pending",
     products: [{ id: 2911, name: "ipsum adipisicing occaecat sint" }],
     value: 257200
   },
   {
     id: 58,
-    deliveryDate: "20-09-15",
+    deliveryDate: "2015-09-20",
     status: "Cancel",
     products: [
       { id: 1666, name: "id ad magna adipisicing" },
@@ -3851,7 +3851,7 @@ data.orders = [
   },
   {
     id: 59,
-    deliveryDate: "15-09-15",
+    deliveryDate: "2015-09-15",
     status: "Cancel",
     products: [
       { id: 1489, name: "veniam mollit exercitation cillum" },
@@ -3863,7 +3863,7 @@ data.orders = [
   },
   {
     id: 60,
-    deliveryDate: "28-05-19",
+    deliveryDate: "2019-05-28",
     status: "Cancel",
     products: [
       { id: 3843, name: "excepteur velit incididunt pariatur" },
@@ -3875,7 +3875,7 @@ data.orders = [
   },
   {
     id: 61,
-    deliveryDate: "20-07-14",
+    deliveryDate: "2014-07-20",
     status: "Success",
     products: [
       { id: 1266, name: "aliquip duis aute sint" },
@@ -3885,7 +3885,7 @@ data.orders = [
   },
   {
     id: 62,
-    deliveryDate: "11-07-19",
+    deliveryDate: "2019-07-11",
     status: "Pending",
     products: [
       { id: 1664, name: "mollit enim eiusmod officia" },
@@ -3896,7 +3896,7 @@ data.orders = [
   },
   {
     id: 63,
-    deliveryDate: "23-12-18",
+    deliveryDate: "2018-12-23",
     status: "Success",
     products: [
       { id: 2697, name: "culpa incididunt occaecat sint" },
