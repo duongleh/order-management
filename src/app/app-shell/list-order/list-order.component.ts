@@ -27,7 +27,7 @@ export class ListOrderComponent implements OnInit {
     startValue: this.startValue || "",
     endValue: this.endValue || "",
     status: this.status || "",
-    product: ""
+    query: ""
   };
 
   constructor(private listOrderService: ListOrderService) {}
@@ -39,12 +39,10 @@ export class ListOrderComponent implements OnInit {
   renderList() {
     this.listOrderService.getListOrder(this.params).subscribe(
       response => {
-        console.log(response);
         response.forEach(
           el =>
             (el.productsName = el.products.map(prod => prod.name).join(", "))
         );
-        console.log(response);
         this.dataSource = new MatTableDataSource(response);
         this.dataSource.paginator = this.paginator;
       },
@@ -56,7 +54,7 @@ export class ListOrderComponent implements OnInit {
   }
 
   handleSearch(inputText: string) {
-    this.params.product = inputText;
+    this.params.query = inputText;
     this.renderList();
   }
 

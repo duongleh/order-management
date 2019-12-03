@@ -14,9 +14,12 @@ router.get(CONSTANTS.ENDPOINT.LISTORDER, (req, res) => {
   if (req.query["status"]) {
     orders = orders.filter(el => el.status === req.query["status"]);
   }
-  if (req.query["product"]) {
+  if (req.query["query"]) {
     orders = orders.filter(el =>
-      el.products.join().includes(req.query["product"])
+      el.products
+        .map(el => el.name)
+        .join()
+        .includes(req.query["query"])
     );
   }
   if (req.query["startTime"]) {
