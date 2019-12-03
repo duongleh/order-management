@@ -1,7 +1,11 @@
-.checkout-name {
-    text-align: end;
+.total-row {
+  display: flex;
 }
 
-.checkout-price {
-    text-align: start;
+.pull-left {
+  flex: 3;
+}
+
+.pull-right {
+  flex: 1;
 }

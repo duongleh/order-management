@@ -5,7 +5,7 @@
     <div class="card-deck">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Địa chỉ người nhận</h5>
+                <h5 class="card-title">Người Nhận Hàng</h5>
                 <p class="card-text">
                     <b>{{order.user?.name}}</b><br>
                     <b>Địa chỉ:</b> {{order.user?.address}}<br>
@@ -15,7 +15,7 @@
         </div>
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Tình trạng giao hàng</h5>
+                <h5 class="card-title">Giao Hàng</h5>
                 <p class="card-text">
                     <b>Ngày giao hàng:</b> {{order.delivery?.date}}<br>
                     <b>Tình trạng:</b> {{order.delivery?.status}}</p>
@@ -23,7 +23,7 @@
         </div>
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Hình thức thanh toán</h5>
+                <h5 class="card-title">Thanh Toán</h5>
                 <p class="card-text">
                     Thanh toán bằng <b>{{order.payment?.type}}</b><br>
                     <b>Tình trạng:</b> {{order.payment?.status}}</p>
@@ -51,30 +51,44 @@
                     </tr>
                 </tbody>
             </table>
-            <div class="checkout">
-                <div class="row">
-                    <div class="col col-md-10 checkout-name"><b>Tạm tính</b></div>
-                    <div class="col col-md-2 checkout-price">{{order.value?.subTotal | currency:'VND'}}</div>
-                </div>
-                <div class="row">
-                    <div class="col col-md-10col-md-10 checkout-name"><b>Giảm giá</b></div>
-                    <div class="col col-md-2 checkout-price">{{order.value?.discount | currency:'VND'}}</div>
-                </div>
-                <div class="row">
-                    <div class="col col-md-10col-md-10 checkout-name"><b>Thuế</b></div>
-                    <div class="col col-md-2 checkout-price">{{order.value?.tax | currency:'VND'}}</div>
-                </div>
-                <div class="row">
-                    <div class="col col-md-10col-md-10 checkout-name"><b>Phí vận chuyển</b></div>
-                    <div class="col col-md-2 checkout-price">{{order.value?.shipping | currency:'VND'}}</div>
-                </div>
-                <div class="row">
-                    <div class="col col-md-10col-md-10 checkout-name"><b>Tổng cộng</b></div>
-                    <div class="col col-md-2 checkout-price">{{order.value?.totalValue | currency:'VND'}}</div>
+
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <!-- <div class="col col-6"></div> -->
+        <div class="col-md-8 offset-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tổng cộng</h5>
+                    <div class="total-row">
+                        <div class="pull-left"><b>Tạm tính</b></div>
+                        <div class="pull-right">{{order.value?.subTotal | currency:'VND'}}</div>
+                    </div>
+                    <div class="total-row">
+                        <div class="pull-left"><b>Giảm giá</b></div>
+                        <div class="pull-right">{{order.value?.discount | currency:'VND'}}</div>
+                    </div>
+                    <div class="total-row">
+                        <div class="pull-left"><b>Thuế</b></div>
+                        <div class="pull-right">{{order.value?.tax | currency:'VND'}}</div>
+                    </div>
+                    <div class="total-row">
+                        <div class="pull-left"><b>Phí vận chuyển</b></div>
+                        <div class="pull-right">{{order.value?.shipping | currency:'VND'}}</div>
+                    </div>
+                    <hr>
+                    <div class="total-row">
+                        <div class="pull-left"><b>Tổng cộng</b></div>
+                        <div class="pull-right">{{order.value?.totalValue | currency:'VND'}}</div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
+
+    <br>
 </div>
 
 <app-warning-message *ngIf="WarningMessageOpen" [text]="WarningMessageText"
