@@ -1,4 +1,3 @@
-const data = require("../data");
 const CONSTANTS = require("../constants");
 const ordersModel = require("../models/orders.model");
 const axios = require("axios");
