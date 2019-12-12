@@ -71,6 +71,10 @@ module.exports.post = async (req, res) => {
     total_cost: order.value.totalValue
   };
 
+  req.body.deliveryUnitId
+    ? (newDelivery.delivery_unit_id = req.body.deliveryUnitId)
+    : null;
+
   order.products.forEach(el => {
     el.id = el.product_id;
     delete el.product_id;
