@@ -2,19 +2,19 @@
 import { Routes, RouterModule } from "@angular/router";
 
 const routes: Routes = [
-  { path: "", redirectTo: "/list-order", pathMatch: "full" },
+  { path: "", redirectTo: "/orders", pathMatch: "full" },
   {
-    path: "list-order",
-    loadChildren: () =>
-      import("./app-shell/list-order/list-order.module").then(
-        mod => mod.ListOrderModule
-      )
-  },
-  {
-    path: "order-detail",
+    path: "orders/:id",
     loadChildren: () =>
       import("./app-shell/order-detail/order-detail.module").then(
         mod => mod.OrderDetailModule
+      )
+  },
+  {
+    path: "orders",
+    loadChildren: () =>
+      import("./app-shell/list-order/list-order.module").then(
+        mod => mod.ListOrderModule
       )
   }
 ];

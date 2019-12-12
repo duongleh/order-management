@@ -2,7 +2,15 @@ const CONSTANTS = require("../constants");
 const ordersModel = require("../models/orders.model");
 const axios = require("axios");
 
-const defaultStatus = ["Success", "Pending", "Cancel"];
+const defaultStatus = [
+  "Success",
+  "Confirmed",
+  "Pending",
+  "Shipping",
+  "Shipped",
+  "Cancel",
+  "Canceled"
+];
 
 // GET ORDER DETAIL
 module.exports.get = async (req, res) => {
