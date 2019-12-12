@@ -3,6 +3,8 @@ const ordersModel = require("../models/orders.model");
 const axios = require("axios");
 
 module.exports.get = async (req, res) => {
+  let foundProducts;
+  let foundDeliveries;
   let qr = ordersModel
     .find()
     .lean()
@@ -25,27 +27,24 @@ module.exports.get = async (req, res) => {
 
   let foundOrders = await qr.limit(parseInt(req.query["quantity"])).exec();
 
-  for (order of foundOrders) {
-    order.products = await Promise.all(
-      order.products.map(async product => {
-        try {
-          let resp = await axios.get(
-            `${CONSTANTS.ENDPOINT.PRODUCT}/${product.id}`
-          );
-          return { ...product, name: resp.data.data[0].name };
-        } catch (error) {
-          return res.status(400).json(error.response.data);
-        }
-      })
-    );
-    try {
-      let resp = await axios.get(`${CONSTANTS.ENDPOINT.DELIVERY}/${order.id}`);
-      order.deliveryDate = resp.data.expected_receving_date;
-    } catch (error) {
-      return res.status(400).json(error.response.data);
-    }
-    order.value = order.value.totalValue;
+  try {
+    foundProducts = await axios.get(CONSTANTS.ENDPOINT.PRODUCT);
+    foundDeliveries = await axios.get(CONSTANTS.ENDPOINT.DELIVERY);
+    foundProducts = foundProducts.data.data;
+    foundDeliveries = foundDeliveries.data.deliveries;
+  } catch (error) {
+    return res.status(400).json(error.response.data);
   }
+
+  foundOrders.forEach(order => {
+    order.products.forEach(product => {
+      product.name = foundProducts.find(el => el.id == product.id).name;
+    });
+    order.deliveryDate = foundDeliveries.find(
+      el => el.order_id == order.id
+    ).expected_receving_date;
+    order.value = order.value.totalValue;
+  });
 
   if (req.query["query"]) {
     foundOrders = foundOrders.filter(el =>
