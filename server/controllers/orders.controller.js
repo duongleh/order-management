@@ -29,17 +29,19 @@ module.exports.get = async (req, res) => {
     order.products = await Promise.all(
       order.products.map(async product => {
         try {
-          let resp = await axios.get(CONSTANTS.ENDPOINT.PRODUCT + product.id);
+          let resp = await axios.get(
+            `${CONSTANTS.ENDPOINT.PRODUCT}/${product.id}`
+          );
           return { ...product, name: resp.data.data[0].name };
-        } catch (err) {
+        } catch (error) {
           return res.status(400).json(error.response.data);
         }
       })
     );
     try {
-      let resp = await axios.get(CONSTANTS.ENDPOINT.DELIVERY + order.id);
+      let resp = await axios.get(`${CONSTANTS.ENDPOINT.DELIVERY}/${order.id}`);
       order.deliveryDate = resp.data.expected_receving_date;
-    } catch (err) {
+    } catch (error) {
       return res.status(400).json(error.response.data);
     }
     order.value = order.value.totalValue;

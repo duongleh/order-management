@@ -25,7 +25,9 @@ module.exports.get = async (req, res) => {
   foundOrder.products = await Promise.all(
     foundOrder.products.map(async product => {
       try {
-        let resp = await axios.get(CONSTANTS.ENDPOINT.PRODUCT + product.id);
+        let resp = await axios.get(
+          `${CONSTANTS.ENDPOINT.PRODUCT}/${product.id}`
+        );
         return {
           ...product,
           name: resp.data.data[0].name,
@@ -39,7 +41,9 @@ module.exports.get = async (req, res) => {
   );
 
   try {
-    let resp = await axios.get(CONSTANTS.ENDPOINT.DELIVERY + foundOrder.id);
+    let resp = await axios.get(
+      `${CONSTANTS.ENDPOINT.DELIVERY}/${foundOrder.id}`
+    );
     foundOrder.delivery = {
       date: resp.data.expected_receving_date,
       status: resp.data.status
@@ -80,7 +84,7 @@ module.exports.post = async (req, res) => {
       ...order
     });
     await newOrder.save();
-    await axios.post(CONSTANTS.ENDPOINT.DELIVERY + id, newDelivery);
+    await axios.post(`${CONSTANTS.ENDPOINT.DELIVERY}/${id}`, newDelivery);
   } catch (error) {
     return res.status(400).json(error.response.data);
   }
@@ -132,7 +136,7 @@ module.exports.delete = async (req, res) => {
   const { id } = req.params;
   try {
     await ordersModel.findOneAndRemove({ id });
-    await axios.delete(CONSTANTS.ENDPOINT.DELIVERY + id);
+    await axios.delete(`${CONSTANTS.ENDPOINT.DELIVERY}/${id}`);
   } catch (error) {
     return res.status(400).json(error.response.data);
   }
