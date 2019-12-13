@@ -1,0 +1,8 @@
+<ng-container *ngIf="status">
+    <h6> {{user.name}} </h6>
+    <a href="{{logOutUrl}}"><button mat-stroked-button color="primary" type="button">Log Out</button></a>
+</ng-container>
+
+<ng-container *ngIf="!status">
+    <a href="{{signInUrl}}"><button mat-stroked-button color="primary" type="button">Sign In</button></a>
+</ng-container>

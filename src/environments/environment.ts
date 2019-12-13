@@ -6,7 +6,16 @@ export const environment = {
   production: false,
   endpoint: {
     listorder: "/api/orders",
-    orderdetail: "/api/order"
+    orderdetail: "/api/order",
+    auth: {
+      auth: "/auth",
+      setsession: "/auth/setsession",
+      destroysession: "/auth/destroysession"
+    },
+    signin:
+      "http://secure-mountain-93147.herokuapp.com/requirelogin?url=http://localhost:3000/auth",
+    logout:
+      "http://secure-mountain-93147.herokuapp.com/logout?url=http://localhost:3000/auth"
   }
 };
 

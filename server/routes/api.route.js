@@ -1,5 +1,5 @@
-﻿const CONSTANTS = require("../constants");
-const express = require("express");
+﻿const express = require("express");
+const CONSTANTS = require("../constants");
 const orders = require("../controllers/orders.controller");
 const order = require("../controllers/order.controller");
 

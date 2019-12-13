@@ -9,6 +9,7 @@ import { FooterComponent } from "./app-shell/footer/footer.component";
 import { ListOrderModule } from "./app-shell/list-order/list-order.module";
 import { OrderDetailModule } from "./app-shell/order-detail/order-detail.module";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { AuthModule } from "./app-shell/auth/auth.module";
 
 @NgModule({
   declarations: [AppComponent, NavBarComponent, FooterComponent],
@@ -18,7 +19,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     AppRoutingModule,
     ListOrderModule,
     OrderDetailModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
