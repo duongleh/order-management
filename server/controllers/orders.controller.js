@@ -38,11 +38,11 @@ module.exports.get = async (req, res) => {
 
   foundOrders.forEach(order => {
     order.products.forEach(product => {
-      product.name = foundProducts.find(el => el.id == product.id).name;
+      let productName = foundProducts.find(el => el.id == product.id);
+      product.name = productName && productName.name;
     });
-    order.deliveryDate = foundDeliveries.find(
-      el => el.order_id == order.id
-    ).expected_receving_date;
+    let receiveDate = foundDeliveries.find(el => el.order_id == order.id);
+    order.deliveryDate = receiveDate && receiveDate.expected_receving_date;
     order.value = order.value.totalValue;
   });
 
