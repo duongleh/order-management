@@ -33,7 +33,7 @@ module.exports.get = async (req, res) => {
     foundProducts = foundProducts.data.data;
     foundDeliveries = foundDeliveries.data.deliveries;
   } catch (error) {
-    return res.status(400).json(error.response.data);
+    console.log(error.response.data);
   }
 
   foundOrders.forEach(order => {

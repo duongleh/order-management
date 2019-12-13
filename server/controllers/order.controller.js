@@ -35,7 +35,7 @@ module.exports.get = async (req, res) => {
           subTotal: product.quantity * resp.data.data[0].price
         };
       } catch (error) {
-        return res.status(400).json(error.response.data);
+        console.log(error.response.data);
       }
     })
   );
@@ -49,7 +49,7 @@ module.exports.get = async (req, res) => {
       status: resp.data.status
     };
   } catch (error) {
-    return res.status(400).json(error.response.data);
+    console.log(error.response.data);
   }
 
   return res.status(200).json(foundOrder);
