@@ -16,7 +16,8 @@ import {
   MatPaginatorModule,
   MatInputModule,
   MatButtonModule,
-  MatIconModule
+  MatIconModule,
+  MatProgressSpinnerModule
 } from "@angular/material";
 
 @NgModule({
@@ -35,7 +36,8 @@ import {
     MatPaginatorModule,
     MatInputModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatProgressSpinnerModule
   ]
 })
 export class ListOrderModule {}

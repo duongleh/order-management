@@ -15,6 +15,8 @@ module.exports.get = async (req, res) => {
         : "-id"
     );
 
+  req.query["id"] ? qr.where("user.id").equals(req.query["id"]) : null;
+
   req.query["status"] ? qr.where("status").equals(req.query["status"]) : null;
 
   req.query["startValue"]
