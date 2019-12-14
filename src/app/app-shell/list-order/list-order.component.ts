@@ -49,7 +49,6 @@ export class ListOrderComponent implements OnInit {
           this.isLoading = false;
           this.requireLogin = true;
         }
-        console.log(this.params.id);
       },
       error => {
         console.log(error);
@@ -61,10 +60,9 @@ export class ListOrderComponent implements OnInit {
     this.isLoading = true;
     this.listOrderService.getListOrder(this.params).subscribe(
       response => {
-        response.forEach(
-          el =>
-            (el.productsName = el.products.map(prod => prod.name).join(", "))
-        );
+        response.forEach(el => {
+          el.productsName = el.products.map(prod => prod.name).join(", ");
+        });
         this.dataSource = new MatTableDataSource(response);
         this.dataSource.paginator = this.paginator;
         this.isLoading = false;
