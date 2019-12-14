@@ -18,9 +18,10 @@
         <mat-icon matPrefix>filter_list</mat-icon>
         <mat-select placeholder="Tình trạng đơn hàng" (selectionChange)="onOptionsSelected($event.value)">
           <mat-option class="option" value="">Tình trạng đơn hàng</mat-option>
-          <mat-option class="option" value="Success">Đơn hàng thành công</mat-option>
-          <mat-option class="option" value="Cancel">Đơn hàng bị huỷ</mat-option>
+          <mat-option class="option" value="Confirmed">Đơn hàng đã giao</mat-option>
+          <mat-option class="option" value="Shipping">Đơn hàng đang giao</mat-option>
           <mat-option class="option" value="Pending">Đơn hàng đã tiếp nhận</mat-option>
+          <mat-option class="option" value="Canceled">Đơn hàng bị huỷ</mat-option>
         </mat-select>
       </mat-form-field>
       <ejs-daterangepicker id="daterangepicker" placeholder="Chọn khoảng thời gian" (change)="onDateChange($event)">
