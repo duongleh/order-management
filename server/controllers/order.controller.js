@@ -31,7 +31,7 @@ module.exports.get = async (req, res) => {
         .json({ success: false, message: "Order not found" });
     }
     foundOrder = foundOrder[0];
-    if (foundOrder.user.id !== userId) {
+    if (userId && foundOrder.user.id !== userId) {
       return res
         .status(404)
         .json({ success: false, message: "Order not belong to this user" });
