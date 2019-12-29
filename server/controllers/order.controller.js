@@ -15,6 +15,7 @@ const defaultStatus = [
 // GET ORDER DETAIL
 module.exports.get = async (req, res) => {
   const { id } = req.params;
+  const userId = parseInt(req.query["userId"]);
   let foundOrder;
 
   try {
@@ -29,11 +30,15 @@ module.exports.get = async (req, res) => {
         .status(404)
         .json({ success: false, message: "Order not found" });
     }
+    foundOrder = foundOrder[0];
+    if (foundOrder.user.id !== userId) {
+      return res
+        .status(404)
+        .json({ success: false, message: "Order not belong to this user" });
+    }
   } catch (err) {
     console.log(err);
   }
-
-  foundOrder = foundOrder[0];
 
   foundOrder.products = await Promise.all(
     foundOrder.products.map(async product => {

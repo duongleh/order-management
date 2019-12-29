@@ -2,7 +2,6 @@ import { Component, OnInit, ViewChild } from "@angular/core";
 import { ListOrderService } from "./list-order.service";
 import { MatPaginator } from "@angular/material/paginator";
 import { MatTableDataSource } from "@angular/material/table";
-import { AuthService } from "../auth/auth.service";
 
 @Component({
   selector: "app-list-order",
@@ -20,10 +19,9 @@ export class ListOrderComponent implements OnInit {
   public displayedColumns = ["id", "date", "products", "value", "status"];
   public dataSource: any;
   public isLoading = true;
-  public requireLogin = false;
 
   public params = {
-    id: "",
+    id: JSON.parse(localStorage.getItem("account")).id,
     sort: "DSC",
     quantity: 100,
     startTime: "",
@@ -34,26 +32,10 @@ export class ListOrderComponent implements OnInit {
     query: ""
   };
 
-  constructor(
-    private listOrderService: ListOrderService,
-    private authService: AuthService
-  ) {}
+  constructor(private listOrderService: ListOrderService) {}
 
   ngOnInit() {
-    this.authService.getAuthStatus().subscribe(
-      (response: any) => {
-        if (response.success) {
-          this.params.id = response.data.id;
-          this.renderList();
-        } else {
-          this.isLoading = false;
-          this.requireLogin = true;
-        }
-      },
-      error => {
-        console.log(error);
-      }
-    );
+    this.renderList();
   }
 
   renderList() {

@@ -23,15 +23,19 @@ export class OrderDetailComponent implements OnInit {
       this.id = paramsId.id;
     });
 
-    this.orderDetailService.getOrderDetail(this.id).subscribe(
-      response => {
-        this.order = response;
-        this.isLoading = false;
-        this.isAvailable = true;
-      },
-      error => {
-        this.isLoading = false;
-      }
-    );
+    this.orderDetailService
+      .getOrderDetail(this.id, {
+        userId: JSON.parse(localStorage.getItem("account")).id
+      })
+      .subscribe(
+        response => {
+          this.order = response;
+          this.isLoading = false;
+          this.isAvailable = true;
+        },
+        error => {
+          this.isLoading = false;
+        }
+      );
   }
 }

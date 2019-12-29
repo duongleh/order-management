@@ -9,10 +9,13 @@ import { FooterComponent } from "./app-shell/footer/footer.component";
 import { ListOrderModule } from "./app-shell/list-order/list-order.module";
 import { OrderDetailModule } from "./app-shell/order-detail/order-detail.module";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { AuthModule } from "./app-shell/auth/auth.module";
+import { AuthGuard } from "./app-shell/auth/auth.guard";
+import { NegateAuthGuard } from "./app-shell/auth/negate-auth.guard";
+import { HomeComponent } from "./app-shell/home/home.component";
+import { MatButtonModule } from "@angular/material/button";
 
 @NgModule({
-  declarations: [AppComponent, NavBarComponent, FooterComponent],
+  declarations: [AppComponent, NavBarComponent, FooterComponent, HomeComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -20,9 +23,9 @@ import { AuthModule } from "./app-shell/auth/auth.module";
     ListOrderModule,
     OrderDetailModule,
     BrowserAnimationsModule,
-    AuthModule
+    MatButtonModule
   ],
-  providers: [],
+  providers: [AuthGuard, NegateAuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

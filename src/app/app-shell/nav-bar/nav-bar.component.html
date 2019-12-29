@@ -6,6 +6,14 @@
     SP04 Order
   </a>
   <div class="navbar-nav">
-    <app-auth></app-auth>
+    <ng-container *ngIf="auth">
+      <h6> {{user.name}} </h6>
+      <a href="{{logOutUrl}}" (click)="onLogOut()">
+        <button mat-stroked-button color="primary" type="button">Log Out</button></a>
+    </ng-container>
+
+    <ng-container *ngIf="!auth">
+      <a href="{{signInUrl}}"><button mat-stroked-button color="primary" type="button">Sign In</button></a>
+    </ng-container>
   </div>
 </nav>

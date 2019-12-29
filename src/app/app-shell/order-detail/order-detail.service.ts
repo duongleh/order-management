@@ -11,8 +11,10 @@ export class OrderDetailService {
 
   constructor(private http: HttpClient) {}
 
-  getOrderDetail(id: number): Observable<IOrderDetail> {
-    return this.http.get<IOrderDetail>(`${this.orderDetailUrl}/${id}`);
+  getOrderDetail(id: number, data): Observable<IOrderDetail> {
+    return this.http.get<IOrderDetail>(`${this.orderDetailUrl}/${id}`, {
+      params: data
+    });
   }
 }
 
