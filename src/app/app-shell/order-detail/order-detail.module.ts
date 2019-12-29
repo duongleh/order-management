@@ -3,10 +3,9 @@ import { CommonModule } from "@angular/common";
 
 import { OrderDetailRoutingModule } from "./order-detail-routing.module";
 import { OrderDetailComponent } from "./order-detail.component";
-import { WarningMessageModule } from "../../shared/warning-message/warning-message.module";
-
+import { MatProgressSpinnerModule } from "@angular/material";
 @NgModule({
   declarations: [OrderDetailComponent],
-  imports: [CommonModule, OrderDetailRoutingModule, WarningMessageModule]
+  imports: [CommonModule, OrderDetailRoutingModule, MatProgressSpinnerModule]
 })
 export class OrderDetailModule {}

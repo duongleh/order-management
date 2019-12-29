@@ -9,3 +9,12 @@
 .pull-right {
   flex: 1;
 }
+
+mat-spinner {
+  margin: 20px auto;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}

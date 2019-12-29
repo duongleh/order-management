@@ -15,11 +15,24 @@ const defaultStatus = [
 // GET ORDER DETAIL
 module.exports.get = async (req, res) => {
   const { id } = req.params;
-  let foundOrder = await ordersModel
-    .find({ id })
-    .lean()
-    .select("-_id -__v")
-    .exec();
+  let foundOrder;
+
+  try {
+    foundOrder = await ordersModel
+      .find({ id })
+      .lean()
+      .select("-_id -__v")
+      .exec();
+
+    if (!Array.isArray(foundOrder) || !foundOrder.length) {
+      return res
+        .status(404)
+        .json({ success: false, message: "Order not found" });
+    }
+  } catch (err) {
+    console.log(err);
+  }
+
   foundOrder = foundOrder[0];
 
   foundOrder.products = await Promise.all(

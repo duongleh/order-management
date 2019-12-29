@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="!isLoading && isAvailable">
     <div class="py-4 text-center">
         <h2>Chi tiết đơn hàng #{{order.id}} - {{order.status}}</h2>
     </div>
@@ -91,5 +91,6 @@
     <br>
 </div>
 
-<app-warning-message *ngIf="WarningMessageOpen" [text]="WarningMessageText"
-    (WarningMessageOpen)="handleWarningClose($event)"></app-warning-message>
+<mat-spinner [diameter]="70" *ngIf="isLoading"></mat-spinner>
+
+<img src="assets/404.png" alt="NotFound" width="30%" *ngIf="!isLoading && !isAvailable">

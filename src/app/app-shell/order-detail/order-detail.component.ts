@@ -8,9 +8,9 @@ import { ActivatedRoute } from "@angular/router";
   styleUrls: ["./order-detail.component.css"]
 })
 export class OrderDetailComponent implements OnInit {
+  isLoading = true;
+  isAvailable = false;
   order = {} as IOrderDetail;
-  WarningMessageText = "Request to get list items failed:";
-  WarningMessageOpen = false;
   id: number;
 
   constructor(
@@ -26,10 +26,11 @@ export class OrderDetailComponent implements OnInit {
     this.orderDetailService.getOrderDetail(this.id).subscribe(
       response => {
         this.order = response;
+        this.isLoading = false;
+        this.isAvailable = true;
       },
       error => {
-        this.WarningMessageOpen = true;
-        this.WarningMessageText = `Request to get list items failed: ${error}`;
+        this.isLoading = false;
       }
     );
   }
