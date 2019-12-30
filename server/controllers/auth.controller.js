@@ -6,8 +6,17 @@ let sessionId;
 
 module.exports.auth = async (req, res) => {
   let user;
+  let checkSession;
   if (userId && sessionId) {
     try {
+      checkSession = await axios.get(
+        `http://secure-mountain-93147.herokuapp.com/api/getsession/${sessionId}`
+      );
+      if (checkSession.data === "no") {
+        userId = null;
+        sessionId = null;
+        return res.status(200).json({ success: false });
+      }
       user = await axios.get(`${CONSTANTS.ENDPOINT.USER}/user/${userId}`);
     } catch (error) {
       console.log(error.response.data);

@@ -24,23 +24,21 @@ export class NegateAuthGuard implements CanActivate {
     | Promise<boolean | UrlTree>
     | boolean
     | UrlTree {
-    if (localStorage.getItem("account") !== null) {
-      this.router.navigateByUrl("orders");
-      return false;
-    } else {
-      return this.authService.getAuthStatus().pipe(
-        map(
-          (res: any) => {
-            if (res.success) {
-              localStorage.setItem("account", JSON.stringify(res.data));
-            }
-            return !res.success;
-          },
-          (error: any) => {
-            console.log(error);
+    return this.authService.getAuthStatus().pipe(
+      map(
+        (res: any) => {
+          if (res.success) {
+            localStorage.setItem("account", JSON.stringify(res.data));
+            this.router.navigateByUrl("orders");
+          } else {
+            localStorage.removeItem("account");
           }
-        )
-      );
-    }
+          return !res.success;
+        },
+        (error: any) => {
+          console.log(error);
+        }
+      )
+    );
   }
 }

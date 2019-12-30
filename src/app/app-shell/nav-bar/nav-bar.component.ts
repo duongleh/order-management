@@ -23,6 +23,8 @@ export class NavBarComponent implements OnInit, AfterContentChecked {
     this.user = JSON.parse(localStorage.getItem("account"));
     if (this.user && this.user.name) {
       this.auth = true;
+    } else {
+      this.auth = false;
     }
   }
 

@@ -24,24 +24,21 @@ export class AuthGuard implements CanActivate {
     | Promise<boolean | UrlTree>
     | boolean
     | UrlTree {
-    if (localStorage.getItem("account") !== null) {
-      return true;
-    } else {
-      return this.authService.getAuthStatus().pipe(
-        map(
-          (res: any) => {
-            if (res.success) {
-              localStorage.setItem("account", JSON.stringify(res.data));
-            } else {
-              this.router.navigateByUrl("home");
-            }
-            return res.success;
-          },
-          (error: any) => {
-            console.log(error);
+    return this.authService.getAuthStatus().pipe(
+      map(
+        (res: any) => {
+          if (res.success) {
+            localStorage.setItem("account", JSON.stringify(res.data));
+          } else {
+            localStorage.removeItem("account");
+            this.router.navigateByUrl("home");
           }
-        )
-      );
-    }
+          return res.success;
+        },
+        (error: any) => {
+          console.log(error);
+        }
+      )
+    );
   }
 }
