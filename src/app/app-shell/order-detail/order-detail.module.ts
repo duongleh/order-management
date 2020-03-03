@@ -3,7 +3,7 @@ import { CommonModule } from "@angular/common";
 
 import { OrderDetailRoutingModule } from "./order-detail-routing.module";
 import { OrderDetailComponent } from "./order-detail.component";
-import { MatProgressSpinnerModule } from "@angular/material";
+import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 @NgModule({
   declarations: [OrderDetailComponent],
   imports: [CommonModule, OrderDetailRoutingModule, MatProgressSpinnerModule]
