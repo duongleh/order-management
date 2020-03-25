@@ -1,9 +1,5 @@
 ﻿# Order management service
 
-## Demo Website
-
-<https://sp-04-order.herokuapp.com/>
-
 ## Getting Started
 
 In the root directory of the project...
