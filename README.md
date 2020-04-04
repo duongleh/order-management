@@ -29,10 +29,6 @@ The front-end is served on <http://localhost:3000/> and the back-end on <http://
 └── README.md
 ```
 
-## Deployment
-
-`git subtree split --branch production --prefix server`
-
 ## Additional Documentation
 
 - Angular Docs - <https://angular.io/docs>

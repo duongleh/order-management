@@ -52,7 +52,8 @@
   },
   "scripts": {
     "init": "npm install && npm install --prefix server ",
-    "start": "concurrently \"yarn start-frontend || npm run start-frontend\" \"yarn start-backend || npm run start-backend\"",
+    "start": "node server/server.js",
+    "start:dev": "concurrently \"yarn start-frontend || npm run start-frontend\" \"yarn start-backend || npm run start-backend\"",
     "start-frontend": "ng serve --port=3000 --o --proxy-config proxy.config.json",
     "ng": "ng",
     "build": "node ./buildScript",
