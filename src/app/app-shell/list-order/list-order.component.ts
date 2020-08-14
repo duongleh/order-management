@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from "@angular/core";
 import { ListOrderService } from "./list-order.service";
 import { MatPaginator } from "@angular/material/paginator";
 import { MatTableDataSource } from "@angular/material/table";
+import { MatDatepickerInputEvent } from "@angular/material/datepicker";
 
 @Component({
   selector: "app-list-order",
@@ -63,9 +64,16 @@ export class ListOrderComponent implements OnInit {
     }
   }
 
-  onDateChange(event: any) {
-    this.params.startTime = event.startDate;
-    this.params.endTime = event.endDate;
-    this.renderList();
+  onStartDateChange(event: MatDatepickerInputEvent<Date>) {
+    if (event.value) {
+      this.params.startTime = event.value.toString();
+    }
+  }
+
+  onEndDateChange(event: MatDatepickerInputEvent<Date>) {
+    if (event.value) {
+      this.params.endTime = event.value.toString();
+      this.renderList();
+    }
   }
 }

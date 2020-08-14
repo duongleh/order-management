@@ -6,7 +6,6 @@ import { NgbAlertModule } from "@ng-bootstrap/ng-bootstrap";
 import { ListOrderRoutingModule } from "./list-order-routing.module";
 import { ListOrderComponent } from "./list-order.component";
 import { ListSearchComponent } from "./list-search/list-search.component";
-import { DateRangePickerModule } from "@syncfusion/ej2-angular-calendars";
 
 import { MatButtonModule } from "@angular/material/button";
 import { MatFormFieldModule } from "@angular/material/form-field";
@@ -16,6 +15,8 @@ import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatSelectModule } from "@angular/material/select";
 import { MatTableModule } from "@angular/material/table";
+import { MatNativeDateModule } from "@angular/material/core";
+import { MatDatepickerModule } from "@angular/material/datepicker";
 
 @NgModule({
   declarations: [ListOrderComponent, ListSearchComponent],
@@ -25,7 +26,6 @@ import { MatTableModule } from "@angular/material/table";
     NgbAlertModule,
     FormsModule,
     ReactiveFormsModule,
-    DateRangePickerModule,
     MatFormFieldModule,
     MatSelectModule,
     MatTableModule,
@@ -33,7 +33,9 @@ import { MatTableModule } from "@angular/material/table";
     MatInputModule,
     MatButtonModule,
     MatIconModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatNativeDateModule,
+    MatDatepickerModule
   ]
 })
 export class ListOrderModule {}
