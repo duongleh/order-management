@@ -11,8 +11,6 @@ import { MatTableDataSource } from "@angular/material/table";
 export class ListOrderComponent implements OnInit {
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
 
-  public WarningMessageText = "Request to get list items failed:";
-  public WarningMessageOpen = false;
   public startValue: number;
   public endValue: number;
   public status: string;
@@ -49,10 +47,7 @@ export class ListOrderComponent implements OnInit {
         this.dataSource.paginator = this.paginator;
         this.isLoading = false;
       },
-      error => {
-        this.WarningMessageOpen = true;
-        this.WarningMessageText = `Request to get list items failed: ${error}`;
-      }
+      error => console.log(error)
     );
   }
 

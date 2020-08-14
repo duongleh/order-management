@@ -6,7 +6,6 @@ import { NgbAlertModule } from "@ng-bootstrap/ng-bootstrap";
 import { ListOrderRoutingModule } from "./list-order-routing.module";
 import { ListOrderComponent } from "./list-order.component";
 import { ListSearchComponent } from "./list-search/list-search.component";
-import { WarningMessageModule } from "../../shared/warning-message/warning-message.module";
 import { DateRangePickerModule } from "@syncfusion/ej2-angular-calendars";
 
 import { MatButtonModule } from "@angular/material/button";
@@ -26,7 +25,6 @@ import { MatTableModule } from "@angular/material/table";
     NgbAlertModule,
     FormsModule,
     ReactiveFormsModule,
-    WarningMessageModule,
     DateRangePickerModule,
     MatFormFieldModule,
     MatSelectModule,
