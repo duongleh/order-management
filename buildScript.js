@@ -1,11 +1,10 @@
 const fs = require("fs");
-const fse = require("fs-extra");
 const childProcess = require("child_process");
 
-if (fs.existsSync("./build")) {
-  fse.removeSync("./build");
+if (fs.existsSync("./server/build")) {
+  fs.rmdirSync("./server/build", { recursive: true });
 }
 
 childProcess.execSync("ng build --prod", { stdio: "inherit" });
 
-fse.moveSync("./build", "./server/build", { overwrite: true });
+fs.renameSync("./build", "./server/build");
